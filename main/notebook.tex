@@ -1,0 +1,1722 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{transfer\_learning - f2}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{DeepER Classic VS VinSIM + DeepER (Fine
+Tuning)}\label{deeper-classic-vs-vinsim-deeper-fine-tuning}
+
+    \subsection{Step 0: Caricamento dati, preprocessing e strutture
+ausiliarie}\label{step-0-caricamento-dati-preprocessing-e-strutture-ausiliarie}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{from} \PY{n+nn}{DeepER} \PY{k}{import} \PY{n}{init\PYZus{}embeddings\PYZus{}index}\PY{p}{,} \PY{n}{init\PYZus{}embeddings\PYZus{}model}\PY{p}{,} \PY{n}{init\PYZus{}DeepER\PYZus{}model}\PY{p}{,} \PY{n}{train\PYZus{}model\PYZus{}ER}\PY{p}{,} \PY{n}{replace\PYZus{}last\PYZus{}layer}\PY{p}{,} \PY{n}{model\PYZus{}statistics}
+        \PY{k+kn}{from} \PY{n+nn}{experimental\PYZus{}similarity} \PY{k}{import} \PY{n}{mono\PYZus{}vector}\PY{p}{,} \PY{n}{cosine\PYZus{}similarity\PYZus{}vector}\PY{p}{,} \PY{n}{distance\PYZus{}similarity\PYZus{}vector}
+        \PY{k+kn}{from} \PY{n+nn}{csv2dataset} \PY{k}{import} \PY{n}{splitting\PYZus{}dataSet}\PY{p}{,} \PY{n}{csv\PYZus{}2\PYZus{}datasetALTERNATE}\PY{p}{,} \PY{n}{csvTable2datasetRANDOM}
+        \PY{k+kn}{from} \PY{n+nn}{generate\PYZus{}similarity\PYZus{}vector} \PY{k}{import} \PY{n}{generate\PYZus{}similarity\PYZus{}vector}
+        \PY{k+kn}{from} \PY{n+nn}{keras}\PY{n+nn}{.}\PY{n+nn}{models} \PY{k}{import} \PY{n}{load\PYZus{}model}
+        \PY{k+kn}{from} \PY{n+nn}{keras}\PY{n+nn}{.}\PY{n+nn}{layers} \PY{k}{import} \PY{n}{Dense}
+        \PY{k+kn}{from} \PY{n+nn}{plotly} \PY{k}{import} \PY{n}{graph\PYZus{}objs} \PY{k}{as} \PY{n}{go}
+        \PY{k+kn}{import} \PY{n+nn}{plotly}\PY{n+nn}{.}\PY{n+nn}{offline} \PY{k}{as} \PY{n+nn}{pyo}
+        \PY{k+kn}{from} \PY{n+nn}{random} \PY{k}{import} \PY{n}{shuffle}
+        \PY{k+kn}{import} \PY{n+nn}{utilist} \PY{k}{as} \PY{n+nn}{uls}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+C:\textbackslash{}Users\textbackslash{}Giulia\textbackslash{}Anaconda3\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}h5py\textbackslash{}\_\_init\_\_.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from .\_conv import register\_converters as \_register\_converters
+Using TensorFlow backend.
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c+c1}{\PYZsh{} Imposta manualmente a True per caricare da disco tutti i modelli salvati. }
+        \PY{c+c1}{\PYZsh{} Imposta manualmente a False per ri\PYZhy{}eseguire tutti gli addestramenti.}
+        \PY{n}{LOAD\PYZus{}FROM\PYZus{}DISK} \PY{o}{=} \PY{k+kc}{False}
+        \PY{c+c1}{\PYZsh{} Il nome con cui saranno etichettati i files prodotti}
+        \PY{n}{DATASET\PYZus{}NAME} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{fodors\PYZus{}zagats}\PY{l+s+s1}{\PYZsq{}}\PY{c+c1}{\PYZsh{} Esempio: \PYZsq{}WA\PYZsq{}}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{} Caricamento strutture dati e modelli ausiliari.}
+        \PY{n}{embeddings\PYZus{}index} \PY{o}{=} \PY{n}{init\PYZus{}embeddings\PYZus{}index}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{glove.6B.50d.txt}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n}{emb\PYZus{}dim} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{embeddings\PYZus{}index}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cat}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)} \PY{c+c1}{\PYZsh{} :3}
+        \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer} \PY{o}{=} \PY{n}{init\PYZus{}embeddings\PYZus{}model}\PY{p}{(}\PY{n}{embeddings\PYZus{}index}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+* Costruzione indice degli embeddings{\ldots}Fatto. 400000 embeddings totali.
+* Creazione del modello per il calcolo degli embeddings{\ldots}
+* Inizializzo il tokenizzatore{\ldots}Fatto: 400000 parole totali.
+* Preparazione della matrice di embedding{\ldots}Fatto. Dimensioni matrice embeddings: (400001, 50)
+
+°°° EMBEDDING MODEL °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Tupla\_A (InputLayer)            (None, None)         0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Tupla\_B (InputLayer)            (None, None)         0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embedding\_lookup (Embedding)    (None, None, 50)     20000050    Tupla\_A[0][0]                    
+                                                                 Tupla\_B[0][0]                    
+==================================================================================================
+Total params: 20,000,050
+Trainable params: 0
+Non-trainable params: 20,000,050
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{} Caricamento dati e split iniziale.}
+        \PY{k}{if} \PY{n}{LOAD\PYZus{}FROM\PYZus{}DISK}\PY{p}{:}
+            
+            \PY{c+c1}{\PYZsh{} Carica dataset salvato su disco.}
+            \PY{n}{data} \PY{o}{=} \PY{n}{uls}\PY{o}{.}\PY{n}{load\PYZus{}list}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dataset\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+        \PY{k}{else}\PY{p}{:}
+            
+            \PY{n}{GROUND\PYZus{}TRUTH\PYZus{}FILE} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{matches\PYZus{}fodors\PYZus{}zagats.csv}\PY{l+s+s1}{\PYZsq{}}\PY{c+c1}{\PYZsh{} Esempio: \PYZsq{}matches\PYZus{}walmart\PYZus{}amazon.csv\PYZsq{}}
+            \PY{c+c1}{\PYZsh{} Necessario inserire le tabelle nell\PYZsq{}ordine corrispondente alle coppie della ground truth.}
+            \PY{n}{TABLE1\PYZus{}FILE} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{fodors.csv}\PY{l+s+s1}{\PYZsq{}}\PY{c+c1}{\PYZsh{} Esempio: \PYZsq{}walmart.csv\PYZsq{}}
+            \PY{n}{TABLE2\PYZus{}FILE} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{zagats.csv}\PY{l+s+s1}{\PYZsq{}}\PY{c+c1}{\PYZsh{} Esempio: \PYZsq{}amazon.csv\PYZsq{}}
+        
+            \PY{c+c1}{\PYZsh{} Coppie di attributi considerati allineati.}
+            \PY{n}{att\PYZus{}indexes} \PY{o}{=} \PY{p}{[}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{3}\PY{p}{,} \PY{l+m+mi}{3}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{4}\PY{p}{,} \PY{l+m+mi}{4}\PY{p}{)}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{5}\PY{p}{,} \PY{l+m+mi}{5}\PY{p}{)}\PY{p}{,} \PY{p}{(}\PY{l+m+mi}{6}\PY{p}{,} \PY{l+m+mi}{6}\PY{p}{)}\PY{p}{]}\PY{c+c1}{\PYZsh{} Esempio: [(5, 9), (4, 5), (3, 3), (14, 4), (6, 11)]}
+        
+        
+            \PY{c+c1}{\PYZsh{} Similarity callbacks}
+            \PY{n}{simf} \PY{o}{=} \PY{k}{lambda} \PY{n}{a}\PY{p}{,} \PY{n}{b}\PY{p}{:} \PY{n}{cosine\PYZus{}similarity\PYZus{}vector}\PY{p}{(}\PY{n}{a}\PY{p}{,} \PY{n}{b}\PY{p}{,} \PY{n}{embeddings\PYZus{}index}\PY{p}{)}
+            \PY{c+c1}{\PYZsh{}simf = lambda a, b: mono\PYZus{}vector(a, b)}
+        
+            \PY{c+c1}{\PYZsh{} Crea il dataset.}
+            \PY{n}{data} \PY{o}{=} \PY{n}{csv\PYZus{}2\PYZus{}datasetALTERNATE}\PY{p}{(}\PY{n}{GROUND\PYZus{}TRUTH\PYZus{}FILE}\PY{p}{,} \PY{n}{TABLE1\PYZus{}FILE}\PY{p}{,} \PY{n}{TABLE2\PYZus{}FILE}\PY{p}{,} \PY{n}{att\PYZus{}indexes}\PY{p}{,} \PY{n}{simf}\PY{p}{)}
+            
+            \PY{c+c1}{\PYZsh{} Salva dataset su disco.}
+            \PY{n}{uls}\PY{o}{.}\PY{n}{save\PYZus{}list}\PY{p}{(}\PY{n}{data}\PY{p}{,} \PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{dataset\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        
+            
+        \PY{c+c1}{\PYZsh{} Dataset per DeepER classico: [(tupla1, tupla2, label), ...].}
+        \PY{n}{deeper\PYZus{}data} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{q}\PY{p}{:} \PY{p}{(}\PY{n}{q}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{q}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{n}{q}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]}\PY{p}{)}\PY{p}{,} \PY{n}{data}\PY{p}{)}\PY{p}{)}
+        
+        
+        \PY{c+c1}{\PYZsh{} Taglia attributi se troppo lunghi}
+        \PY{c+c1}{\PYZsh{} Alcuni dataset hanno attributi con descrizioni molto lunghe.}
+        \PY{c+c1}{\PYZsh{} Questo filtro limita il numero di caratteri di un attributo a 1000.}
+        \PY{k}{def} \PY{n+nf}{shrink\PYZus{}data}\PY{p}{(}\PY{n}{data}\PY{p}{)}\PY{p}{:}
+            
+            \PY{k}{def} \PY{n+nf}{cut\PYZus{}string}\PY{p}{(}\PY{n}{s}\PY{p}{)}\PY{p}{:}
+                \PY{k}{if} \PY{n+nb}{len}\PY{p}{(}\PY{n}{s}\PY{p}{)} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{l+m+mi}{1000}\PY{p}{:}
+                    \PY{k}{return} \PY{n}{s}\PY{p}{[}\PY{p}{:}\PY{l+m+mi}{1000}\PY{p}{]}
+                \PY{k}{else}\PY{p}{:}
+                    \PY{k}{return} \PY{n}{s}
+            
+            \PY{n}{temp} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+            \PY{k}{for} \PY{n}{t1}\PY{p}{,} \PY{n}{t2}\PY{p}{,} \PY{n}{lb} \PY{o+ow}{in} \PY{n}{data}\PY{p}{:}
+                \PY{n}{t1} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{map}\PY{p}{(}\PY{n}{cut\PYZus{}string}\PY{p}{,} \PY{n}{t1}\PY{p}{)}\PY{p}{)}
+                \PY{n}{t2} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{map}\PY{p}{(}\PY{n}{cut\PYZus{}string}\PY{p}{,} \PY{n}{t2}\PY{p}{)}\PY{p}{)}
+                \PY{n}{temp}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{(}\PY{n}{t1}\PY{p}{,} \PY{n}{t2}\PY{p}{,} \PY{n}{lb}\PY{p}{)}\PY{p}{)}
+                
+            \PY{k}{return} \PY{n}{temp}
+        
+        \PY{n}{deeper\PYZus{}data} \PY{o}{=} \PY{n}{shrink\PYZus{}data}\PY{p}{(}\PY{n}{deeper\PYZus{}data}\PY{p}{)}
+        
+        
+        \PY{c+c1}{\PYZsh{} Split in training set e test set.}
+        \PY{k}{def} \PY{n+nf}{split\PYZus{}training\PYZus{}test}\PY{p}{(}\PY{n}{data}\PY{p}{,} \PY{n}{SPLIT\PYZus{}FACTOR} \PY{o}{=} \PY{l+m+mf}{0.8}\PY{p}{)}\PY{p}{:}     
+            \PY{n}{bound} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{data}\PY{p}{)} \PY{o}{*} \PY{n}{SPLIT\PYZus{}FACTOR}\PY{p}{)}
+            \PY{n}{train} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{p}{:}\PY{n}{bound}\PY{p}{]}
+            \PY{n}{test} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{bound}\PY{p}{:}\PY{p}{]}
+            
+            \PY{k}{return} \PY{n}{train}\PY{p}{,} \PY{n}{test}
+        
+        
+        \PY{c+c1}{\PYZsh{} Tutti i successivi addestramenti partiranno dal 100\PYZpc{} di deeper\PYZus{}train (80\PYZpc{} di tutti i dati).}
+        \PY{c+c1}{\PYZsh{} Le tuple in deeper\PYZus{}test non verranno mai usate per addestrare ma solo per testare i modelli.}
+        \PY{n}{deeper\PYZus{}train}\PY{p}{,} \PY{n}{deeper\PYZus{}test} \PY{o}{=} \PY{n}{split\PYZus{}training\PYZus{}test}\PY{p}{(}\PY{n}{deeper\PYZus{}data}\PY{p}{)}
+\end{Verbatim}
+
+
+    \subsection{Step 1: Addestramento
+standard}\label{step-1-addestramento-standard}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{c+c1}{\PYZsh{} InPut: Percentuale di dati considerata per l\PYZsq{}addestramento. }
+        \PY{c+c1}{\PYZsh{} OutPut: DeepER addestrato sul taglio scelto.}
+        \PY{k}{def} \PY{n+nf}{get\PYZus{}DeepER}\PY{p}{(}\PY{n}{perc}\PY{p}{)}\PY{p}{:}
+           
+            \PY{n}{sub\PYZus{}data} \PY{o}{=} \PY{n}{splitting\PYZus{}dataSet}\PY{p}{(}\PY{n}{perc}\PY{p}{,} \PY{n}{deeper\PYZus{}train}\PY{p}{)}    
+            
+            \PY{k}{if} \PY{n}{LOAD\PYZus{}FROM\PYZus{}DISK}\PY{p}{:}
+                
+                \PY{c+c1}{\PYZsh{} Carica da disco.}
+                \PY{n+nb}{print}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Loading DeepER\PYZus{}best\PYZus{}model\PYZus{}}\PY{l+s+s1}{\PYZob{}}\PY{l+s+s1}{int(perc*100)\PYZcb{}\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{.h5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{end}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{flush}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+                \PY{n}{deeper\PYZus{}model} \PY{o}{=} \PY{n}{load\PYZus{}model}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{DeepER\PYZus{}best\PYZus{}model\PYZus{}}\PY{l+s+s1}{\PYZob{}}\PY{l+s+s1}{int(perc*100)\PYZcb{}\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{.h5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{  \PYZhy{}\PYZgt{}  Done}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}        
+                        
+            \PY{k}{else}\PY{p}{:}
+                
+                \PY{c+c1}{\PYZsh{} Inizializza il modello.}
+                \PY{n}{deeper\PYZus{}model} \PY{o}{=} \PY{n}{init\PYZus{}DeepER\PYZus{}model}\PY{p}{(}\PY{n}{emb\PYZus{}dim}\PY{p}{)}
+                \PY{n}{deeper\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+                \PY{c+c1}{\PYZsh{} Avvio addestramento.}
+                \PY{n}{deeper\PYZus{}model} \PY{o}{=} \PY{n}{train\PYZus{}model\PYZus{}ER}\PY{p}{(}\PY{n}{sub\PYZus{}data}\PY{p}{,} 
+                                              \PY{n}{deeper\PYZus{}model}\PY{p}{,} 
+                                              \PY{n}{embeddings\PYZus{}model}\PY{p}{,} 
+                                              \PY{n}{tokenizer}\PY{p}{,} 
+                                              \PY{n}{pretraining}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} 
+                                              \PY{n}{end}\PY{o}{=}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZus{}}\PY{l+s+s1}{\PYZob{}}\PY{l+s+s1}{int(perc*100)\PYZcb{}\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                
+            \PY{k}{return} \PY{n}{deeper\PYZus{}model}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{c+c1}{\PYZsh{} Avvio addestramenti o carica da disco.}
+        \PY{n}{deeper\PYZus{}model\PYZus{}5} \PY{o}{=} \PY{n}{get\PYZus{}DeepER}\PY{p}{(}\PY{l+m+mf}{0.05}\PY{p}{)}
+        \PY{n}{deeper\PYZus{}model\PYZus{}10} \PY{o}{=} \PY{n}{get\PYZus{}DeepER}\PY{p}{(}\PY{l+m+mf}{0.1}\PY{p}{)}
+        \PY{n}{deeper\PYZus{}model\PYZus{}25} \PY{o}{=} \PY{n}{get\PYZus{}DeepER}\PY{p}{(}\PY{l+m+mf}{0.25}\PY{p}{)}
+        \PY{n}{deeper\PYZus{}model\PYZus{}50} \PY{o}{=} \PY{n}{get\PYZus{}DeepER}\PY{p}{(}\PY{l+m+mf}{0.5}\PY{p}{)}
+        \PY{n}{deeper\PYZus{}model\PYZus{}75} \PY{o}{=} \PY{n}{get\PYZus{}DeepER}\PY{p}{(}\PY{l+m+mf}{0.75}\PY{p}{)}
+        \PY{n}{deeper\PYZus{}model\PYZus{}100} \PY{o}{=} \PY{n}{get\PYZus{}DeepER}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 8 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (8, 6), Table2 shape: (8, 6)
+Batch size: 1
+Train on 6 samples, validate on 2 samples
+Epoch 1/64
+6/6 [==============================] - 14s 2s/step - loss: 0.7166 - acc: 0.3333 - val\_loss: 0.6390 - val\_acc: 0.5000
+
+Epoch 00001: val\_acc improved from -inf to 0.50000, saving model to DeepER\_best\_model\_5\_fodors\_zagats.h5
+Epoch 2/64
+6/6 [==============================] - 1s 84ms/step - loss: 0.6022 - acc: 0.5000 - val\_loss: 0.5562 - val\_acc: 0.5000
+
+Epoch 00002: val\_acc did not improve from 0.50000
+Epoch 3/64
+6/6 [==============================] - 1s 91ms/step - loss: 0.4381 - acc: 0.6667 - val\_loss: 0.3940 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc improved from 0.50000 to 1.00000, saving model to DeepER\_best\_model\_5\_fodors\_zagats.h5
+Epoch 4/64
+6/6 [==============================] - 0s 80ms/step - loss: 0.3204 - acc: 1.0000 - val\_loss: 0.3037 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+6/6 [==============================] - 0s 82ms/step - loss: 0.2152 - acc: 1.0000 - val\_loss: 0.2280 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+6/6 [==============================] - 0s 80ms/step - loss: 0.1060 - acc: 1.0000 - val\_loss: 0.0279 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+6/6 [==============================] - 0s 78ms/step - loss: 0.0019 - acc: 1.0000 - val\_loss: 6.1734e-04 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+6/6 [==============================] - 0s 77ms/step - loss: 9.3756e-05 - acc: 1.0000 - val\_loss: 1.0357e-04 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 9/64
+6/6 [==============================] - 0s 83ms/step - loss: 6.8569e-05 - acc: 1.0000 - val\_loss: 7.8058e-05 - val\_acc: 1.0000
+
+Epoch 00009: val\_acc did not improve from 1.00000
+Epoch 10/64
+6/6 [==============================] - 1s 89ms/step - loss: 5.7111e-05 - acc: 1.0000 - val\_loss: 3.1234e-05 - val\_acc: 1.0000
+
+Epoch 00010: val\_acc did not improve from 1.00000
+Epoch 00010: early stopping
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 17 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (17, 6), Table2 shape: (17, 8)
+Batch size: 1
+Train on 13 samples, validate on 4 samples
+Epoch 1/64
+13/13 [==============================] - 17s 1s/step - loss: 0.6632 - acc: 0.7692 - val\_loss: 0.6331 - val\_acc: 0.7500
+
+Epoch 00001: val\_acc improved from -inf to 0.75000, saving model to DeepER\_best\_model\_10\_fodors\_zagats.h5
+Epoch 2/64
+13/13 [==============================] - 1s 97ms/step - loss: 0.3219 - acc: 1.0000 - val\_loss: 0.5055 - val\_acc: 0.7500
+
+Epoch 00002: val\_acc did not improve from 0.75000
+Epoch 3/64
+13/13 [==============================] - 1s 98ms/step - loss: 0.0013 - acc: 1.0000 - val\_loss: 1.4470 - val\_acc: 0.2500
+
+Epoch 00003: val\_acc did not improve from 0.75000
+Epoch 4/64
+13/13 [==============================] - 1s 95ms/step - loss: 3.1361e-05 - acc: 1.0000 - val\_loss: 2.1559 - val\_acc: 0.7500
+
+Epoch 00004: val\_acc did not improve from 0.75000
+Epoch 5/64
+13/13 [==============================] - 1s 97ms/step - loss: 1.6506e-07 - acc: 1.0000 - val\_loss: 2.6457 - val\_acc: 0.7500
+
+Epoch 00005: val\_acc did not improve from 0.75000
+Epoch 6/64
+13/13 [==============================] - 1s 94ms/step - loss: 1.1921e-07 - acc: 1.0000 - val\_loss: 2.8017 - val\_acc: 0.7500
+
+Epoch 00006: val\_acc did not improve from 0.75000
+Epoch 7/64
+13/13 [==============================] - 1s 96ms/step - loss: 1.1921e-07 - acc: 1.0000 - val\_loss: 2.8460 - val\_acc: 0.7500
+
+Epoch 00007: val\_acc did not improve from 0.75000
+Epoch 8/64
+13/13 [==============================] - 1s 96ms/step - loss: 1.1921e-07 - acc: 1.0000 - val\_loss: 2.8583 - val\_acc: 0.7500
+
+Epoch 00008: val\_acc did not improve from 0.75000
+Epoch 00008: early stopping
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 44 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (44, 6), Table2 shape: (44, 8)
+Batch size: 2
+Train on 35 samples, validate on 9 samples
+Epoch 1/64
+35/35 [==============================] - 21s 600ms/step - loss: 0.6116 - acc: 0.5714 - val\_loss: 0.3260 - val\_acc: 1.0000
+
+Epoch 00001: val\_acc improved from -inf to 1.00000, saving model to DeepER\_best\_model\_25\_fodors\_zagats.h5
+Epoch 2/64
+35/35 [==============================] - 2s 64ms/step - loss: 0.1919 - acc: 0.9429 - val\_loss: 0.5076 - val\_acc: 0.7778
+
+Epoch 00002: val\_acc did not improve from 1.00000
+Epoch 3/64
+35/35 [==============================] - 2s 68ms/step - loss: 0.3711 - acc: 0.9143 - val\_loss: 0.0186 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc did not improve from 1.00000
+Epoch 4/64
+35/35 [==============================] - 2s 66ms/step - loss: 0.0325 - acc: 1.0000 - val\_loss: 0.0414 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+35/35 [==============================] - 2s 68ms/step - loss: 0.0198 - acc: 1.0000 - val\_loss: 0.0285 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+35/35 [==============================] - 2s 71ms/step - loss: 0.0086 - acc: 1.0000 - val\_loss: 0.0156 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+35/35 [==============================] - 2s 64ms/step - loss: 0.0037 - acc: 1.0000 - val\_loss: 0.0121 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+35/35 [==============================] - 2s 68ms/step - loss: 0.0018 - acc: 1.0000 - val\_loss: 0.0105 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 00008: early stopping
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 89 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (89, 11), Table2 shape: (89, 8)
+Batch size: 2
+Train on 71 samples, validate on 18 samples
+Epoch 1/64
+71/71 [==============================] - 29s 403ms/step - loss: 0.3884 - acc: 0.8732 - val\_loss: 8.2421e-06 - val\_acc: 1.0000
+
+Epoch 00001: val\_acc improved from -inf to 1.00000, saving model to DeepER\_best\_model\_50\_fodors\_zagats.h5
+Epoch 2/64
+71/71 [==============================] - 6s 86ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00002: val\_acc did not improve from 1.00000
+Epoch 3/64
+71/71 [==============================] - 6s 86ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc did not improve from 1.00000
+Epoch 4/64
+71/71 [==============================] - 6s 87ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+71/71 [==============================] - 6s 86ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+71/71 [==============================] - 6s 88ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+71/71 [==============================] - 6s 87ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+71/71 [==============================] - 6s 86ms/step - loss: 0.4540 - acc: 0.9718 - val\_loss: 1.1921e-07 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 00008: early stopping
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 134 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (134, 11), Table2 shape: (134, 8)
+Batch size: 3
+Train on 107 samples, validate on 27 samples
+Epoch 1/64
+107/107 [==============================] - 31s 290ms/step - loss: 0.3284 - acc: 0.8505 - val\_loss: 0.1175 - val\_acc: 0.9630
+
+Epoch 00001: val\_acc improved from -inf to 0.96296, saving model to DeepER\_best\_model\_75\_fodors\_zagats.h5
+Epoch 2/64
+107/107 [==============================] - 7s 63ms/step - loss: 0.0640 - acc: 0.9720 - val\_loss: 0.1169 - val\_acc: 0.9630
+
+Epoch 00002: val\_acc did not improve from 0.96296
+Epoch 3/64
+107/107 [==============================] - 7s 63ms/step - loss: 0.0127 - acc: 0.9907 - val\_loss: 0.0342 - val\_acc: 0.9630
+
+Epoch 00003: val\_acc did not improve from 0.96296
+Epoch 4/64
+107/107 [==============================] - 7s 61ms/step - loss: 1.9958e-04 - acc: 1.0000 - val\_loss: 0.0258 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc improved from 0.96296 to 1.00000, saving model to DeepER\_best\_model\_75\_fodors\_zagats.h5
+Epoch 5/64
+107/107 [==============================] - 7s 65ms/step - loss: 8.4551e-05 - acc: 1.0000 - val\_loss: 0.0196 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+107/107 [==============================] - 7s 61ms/step - loss: 5.0165e-05 - acc: 1.0000 - val\_loss: 0.0153 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+107/107 [==============================] - 7s 63ms/step - loss: 3.2922e-05 - acc: 1.0000 - val\_loss: 0.0127 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+107/107 [==============================] - 7s 62ms/step - loss: 2.3886e-05 - acc: 1.0000 - val\_loss: 0.0114 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 9/64
+107/107 [==============================] - 7s 61ms/step - loss: 1.6803e-05 - acc: 1.0000 - val\_loss: 0.0098 - val\_acc: 1.0000
+
+Epoch 00009: val\_acc did not improve from 1.00000
+Epoch 10/64
+107/107 [==============================] - 7s 63ms/step - loss: 1.2597e-05 - acc: 1.0000 - val\_loss: 0.0098 - val\_acc: 1.0000
+
+Epoch 00010: val\_acc did not improve from 1.00000
+Epoch 11/64
+107/107 [==============================] - 7s 62ms/step - loss: 9.9016e-06 - acc: 1.0000 - val\_loss: 0.0093 - val\_acc: 1.0000
+
+Epoch 00011: val\_acc did not improve from 1.00000
+Epoch 00011: early stopping
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 179 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (179, 11), Table2 shape: (179, 9)
+Batch size: 4
+Train on 143 samples, validate on 36 samples
+Epoch 1/64
+143/143 [==============================] - 36s 250ms/step - loss: 0.3366 - acc: 0.8531 - val\_loss: 0.1656 - val\_acc: 0.9722
+
+Epoch 00001: val\_acc improved from -inf to 0.97222, saving model to DeepER\_best\_model\_100\_fodors\_zagats.h5
+Epoch 2/64
+143/143 [==============================] - 8s 56ms/step - loss: 0.1718 - acc: 0.9441 - val\_loss: 0.1471 - val\_acc: 0.9722
+
+Epoch 00002: val\_acc did not improve from 0.97222
+Epoch 3/64
+143/143 [==============================] - 8s 57ms/step - loss: 0.1897 - acc: 0.9650 - val\_loss: 0.3063 - val\_acc: 0.9167
+
+Epoch 00003: val\_acc did not improve from 0.97222
+Epoch 4/64
+143/143 [==============================] - 8s 56ms/step - loss: 0.1504 - acc: 0.9720 - val\_loss: 0.1950 - val\_acc: 0.9444
+
+Epoch 00004: val\_acc did not improve from 0.97222
+Epoch 5/64
+143/143 [==============================] - 8s 56ms/step - loss: 0.0927 - acc: 0.9650 - val\_loss: 0.3343 - val\_acc: 0.8889
+
+Epoch 00005: val\_acc did not improve from 0.97222
+Epoch 6/64
+143/143 [==============================] - 8s 56ms/step - loss: 0.0958 - acc: 0.9790 - val\_loss: 0.1478 - val\_acc: 0.9722
+
+Epoch 00006: val\_acc did not improve from 0.97222
+Epoch 7/64
+143/143 [==============================] - 8s 58ms/step - loss: 0.0625 - acc: 0.9790 - val\_loss: 0.2708 - val\_acc: 0.9167
+
+Epoch 00007: val\_acc did not improve from 0.97222
+Epoch 8/64
+143/143 [==============================] - 8s 56ms/step - loss: 0.0301 - acc: 0.9860 - val\_loss: 0.1086 - val\_acc: 0.9722
+
+Epoch 00008: val\_acc did not improve from 0.97222
+Epoch 00008: early stopping
+
+    \end{Verbatim}
+
+    \subsubsection{Calcolo F-Measure dopo addestramento
+standard}\label{calcolo-f-measure-dopo-addestramento-standard}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{c+c1}{\PYZsh{} Misurazione dell\PYZsq{}f\PYZhy{}measure sullo stesso test set con i diversi modelli.}
+         \PY{n}{fm\PYZus{}model\PYZus{}standard} \PY{o}{=} \PY{p}{[}\PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}100}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                              \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}75}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                              \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}50}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                              \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}25}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                              \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}10}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                              \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}5}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{]}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{fm\PYZus{}model\PYZus{}standard}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 1.0, Recall: 0.7272727272727273, f1-score: 0.8421052631578948
+Total retrieved: 16, retrieved/total matches: 16/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 1.0, Recall: 0.2727272727272727, f1-score: 0.42857142857142855
+Total retrieved: 6, retrieved/total matches: 6/22
+[0.9777777777777777, 0.8421052631578948, 0.9777777777777777, 0.9777777777777777, 0.9777777777777777, 0.42857142857142855]
+
+    \end{Verbatim}
+
+    \subsubsection{Visualizzazione F-Measure: primi
+risultati}\label{visualizzazione-f-measure-primi-risultati}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{c+c1}{\PYZsh{} Attiva modalità notebook per mostrare i grafici correttamente.}
+         \PY{n}{pyo}\PY{o}{.}\PY{n}{init\PYZus{}notebook\PYZus{}mode}\PY{p}{(}\PY{p}{)}
+         
+         \PY{n}{splits} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{100}\PY{l+s+si}{\PYZpc{} s}\PY{l+s+s1}{plit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{75}\PY{l+s+si}{\PYZpc{} s}\PY{l+s+s1}{plit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{50}\PY{l+s+si}{\PYZpc{} s}\PY{l+s+s1}{plit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{25}\PY{l+s+si}{\PYZpc{} s}\PY{l+s+s1}{plit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{10}\PY{l+s+si}{\PYZpc{} s}\PY{l+s+s1}{plit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{5}\PY{l+s+si}{\PYZpc{} s}\PY{l+s+s1}{plit}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+         \PY{n}{total\PYZus{}tup} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{deeper\PYZus{}train}\PY{p}{)}
+         \PY{n}{tuplecount} \PY{o}{=} \PY{p}{[}\PY{n}{total\PYZus{}tup}\PY{p}{,} 
+                       \PY{n+nb}{int}\PY{p}{(}\PY{n}{total\PYZus{}tup}\PY{o}{*}\PY{l+m+mf}{0.75}\PY{p}{)}\PY{p}{,} 
+                       \PY{n+nb}{int}\PY{p}{(}\PY{n}{total\PYZus{}tup}\PY{o}{*}\PY{l+m+mf}{0.5}\PY{p}{)}\PY{p}{,} 
+                       \PY{n+nb}{int}\PY{p}{(}\PY{n}{total\PYZus{}tup}\PY{o}{*}\PY{l+m+mf}{0.25}\PY{p}{)}\PY{p}{,} 
+                       \PY{n+nb}{int}\PY{p}{(}\PY{n}{total\PYZus{}tup}\PY{o}{*}\PY{l+m+mf}{0.1}\PY{p}{)}\PY{p}{,} 
+                       \PY{n+nb}{int}\PY{p}{(}\PY{n}{total\PYZus{}tup}\PY{o}{*}\PY{l+m+mf}{0.05}\PY{p}{)}\PY{p}{]}
+         
+         \PY{c+c1}{\PYZsh{} Aggiungi descrizione al numero}
+         \PY{n}{tuplecount} \PY{o}{=} \PY{n+nb}{list}\PY{p}{(}\PY{n+nb}{map}\PY{p}{(}\PY{k}{lambda} \PY{n}{x}\PY{p}{:} \PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+si}{\PYZob{}x\PYZcb{}}\PY{l+s+s1}{ coppie di tuple}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{tuplecount}\PY{p}{)}\PY{p}{)}
+         
+         \PY{n}{fig} \PY{o}{=} \PY{n}{go}\PY{o}{.}\PY{n}{Figure}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{p}{[}\PY{n}{go}\PY{o}{.}\PY{n}{Bar}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{DeepER}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{n}{splits}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{n}{fm\PYZus{}model\PYZus{}standard}\PY{p}{,} \PY{n}{hovertext}\PY{o}{=}\PY{n}{tuplecount}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{}fig.show()}
+         
+         \PY{c+c1}{\PYZsh{} Plotta il grafico e salvalo come features\PYZus{}standard.html (verrà integrato nell\PYZsq{}html).}
+         \PY{n}{pyo}\PY{o}{.}\PY{n}{iplot}\PY{p}{(}\PY{n}{fig}\PY{p}{,} \PY{n}{filename}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{fmeasures\PYZhy{}standard}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    
+    
+    
+    
+    \subparagraph{Al passaggio del mouse il grafico
+mostra:}\label{al-passaggio-del-mouse-il-grafico-mostra}
+
+\begin{itemize}
+\tightlist
+\item
+  Il numero di coppie di tuple utilizzate per l'addestramento;
+\item
+  La percentuale di split (Quantità di tuple utilizzate per addestrare
+  il modello);
+\item
+  Il valore di F-Measure (media armonica tra precision e recall);
+\end{itemize}
+
+    \subsection{Step 2: Addestramento con
+Pre-Train}\label{step-2-addestramento-con-pre-train}
+
+    \subsubsection{Pre-Addestramento modello
+VinSim}\label{pre-addestramento-modello-vinsim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{c+c1}{\PYZsh{} Caricamento o addestramento del modello per la similarità.}
+         \PY{k}{if} \PY{n}{LOAD\PYZus{}FROM\PYZus{}DISK}\PY{p}{:}    
+             
+             \PY{n}{vinsim\PYZus{}model} \PY{o}{=} \PY{n}{load\PYZus{}model}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{VinSim\PYZus{}best\PYZus{}model\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{.h5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             
+         \PY{k}{else}\PY{p}{:}
+             
+             \PY{c+c1}{\PYZsh{} Dataset per VinSim.}
+             \PY{n}{vinsim\PYZus{}data} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+             
+             \PY{c+c1}{\PYZsh{} Porzione di tuple in match da includere nell\PYZsq{}addestramento di VinSim.}
+             \PY{n}{TP\PYZus{}FACTOR} \PY{o}{=} \PY{l+m+mf}{0.2}
+             
+             \PY{c+c1}{\PYZsh{} Preleva solo quelle in match con il relativo sim vector.}
+             \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{data}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+                 \PY{k}{if} \PY{n}{data}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{3}\PY{p}{]} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{:}
+                     \PY{n}{r} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{i}\PY{p}{]}
+                     \PY{n}{vinsim\PYZus{}data}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{p}{(}\PY{n}{r}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,} \PY{n}{r}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,} \PY{n}{r}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+                     
+             \PY{c+c1}{\PYZsh{} Taglio della porzione desiderata.}
+             \PY{n}{bound} \PY{o}{=} \PY{n+nb}{int}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{vinsim\PYZus{}data}\PY{p}{)} \PY{o}{*} \PY{n}{TP\PYZus{}FACTOR}\PY{p}{)}
+             \PY{n}{vinsim\PYZus{}data} \PY{o}{=} \PY{n}{vinsim\PYZus{}data}\PY{p}{[}\PY{p}{:}\PY{n}{bound}\PY{p}{]}
+             
+             \PY{c+c1}{\PYZsh{} Generazione di tuple random.}
+             \PY{n}{random\PYZus{}tuples} \PY{o}{=} \PY{n}{csvTable2datasetRANDOM}\PY{p}{(}\PY{n}{TABLE1\PYZus{}FILE}\PY{p}{,} \PY{n}{TABLE2\PYZus{}FILE}\PY{p}{,} \PY{n+nb}{len}\PY{p}{(}\PY{n}{data}\PY{p}{)}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{att\PYZus{}indexes}\PY{p}{,} \PY{n}{simf}\PY{p}{)}
+             
+             \PY{c+c1}{\PYZsh{} Concatenazione.}
+             \PY{n}{vinsim\PYZus{}data} \PY{o}{+}\PY{o}{=} \PY{n}{random\PYZus{}tuples}
+             
+             \PY{c+c1}{\PYZsh{} Shuffle.}
+             \PY{n}{shuffle}\PY{p}{(}\PY{n}{vinsim\PYZus{}data}\PY{p}{)}
+             
+             \PY{c+c1}{\PYZsh{} Filtro.}
+             \PY{n}{vinsim\PYZus{}data} \PY{o}{=} \PY{n}{shrink\PYZus{}data}\PY{p}{(}\PY{n}{vinsim\PYZus{}data}\PY{p}{)}
+                 
+             \PY{c+c1}{\PYZsh{} Inizializza un nuovo modello.}
+             \PY{n}{vinsim\PYZus{}model} \PY{o}{=} \PY{n}{init\PYZus{}DeepER\PYZus{}model}\PY{p}{(}\PY{n}{emb\PYZus{}dim}\PY{p}{)}
+         
+             \PY{c+c1}{\PYZsh{} Sostituisci ultimo layer e ricompila per l\PYZsq{}addestramento.}
+             \PY{n}{output\PYZus{}neurons} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n}{vinsim\PYZus{}data}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{[}\PY{l+m+mi}{2}\PY{p}{]}\PY{p}{)} \PY{c+c1}{\PYZsh{} Parametrico rispetto alla dimensione del vettore di similarità.}
+             \PY{n}{vinsim\PYZus{}model} \PY{o}{=} \PY{n}{replace\PYZus{}last\PYZus{}layer}\PY{p}{(}\PY{n}{vinsim\PYZus{}model}\PY{p}{,} \PY{n}{Dense}\PY{p}{(}\PY{n}{output\PYZus{}neurons}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{name}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{VinSim}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}    
+             \PY{n}{vinsim\PYZus{}model}\PY{o}{.}\PY{n}{compile}\PY{p}{(}\PY{n}{optimizer}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{adam}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{loss}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{mean\PYZus{}squared\PYZus{}error}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+             \PY{n}{vinsim\PYZus{}model}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+         
+             \PY{c+c1}{\PYZsh{} Avvia l\PYZsq{}addestramento. }
+             \PY{n}{train\PYZus{}model\PYZus{}ER}\PY{p}{(}\PY{n}{vinsim\PYZus{}data}\PY{p}{,} 
+                            \PY{n}{vinsim\PYZus{}model}\PY{p}{,} 
+                            \PY{n}{embeddings\PYZus{}model}\PY{p}{,} 
+                            \PY{n}{tokenizer}\PY{p}{,} 
+                            \PY{n}{pretraining}\PY{o}{=}\PY{k+kc}{True}\PY{p}{,} 
+                            \PY{n}{metric}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{val\PYZus{}loss}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} 
+                            \PY{n}{end}\PY{o}{=}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+
+°°° DeepER Model °°°
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+VinSim (Dense)                  (None, 6)            1806        Dense2[0][0]                     
+==================================================================================================
+Total params: 423,606
+Trainable params: 423,606
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 470 tuple totali, esempio label: [0.4800433814525604, 0.8094688057899475, 0.8079884350299835, 0.8510982096195221, 0.6952213495969772, 0.8419509530067444] -> [0.48004338 0.80946881 0.80798844 0.85109821 0.69522135 0.84195095], Table1 shape: (470, 16), Table2 shape: (470, 8)
+Batch size: 8
+Train on 376 samples, validate on 94 samples
+Epoch 1/64
+376/376 [==============================] - 43s 115ms/step - loss: 0.0302 - val\_loss: 0.0140
+
+Epoch 00001: val\_loss improved from inf to 0.01400, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 2/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0121 - val\_loss: 0.0103
+
+Epoch 00002: val\_loss improved from 0.01400 to 0.01032, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 3/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0088 - val\_loss: 0.0087
+
+Epoch 00003: val\_loss improved from 0.01032 to 0.00874, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 4/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0067 - val\_loss: 0.0078
+
+Epoch 00004: val\_loss improved from 0.00874 to 0.00782, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 5/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0055 - val\_loss: 0.0067
+
+Epoch 00005: val\_loss improved from 0.00782 to 0.00670, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 6/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0042 - val\_loss: 0.0057
+
+Epoch 00006: val\_loss improved from 0.00670 to 0.00573, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 7/64
+376/376 [==============================] - 13s 35ms/step - loss: 0.0032 - val\_loss: 0.0064
+
+Epoch 00007: val\_loss did not improve from 0.00573
+Epoch 8/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0026 - val\_loss: 0.0052
+
+Epoch 00008: val\_loss improved from 0.00573 to 0.00517, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 9/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0019 - val\_loss: 0.0053
+
+Epoch 00009: val\_loss did not improve from 0.00517
+Epoch 10/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0015 - val\_loss: 0.0050
+
+Epoch 00010: val\_loss improved from 0.00517 to 0.00502, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 11/64
+376/376 [==============================] - 13s 34ms/step - loss: 0.0012 - val\_loss: 0.0049
+
+Epoch 00011: val\_loss improved from 0.00502 to 0.00493, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 12/64
+376/376 [==============================] - 13s 34ms/step - loss: 9.8820e-04 - val\_loss: 0.0050
+
+Epoch 00012: val\_loss did not improve from 0.00493
+Epoch 13/64
+376/376 [==============================] - 13s 34ms/step - loss: 7.7277e-04 - val\_loss: 0.0051
+
+Epoch 00013: val\_loss did not improve from 0.00493
+Epoch 14/64
+376/376 [==============================] - 13s 34ms/step - loss: 6.8313e-04 - val\_loss: 0.0049
+
+Epoch 00014: val\_loss improved from 0.00493 to 0.00487, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 15/64
+376/376 [==============================] - 13s 34ms/step - loss: 5.1269e-04 - val\_loss: 0.0050
+
+Epoch 00015: val\_loss did not improve from 0.00487
+Epoch 16/64
+376/376 [==============================] - 13s 34ms/step - loss: 4.5406e-04 - val\_loss: 0.0049
+
+Epoch 00016: val\_loss did not improve from 0.00487
+Epoch 17/64
+376/376 [==============================] - 13s 34ms/step - loss: 4.3917e-04 - val\_loss: 0.0050
+
+Epoch 00017: val\_loss did not improve from 0.00487
+Epoch 18/64
+376/376 [==============================] - 13s 34ms/step - loss: 3.9397e-04 - val\_loss: 0.0048
+
+Epoch 00018: val\_loss improved from 0.00487 to 0.00484, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 19/64
+376/376 [==============================] - 13s 34ms/step - loss: 3.1890e-04 - val\_loss: 0.0050
+
+Epoch 00019: val\_loss did not improve from 0.00484
+Epoch 20/64
+376/376 [==============================] - 13s 34ms/step - loss: 3.0694e-04 - val\_loss: 0.0049
+
+Epoch 00020: val\_loss did not improve from 0.00484
+Epoch 21/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.8309e-04 - val\_loss: 0.0049
+
+Epoch 00021: val\_loss did not improve from 0.00484
+Epoch 22/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.4779e-04 - val\_loss: 0.0048
+
+Epoch 00022: val\_loss improved from 0.00484 to 0.00478, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 23/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.4395e-04 - val\_loss: 0.0048
+
+Epoch 00023: val\_loss did not improve from 0.00478
+Epoch 24/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.4615e-04 - val\_loss: 0.0048
+
+Epoch 00024: val\_loss improved from 0.00478 to 0.00477, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 25/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.2392e-04 - val\_loss: 0.0049
+
+Epoch 00025: val\_loss did not improve from 0.00477
+Epoch 26/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.2963e-04 - val\_loss: 0.0047
+
+Epoch 00026: val\_loss improved from 0.00477 to 0.00470, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 27/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.2125e-04 - val\_loss: 0.0048
+
+Epoch 00027: val\_loss did not improve from 0.00470
+Epoch 28/64
+376/376 [==============================] - 13s 34ms/step - loss: 2.0575e-04 - val\_loss: 0.0048
+
+Epoch 00028: val\_loss did not improve from 0.00470
+Epoch 29/64
+376/376 [==============================] - 13s 34ms/step - loss: 1.8865e-04 - val\_loss: 0.0046
+
+Epoch 00029: val\_loss improved from 0.00470 to 0.00465, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 30/64
+376/376 [==============================] - 14s 36ms/step - loss: 1.7095e-04 - val\_loss: 0.0048
+
+Epoch 00030: val\_loss did not improve from 0.00465
+Epoch 31/64
+376/376 [==============================] - 13s 35ms/step - loss: 1.4967e-04 - val\_loss: 0.0047
+
+Epoch 00031: val\_loss did not improve from 0.00465
+Epoch 32/64
+376/376 [==============================] - 13s 33ms/step - loss: 1.5759e-04 - val\_loss: 0.0046
+
+Epoch 00032: val\_loss improved from 0.00465 to 0.00458, saving model to VinSim\_best\_model\_fodors\_zagats.h5
+Epoch 33/64
+376/376 [==============================] - 13s 33ms/step - loss: 1.4300e-04 - val\_loss: 0.0047
+
+Epoch 00033: val\_loss did not improve from 0.00458
+Epoch 34/64
+376/376 [==============================] - 13s 34ms/step - loss: 1.3269e-04 - val\_loss: 0.0046
+
+Epoch 00034: val\_loss did not improve from 0.00458
+Epoch 35/64
+376/376 [==============================] - 13s 33ms/step - loss: 1.2955e-04 - val\_loss: 0.0046
+
+Epoch 00035: val\_loss did not improve from 0.00458
+Epoch 36/64
+376/376 [==============================] - 13s 33ms/step - loss: 1.2328e-04 - val\_loss: 0.0048
+
+Epoch 00036: val\_loss did not improve from 0.00458
+Epoch 37/64
+376/376 [==============================] - 13s 33ms/step - loss: 1.1280e-04 - val\_loss: 0.0047
+
+Epoch 00037: val\_loss did not improve from 0.00458
+Epoch 38/64
+376/376 [==============================] - 13s 33ms/step - loss: 1.1224e-04 - val\_loss: 0.0046
+
+Epoch 00038: val\_loss did not improve from 0.00458
+Epoch 39/64
+376/376 [==============================] - 13s 34ms/step - loss: 1.3443e-04 - val\_loss: 0.0047
+
+Epoch 00039: val\_loss did not improve from 0.00458
+Epoch 00039: early stopping
+
+    \end{Verbatim}
+
+    \subsubsection{Addestramento VinSim +
+DeepER}\label{addestramento-vinsim-deeper}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{c+c1}{\PYZsh{} Input: Percentuale di dati considerata per l\PYZsq{}addestramento.}
+         \PY{c+c1}{\PYZsh{} Output: DeepER addestrato con preaddestramento VinSim.}
+         \PY{k}{def} \PY{n+nf}{get\PYZus{}PreTrained}\PY{p}{(}\PY{n}{perc}\PY{p}{)}\PY{p}{:}
+            
+             \PY{n}{sub\PYZus{}data} \PY{o}{=} \PY{n}{splitting\PYZus{}dataSet}\PY{p}{(}\PY{n}{perc}\PY{p}{,} \PY{n}{deeper\PYZus{}train}\PY{p}{)}       
+             
+             \PY{k}{if} \PY{n}{LOAD\PYZus{}FROM\PYZus{}DISK}\PY{p}{:}
+                 
+                 \PY{c+c1}{\PYZsh{} Carica da disco.      }
+                 \PY{n+nb}{print}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Loading DeepER\PYZus{}best\PYZus{}model\PYZus{}}\PY{l+s+s1}{\PYZob{}}\PY{l+s+s1}{int(perc*100)\PYZcb{}\PYZus{}pre\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{.h5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{end}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{flush}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
+                 \PY{n}{deeper\PYZus{}model\PYZus{}pre} \PY{o}{=} \PY{n}{load\PYZus{}model}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{DeepER\PYZus{}best\PYZus{}model\PYZus{}}\PY{l+s+s1}{\PYZob{}}\PY{l+s+s1}{int(perc*100)\PYZcb{}\PYZus{}pre\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{.h5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{  \PYZhy{}\PYZgt{}  Done}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} 
+                 
+             \PY{k}{else}\PY{p}{:}
+                 
+                 \PY{c+c1}{\PYZsh{} Utilizza il modello addestrato sulla similarità per l\PYZsq{}addestramento (transfer learning).}
+                 \PY{n}{deeper\PYZus{}model\PYZus{}pre} \PY{o}{=} \PY{n}{load\PYZus{}model}\PY{p}{(}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{VinSim\PYZus{}best\PYZus{}model\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{.h5}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+                 \PY{n}{deeper\PYZus{}model\PYZus{}pre} \PY{o}{=} \PY{n}{replace\PYZus{}last\PYZus{}layer}\PY{p}{(}\PY{n}{deeper\PYZus{}model\PYZus{}pre}\PY{p}{,} \PY{n}{Dense}\PY{p}{(}\PY{l+m+mi}{2}\PY{p}{,} \PY{n}{activation}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{softmax}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{name}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Classification}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+                 \PY{n}{deeper\PYZus{}model\PYZus{}pre}\PY{o}{.}\PY{n}{compile}\PY{p}{(}\PY{n}{optimizer}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{adam}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{loss}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{categorical\PYZus{}crossentropy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{metrics}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+                 \PY{n}{deeper\PYZus{}model\PYZus{}pre}\PY{o}{.}\PY{n}{summary}\PY{p}{(}\PY{p}{)}
+                 \PY{n}{deeper\PYZus{}model\PYZus{}pre} \PY{o}{=} \PY{n}{train\PYZus{}model\PYZus{}ER}\PY{p}{(}\PY{n}{sub\PYZus{}data}\PY{p}{,} 
+                                                   \PY{n}{deeper\PYZus{}model\PYZus{}pre}\PY{p}{,} 
+                                                   \PY{n}{embeddings\PYZus{}model}\PY{p}{,} 
+                                                   \PY{n}{tokenizer}\PY{p}{,} 
+                                                   \PY{n}{pretraining}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} 
+                                                   \PY{n}{end}\PY{o}{=}\PY{n}{f}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZus{}}\PY{l+s+s1}{\PYZob{}}\PY{l+s+s1}{int(perc*100)\PYZcb{}\PYZus{}pre\PYZus{}}\PY{l+s+si}{\PYZob{}DATASET\PYZus{}NAME\PYZcb{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}     
+             
+             \PY{k}{return} \PY{n}{deeper\PYZus{}model\PYZus{}pre}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{c+c1}{\PYZsh{} Avvio addestramenti o carica da disco.}
+         \PY{n}{deeper\PYZus{}model\PYZus{}5\PYZus{}pre} \PY{o}{=} \PY{n}{get\PYZus{}PreTrained}\PY{p}{(}\PY{l+m+mf}{0.05}\PY{p}{)}
+         \PY{n}{deeper\PYZus{}model\PYZus{}10\PYZus{}pre} \PY{o}{=} \PY{n}{get\PYZus{}PreTrained}\PY{p}{(}\PY{l+m+mf}{0.1}\PY{p}{)}
+         \PY{n}{deeper\PYZus{}model\PYZus{}25\PYZus{}pre} \PY{o}{=} \PY{n}{get\PYZus{}PreTrained}\PY{p}{(}\PY{l+m+mf}{0.25}\PY{p}{)}
+         \PY{n}{deeper\PYZus{}model\PYZus{}50\PYZus{}pre} \PY{o}{=} \PY{n}{get\PYZus{}PreTrained}\PY{p}{(}\PY{l+m+mf}{0.5}\PY{p}{)}
+         \PY{n}{deeper\PYZus{}model\PYZus{}75\PYZus{}pre} \PY{o}{=} \PY{n}{get\PYZus{}PreTrained}\PY{p}{(}\PY{l+m+mf}{0.75}\PY{p}{)}
+         \PY{n}{deeper\PYZus{}model\PYZus{}100\PYZus{}pre} \PY{o}{=} \PY{n}{get\PYZus{}PreTrained}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 8 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (8, 6), Table2 shape: (8, 6)
+Batch size: 1
+Train on 6 samples, validate on 2 samples
+Epoch 1/64
+6/6 [==============================] - 36s 6s/step - loss: 1.3079 - acc: 0.5000 - val\_loss: 0.5884 - val\_acc: 0.5000
+
+Epoch 00001: val\_acc improved from -inf to 0.50000, saving model to DeepER\_best\_model\_5\_pre\_fodors\_zagats.h5
+Epoch 2/64
+6/6 [==============================] - 1s 168ms/step - loss: 0.4268 - acc: 0.8333 - val\_loss: 0.3789 - val\_acc: 1.0000
+
+Epoch 00002: val\_acc improved from 0.50000 to 1.00000, saving model to DeepER\_best\_model\_5\_pre\_fodors\_zagats.h5
+Epoch 3/64
+6/6 [==============================] - 1s 182ms/step - loss: 0.2045 - acc: 1.0000 - val\_loss: 0.1664 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc did not improve from 1.00000
+Epoch 4/64
+6/6 [==============================] - 1s 183ms/step - loss: 0.0640 - acc: 1.0000 - val\_loss: 0.0524 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+6/6 [==============================] - 1s 180ms/step - loss: 0.0173 - acc: 1.0000 - val\_loss: 0.0142 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+6/6 [==============================] - 1s 189ms/step - loss: 0.0030 - acc: 1.0000 - val\_loss: 0.0041 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+6/6 [==============================] - 1s 189ms/step - loss: 7.1792e-04 - acc: 1.0000 - val\_loss: 0.0016 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+6/6 [==============================] - 1s 186ms/step - loss: 2.7730e-04 - acc: 1.0000 - val\_loss: 8.3327e-04 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 9/64
+6/6 [==============================] - 1s 188ms/step - loss: 1.4786e-04 - acc: 1.0000 - val\_loss: 5.4672e-04 - val\_acc: 1.0000
+
+Epoch 00009: val\_acc did not improve from 1.00000
+Epoch 00009: early stopping
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 17 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (17, 6), Table2 shape: (17, 8)
+Batch size: 1
+Train on 13 samples, validate on 4 samples
+Epoch 1/64
+13/13 [==============================] - 49s 4s/step - loss: 0.7205 - acc: 0.5385 - val\_loss: 0.5822 - val\_acc: 0.7500
+
+Epoch 00001: val\_acc improved from -inf to 0.75000, saving model to DeepER\_best\_model\_10\_pre\_fodors\_zagats.h5
+Epoch 2/64
+13/13 [==============================] - 3s 240ms/step - loss: 0.1871 - acc: 1.0000 - val\_loss: 0.5075 - val\_acc: 0.7500
+
+Epoch 00002: val\_acc did not improve from 0.75000
+Epoch 3/64
+13/13 [==============================] - 3s 245ms/step - loss: 0.0075 - acc: 1.0000 - val\_loss: 0.4947 - val\_acc: 0.7500
+
+Epoch 00003: val\_acc did not improve from 0.75000
+Epoch 4/64
+13/13 [==============================] - 3s 228ms/step - loss: 2.4289e-04 - acc: 1.0000 - val\_loss: 0.6708 - val\_acc: 0.7500
+
+Epoch 00004: val\_acc did not improve from 0.75000
+Epoch 5/64
+13/13 [==============================] - 3s 232ms/step - loss: 4.1634e-05 - acc: 1.0000 - val\_loss: 0.8683 - val\_acc: 0.7500
+
+Epoch 00005: val\_acc did not improve from 0.75000
+Epoch 6/64
+13/13 [==============================] - 3s 268ms/step - loss: 1.2027e-05 - acc: 1.0000 - val\_loss: 0.9752 - val\_acc: 0.7500
+
+Epoch 00006: val\_acc did not improve from 0.75000
+Epoch 7/64
+13/13 [==============================] - 3s 237ms/step - loss: 7.4048e-06 - acc: 1.0000 - val\_loss: 1.0248 - val\_acc: 0.7500
+
+Epoch 00007: val\_acc did not improve from 0.75000
+Epoch 8/64
+13/13 [==============================] - 3s 230ms/step - loss: 5.6350e-06 - acc: 1.0000 - val\_loss: 1.0519 - val\_acc: 0.7500
+
+Epoch 00008: val\_acc did not improve from 0.75000
+Epoch 00008: early stopping
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 44 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (44, 6), Table2 shape: (44, 8)
+Batch size: 2
+Train on 35 samples, validate on 9 samples
+Epoch 1/64
+35/35 [==============================] - 50s 1s/step - loss: 0.4867 - acc: 0.8286 - val\_loss: 0.0593 - val\_acc: 1.0000
+
+Epoch 00001: val\_acc improved from -inf to 1.00000, saving model to DeepER\_best\_model\_25\_pre\_fodors\_zagats.h5
+Epoch 2/64
+35/35 [==============================] - 4s 108ms/step - loss: 0.2835 - acc: 0.9429 - val\_loss: 0.0409 - val\_acc: 1.0000
+
+Epoch 00002: val\_acc did not improve from 1.00000
+Epoch 3/64
+35/35 [==============================] - 4s 108ms/step - loss: 0.0426 - acc: 1.0000 - val\_loss: 0.0197 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc did not improve from 1.00000
+Epoch 4/64
+35/35 [==============================] - 4s 110ms/step - loss: 0.0061 - acc: 1.0000 - val\_loss: 9.4480e-04 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+35/35 [==============================] - 4s 106ms/step - loss: 0.0011 - acc: 1.0000 - val\_loss: 4.6802e-04 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+35/35 [==============================] - 4s 103ms/step - loss: 5.6022e-04 - acc: 1.0000 - val\_loss: 2.7299e-04 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+35/35 [==============================] - 4s 106ms/step - loss: 3.4236e-04 - acc: 1.0000 - val\_loss: 2.1784e-04 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+35/35 [==============================] - 4s 115ms/step - loss: 2.2475e-04 - acc: 1.0000 - val\_loss: 1.6803e-04 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 00008: early stopping
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 89 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (89, 11), Table2 shape: (89, 8)
+Batch size: 2
+Train on 71 samples, validate on 18 samples
+Epoch 1/64
+71/71 [==============================] - 43s 605ms/step - loss: 0.2679 - acc: 0.9155 - val\_loss: 1.3172e-04 - val\_acc: 1.0000
+
+Epoch 00001: val\_acc improved from -inf to 1.00000, saving model to DeepER\_best\_model\_50\_pre\_fodors\_zagats.h5
+Epoch 2/64
+71/71 [==============================] - 10s 141ms/step - loss: 0.0373 - acc: 0.9859 - val\_loss: 0.0055 - val\_acc: 1.0000
+
+Epoch 00002: val\_acc did not improve from 1.00000
+Epoch 3/64
+71/71 [==============================] - 10s 144ms/step - loss: 0.0015 - acc: 1.0000 - val\_loss: 5.9372e-04 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc did not improve from 1.00000
+Epoch 4/64
+71/71 [==============================] - 10s 136ms/step - loss: 5.1726e-04 - acc: 1.0000 - val\_loss: 0.0011 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+71/71 [==============================] - 10s 141ms/step - loss: 2.4833e-04 - acc: 1.0000 - val\_loss: 9.8760e-04 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+71/71 [==============================] - 10s 140ms/step - loss: 1.4129e-04 - acc: 1.0000 - val\_loss: 8.2093e-04 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+71/71 [==============================] - 10s 138ms/step - loss: 8.2123e-05 - acc: 1.0000 - val\_loss: 6.7387e-04 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+71/71 [==============================] - 10s 141ms/step - loss: 6.4323e-05 - acc: 1.0000 - val\_loss: 6.1901e-04 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 00008: early stopping
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 134 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (134, 11), Table2 shape: (134, 8)
+Batch size: 3
+Train on 107 samples, validate on 27 samples
+Epoch 1/64
+107/107 [==============================] - 48s 447ms/step - loss: 0.1267 - acc: 0.9533 - val\_loss: 0.0226 - val\_acc: 1.0000
+
+Epoch 00001: val\_acc improved from -inf to 1.00000, saving model to DeepER\_best\_model\_75\_pre\_fodors\_zagats.h5
+Epoch 2/64
+107/107 [==============================] - 13s 119ms/step - loss: 0.0035 - acc: 1.0000 - val\_loss: 0.0317 - val\_acc: 0.9630
+
+Epoch 00002: val\_acc did not improve from 1.00000
+Epoch 3/64
+107/107 [==============================] - 14s 129ms/step - loss: 4.7818e-04 - acc: 1.0000 - val\_loss: 0.0210 - val\_acc: 1.0000
+
+Epoch 00003: val\_acc did not improve from 1.00000
+Epoch 4/64
+107/107 [==============================] - 13s 121ms/step - loss: 1.7859e-04 - acc: 1.0000 - val\_loss: 0.0212 - val\_acc: 1.0000
+
+Epoch 00004: val\_acc did not improve from 1.00000
+Epoch 5/64
+107/107 [==============================] - 14s 127ms/step - loss: 1.1541e-04 - acc: 1.0000 - val\_loss: 0.0211 - val\_acc: 1.0000
+
+Epoch 00005: val\_acc did not improve from 1.00000
+Epoch 6/64
+107/107 [==============================] - 16s 148ms/step - loss: 8.2477e-05 - acc: 1.0000 - val\_loss: 0.0215 - val\_acc: 1.0000
+
+Epoch 00006: val\_acc did not improve from 1.00000
+Epoch 7/64
+107/107 [==============================] - 13s 123ms/step - loss: 6.1299e-05 - acc: 1.0000 - val\_loss: 0.0204 - val\_acc: 1.0000
+
+Epoch 00007: val\_acc did not improve from 1.00000
+Epoch 8/64
+107/107 [==============================] - 13s 126ms/step - loss: 4.6192e-05 - acc: 1.0000 - val\_loss: 0.0219 - val\_acc: 1.0000
+
+Epoch 00008: val\_acc did not improve from 1.00000
+Epoch 00008: early stopping
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Layer (type)                    Output Shape         Param \#     Connected to                     
+==================================================================================================
+Embeddings\_seq\_a (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Embeddings\_seq\_b (InputLayer)   (None, None, 50)     0                                            
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Composition (Bidirectional)     (None, 300)          241200      Embeddings\_seq\_a[0][0]           
+                                                                 Embeddings\_seq\_b[0][0]           
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Similarity (Lambda)             (None, 300)          0           Composition[0][0]                
+                                                                 Composition[1][0]                
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense1 (Dense)                  (None, 300)          90300       Similarity[0][0]                 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Dense2 (Dense)                  (None, 300)          90300       Dense1[0][0]                     
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Classification (Dense)          (None, 2)            602         Dense2[0][0]                     
+==================================================================================================
+Total params: 422,402
+Trainable params: 422,402
+Non-trainable params: 0
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+* Preparazione input{\ldots}Fatto. 179 tuple totali, esempio label: 1 -> [0. 1.], Table1 shape: (179, 11), Table2 shape: (179, 9)
+Batch size: 4
+Train on 143 samples, validate on 36 samples
+Epoch 1/64
+143/143 [==============================] - 64s 448ms/step - loss: 0.3751 - acc: 0.8741 - val\_loss: 0.1177 - val\_acc: 0.9722
+
+Epoch 00001: val\_acc improved from -inf to 0.97222, saving model to DeepER\_best\_model\_100\_pre\_fodors\_zagats.h5
+Epoch 2/64
+143/143 [==============================] - 12s 86ms/step - loss: 0.1395 - acc: 0.9510 - val\_loss: 0.0964 - val\_acc: 0.9722
+
+Epoch 00002: val\_acc did not improve from 0.97222
+Epoch 3/64
+143/143 [==============================] - 11s 80ms/step - loss: 0.1617 - acc: 0.9790 - val\_loss: 0.1081 - val\_acc: 0.9722
+
+Epoch 00003: val\_acc did not improve from 0.97222
+Epoch 4/64
+143/143 [==============================] - 12s 83ms/step - loss: 0.0604 - acc: 0.9860 - val\_loss: 0.1020 - val\_acc: 0.9722
+
+Epoch 00004: val\_acc did not improve from 0.97222
+Epoch 5/64
+143/143 [==============================] - 12s 83ms/step - loss: 0.1014 - acc: 0.9720 - val\_loss: 0.2835 - val\_acc: 0.8889
+
+Epoch 00005: val\_acc did not improve from 0.97222
+Epoch 6/64
+143/143 [==============================] - 12s 86ms/step - loss: 0.1017 - acc: 0.9790 - val\_loss: 0.1290 - val\_acc: 0.9444
+
+Epoch 00006: val\_acc did not improve from 0.97222
+Epoch 7/64
+143/143 [==============================] - 11s 76ms/step - loss: 0.0607 - acc: 0.9860 - val\_loss: 0.0958 - val\_acc: 0.9722
+
+Epoch 00007: val\_acc did not improve from 0.97222
+Epoch 8/64
+143/143 [==============================] - 11s 79ms/step - loss: 0.0529 - acc: 0.9790 - val\_loss: 0.1185 - val\_acc: 0.9722
+
+Epoch 00008: val\_acc did not improve from 0.97222
+Epoch 00008: early stopping
+
+    \end{Verbatim}
+
+    \subsubsection{F-Measure per VinSim +
+DeepER}\label{f-measure-per-vinsim-deeper}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{c+c1}{\PYZsh{} Misurazione dell\PYZsq{}f\PYZhy{}measure sullo stesso test set con i diversi modelli.}
+         \PY{n}{fm\PYZus{}model\PYZus{}pre\PYZus{}trained} \PY{o}{=} \PY{p}{[}\PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}100\PYZus{}pre}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                                 \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}75\PYZus{}pre}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                                 \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}50\PYZus{}pre}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                                 \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}25\PYZus{}pre}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                                 \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}10\PYZus{}pre}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{,}
+                                 \PY{n}{model\PYZus{}statistics}\PY{p}{(}\PY{n}{deeper\PYZus{}test}\PY{p}{,} \PY{n}{deeper\PYZus{}model\PYZus{}5\PYZus{}pre}\PY{p}{,} \PY{n}{embeddings\PYZus{}model}\PY{p}{,} \PY{n}{tokenizer}\PY{p}{)}\PY{p}{]}
+         
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{fm\PYZus{}model\PYZus{}pre\PYZus{}trained}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 1.0, Recall: 1.0, f1-score: 1.0
+Total retrieved: 22, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 0.9565217391304348, Recall: 1.0, f1-score: 0.9777777777777777
+Total retrieved: 23, retrieved/total matches: 22/22
+* Avvio test metriche{\ldots}
+-- Corpus size: 45
+-- Non Match: 23
+-- Match: 22
+* Preparazione input{\ldots}Fatto. 45 tuple totali, esempio label: 0 -> [1. 0.], Table1 shape: (45, 6), Table2 shape: (45, 8)
+* Evaluating: ============|
+Precision: 1.0, Recall: 1.0, f1-score: 1.0
+Total retrieved: 22, retrieved/total matches: 22/22
+[0.9777777777777777, 1.0, 0.9777777777777777, 0.9777777777777777, 0.9777777777777777, 1.0]
+
+    \end{Verbatim}
+
+    \subsection{Visualizzazione F-Measure: comparazione
+finale}\label{visualizzazione-f-measure-comparazione-finale}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{fig2} \PY{o}{=} \PY{n}{go}\PY{o}{.}\PY{n}{Figure}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{p}{[}\PY{n}{go}\PY{o}{.}\PY{n}{Bar}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{DeepER standard}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{n}{splits}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{n}{fm\PYZus{}model\PYZus{}standard}\PY{p}{)}\PY{p}{,}
+                                \PY{n}{go}\PY{o}{.}\PY{n}{Bar}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{VinSim + DeepER}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{n}{splits}\PY{p}{,} \PY{n}{y}\PY{o}{=}\PY{n}{fm\PYZus{}model\PYZus{}pre\PYZus{}trained}\PY{p}{)}\PY{p}{]}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{} Modalità di visualizzazione con colonne raggruppate.}
+         \PY{n}{fig2}\PY{o}{.}\PY{n}{update\PYZus{}layout}\PY{p}{(}\PY{n}{barmode}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{group}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{c+c1}{\PYZsh{}fig.show()}
+         
+         \PY{c+c1}{\PYZsh{} Plotta il grafico e salvalo come features\PYZus{}comparison.html (verrà integrato nell\PYZsq{}html).}
+         \PY{n}{pyo}\PY{o}{.}\PY{n}{iplot}\PY{p}{(}\PY{n}{fig2}\PY{p}{,} \PY{n}{filename}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{fmeasures\PYZhy{}comparison}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    
+    
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
