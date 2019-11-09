@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+main/embeddings/
+main/models/
+main/__pycache__/
