@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Scikit Learn
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
-
+import os
 #### WARNING
 import re, math
 from collections import Counter
@@ -70,6 +70,65 @@ def cos_sim2Str(str1,str2):
     cos_sim=cosine_similarity(df,df)
     #print(cos_sim[0][-1])
     return cos_sim[0][-1]
+ 
+    
+
+def buildDataset(dataset_dir,ground_truth,tableL, tableR):
+    table1 = pd.read_csv(os.path.join(dataset_dir,tableL))
+    table2 = pd.read_csv(os.path.join(dataset_dir,tableR))
+    matches_df = pd.read_csv(os.path.join(dataset_dir,ground_truth))
+
+    result_list_match = []
+    result_list_NOmatch= []
+    matches_ids = list(map(lambda x, y:(x,y), matches_df.id1.values, matches_df.id2.values))
+    cos_sim_list=[]
+    '''costruisce lista dei match parsando i file di input'''
+    for i in range(len(matches_df)):
+        curr_lid = matches_df.iloc[i]['id1']
+        curr_rid = matches_df.iloc[i]['id2']
+        curr_lrecord = table1.iloc[curr_lid]
+        curr_rrecord = table2.iloc[curr_rid]
+        curr_ltokens = list(map(lambda t:str(t),curr_lrecord.values[1:]))
+        curr_rtokens = list(map(lambda t:str(t),curr_rrecord.values[1:]))
+        stringa1 = " ".join(curr_ltokens)
+        stringa2 = " ".join(curr_rtokens)
+        #calcola la cos similarita della tupla i-esima
+        cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
+        cos_sim_list.append(cos_sim)
+        result_list_match.append((curr_lrecord.values[1:],curr_rrecord.values[1:],1))
+        #min_cos_sim_match= valore minimo della cos_similarity di tutte quelle in match
+    
+    min_cos_sim_match=min(cos_sim_list)
+    print("la coseno similarity minima is {}".format(min_cos_sim_match))
+    '''costruisce la lista dei NO_match calcolando un min cos similarity'''   
+    i=0
+    while i<len(result_list_match):
+
+        x = random.randint(0,len(table1)-1)
+        y =  random.randint(0,len(table2)-1)            
+        curr_lrecord = table1.iloc[x]
+        curr_rrecord = table2.iloc[y]
+        curr_ltokens = list(map(lambda t:str(t),curr_lrecord.values[1:]))
+        curr_rtokens = list(map(lambda t:str(t),curr_rrecord.values[1:]))
+        stringa1 = " ".join(curr_ltokens)
+        stringa2 = " ".join(curr_rtokens)
+        #serve per calcolare la cos_sim tra i due elementi della tupla, è necessario concatenare tutta la riga
+        cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
+        
+        #controlla che la tupla che sto aggiungendo abbia una cos_similarity maggiore del min di quelle in match
+        if cos_sim < min_cos_sim_match and (x,y) not in matches_ids:
+            result_list_NOmatch.append((curr_lrecord.values[1:],curr_rrecord.values[1:],0))
+            i += 1
+
+    '''unisce le due liste dei match e No_match alternandole'''
+    result_list=[]
+    for i in range(max(len(result_list_match),len(result_list_NOmatch))):
+        result_list.append(result_list_match[i])
+        result_list.append(result_list_NOmatch[i])
+
+
+    return result_list
+
 
 """
 si deve fare attenzione all'ordine con cui si passano i table1 e table2
@@ -81,11 +140,11 @@ in caso di errore aprirli con textpad->formato->converti in utf8
 
 '''parsing del csv e costruzione dataset => (tupla1, tupla2, vettore_sim, label_match_OR_no_match)
     con shuffle finale dei match-No match'''
-def csv_2_dataset(ground_truth, tableL, tableR, indici, sim_function=lambda x, y: [1, 1]):
+def csv_2_dataset(dataset_dir,ground_truth, tableL, tableR, indici, sim_function=lambda x, y: [1, 1]):
     
-    table1 = csv.reader(open(tableL,encoding="utf8"), delimiter=',')
-    table2 = csv.reader(open(tableR,encoding="utf8"), delimiter=',')
-    matches_file = csv.reader(open(ground_truth,encoding="utf8"), delimiter=',')
+    table1 = csv.reader(open(os.path.join(dataset_dir,tableL),encoding="utf8"), delimiter=',')
+    table2 = csv.reader(open(os.path.join(dataset_dir,tableR),encoding="utf8"), delimiter=',')
+    matches_file = csv.reader(open(os.path.join(dataset_dir,ground_truth),encoding="utf8"), delimiter=',')
   
     #skip header
     next(table1, None)
@@ -289,15 +348,14 @@ in caso di errore aprirli con textpad->formato->converti in utf8
 """
 
 '''parsing dei csv e costruzione dataset alternato(match-NOmatch) =>  (tupla1,tupla2,vettore_sim,label_match_OR_no_match)
-    indici= lista di Coppie di attributi considerati   (es: per Walmart Amazon (Walmart_att, Amazon_att))
+    indici= lista di Coppie di attributi considerati allineati(es: per Walmart Amazon (Walmart_att, Amazon_att))
     cosi ogni coppia di tuple ha stesso num di attributi
     ES:   indici=[(5, 9), (4, 5), (3, 3), (14, 4), (6, 11)]'''
+def csv_2_datasetALTERNATE(dataset_dir,ground_truth,tableL, tableR, indici, sim_function=lambda x, y: [1, 1]):
     
-def csv_2_datasetALTERNATE(ground_truth, tableL, tableR, indici, sim_function=lambda x, y: [1, 1]):
-    
-    table1 = csv.reader(open(tableL,encoding="utf8"), delimiter=',')
-    table2 = csv.reader(open(tableR,encoding="utf8"), delimiter=',')
-    matches_file = csv.reader(open(ground_truth,encoding="utf8"), delimiter=',')
+    table1 = csv.reader(open(os.path.join(dataset_dir,tableL),encoding="utf8"), delimiter=',')
+    table2 = csv.reader(open(os.path.join(dataset_dir,tableR),encoding="utf8"), delimiter=',')
+    matches_file = csv.reader(open(os.path.join(dataset_dir,ground_truth),encoding="utf8"), delimiter=',')
   
     #skip header
     next(table1, None)
@@ -331,7 +389,6 @@ def csv_2_datasetALTERNATE(ground_truth, tableL, tableR, indici, sim_function=la
         #calcola la cos similarita della tupla i-esima
         cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
         #cos_sim=cos_sim2Str(str(stringa1),str(stringa2))
-        #print(cos_sim)
         cos_sim_list.append(cos_sim)
         
         sim_vector=sim_function(tableL_el,tableR_el) # Modificato

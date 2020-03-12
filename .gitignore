@@ -2,3 +2,6 @@
 main/embeddings/
 main/models/
 main/__pycache__/
+*.pyc
+models/
+embeddings/

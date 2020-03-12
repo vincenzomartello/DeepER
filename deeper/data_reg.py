@@ -11,15 +11,15 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Scikit Learn
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
-from experimental_similarity import mono_vector0,mono_vector,mono_vector_fast,cosine_similarity_vector,distance_similarity_vector
+from deeper.experimental_similarity import mono_vector0,mono_vector,mono_vector_fast,cosine_similarity_vector,distance_similarity_vector
 #### WARNING
 import re, math
 from collections import Counter
 from pyjarowinkler import distance
 import textdistance
 import matplotlib.pyplot as plt
-from DeepER import init_embeddings_index
-from generate_similarity_vector import wa_vector
+from deeper.DeepER import init_embeddings_index
+from deeper.generate_similarity_vector import wa_vector
 import textdistance as txd
 import numpy as np
 from similarity.metric_lcs import MetricLCS
