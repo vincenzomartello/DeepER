@@ -7,6 +7,7 @@ from keras.preprocessing.text import Tokenizer
 from keras.utils import plot_model, to_categorical
 from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import EarlyStopping, ModelCheckpoint
+from deeper.data import data2Inputs
 import os
 
 
@@ -118,38 +119,6 @@ def init_DeepER_model(embedding_dim):
 
     return deeper_model
 
-
-# InPut: data = [(t1, t2, label),...], tokenizer = tokenizzatore per le tuple
-# OutPut: table1, table2 = matrici di tokens, labels matrice con etichette
-def data2Inputs(data, tokenizer, categorical=True):
-    
-    # Limita la sequenza massima di tokens 
-    #SEQUENCES_MAXLEN = 500
-
-    # Tokenizza le tuple e prepara l'input per il modello
-    print('* Preparazione input......', end='', flush=True)
-    table1, table2, labels = [], [], []
-    for t1, t2, label in data:
-        # Sperimentale: ordino gli attributi per lunghezza decrescente
-        # Attributi con molti tokens conengono più informazioni utili 
-        #t1 = sorted(t1, key=lambda s: len(s), reverse=True)
-        #t2 = sorted(t2, key=lambda s: len(s), reverse=True)                  
-        table1.append(' '.join(t1).replace(', ', ' '))
-        table2.append(' '.join(t2).replace(', ', ' '))
-        labels.append(label)
-    table1 = tokenizer.texts_to_sequences(table1)                      
-    #table1 = pad_sequences(table1, maxlen=SEQUENCES_MAXLEN, padding='post')
-    table1 = pad_sequences(table1, padding='post')
-    table2 = tokenizer.texts_to_sequences(table2)        
-    #table2 = pad_sequences(table2, maxlen=SEQUENCES_MAXLEN, padding='post')
-    table2 = pad_sequences(table2, padding='post')
-    if categorical:
-        labels = to_categorical(labels)
-    else:
-        labels = np.array(labels)
-    print(f'Fatto. {len(labels)} tuple totali, esempio label: {data[0][2]} -> {labels[0]}, Table1 shape: {table1.shape}, Table2 shape: {table2.shape}')
-
-    return table1, table2, labels
 
 
 # InPut: modello, nuovo output layer

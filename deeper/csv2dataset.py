@@ -95,11 +95,10 @@ def buildDataset(dataset_dir,ground_truth,tableL, tableR):
         #calcola la cos similarita della tupla i-esima
         cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
         cos_sim_list.append(cos_sim)
-        result_list_match.append((curr_lrecord.values[1:],curr_rrecord.values[1:],1))
+        result_list_match.append((curr_ltokens,curr_rtokens,1))
         #min_cos_sim_match= valore minimo della cos_similarity di tutte quelle in match
     
     min_cos_sim_match=min(cos_sim_list)
-    print("la coseno similarity minima is {}".format(min_cos_sim_match))
     '''costruisce la lista dei NO_match calcolando un min cos similarity'''   
     i=0
     while i<len(result_list_match):
@@ -116,8 +115,8 @@ def buildDataset(dataset_dir,ground_truth,tableL, tableR):
         cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
         
         #controlla che la tupla che sto aggiungendo abbia una cos_similarity maggiore del min di quelle in match
-        if cos_sim < min_cos_sim_match and (x,y) not in matches_ids:
-            result_list_NOmatch.append((curr_lrecord.values[1:],curr_rrecord.values[1:],0))
+        if cos_sim > min_cos_sim_match and (x,y) not in matches_ids:
+            result_list_NOmatch.append((curr_ltokens,curr_rtokens,0))
             i += 1
 
     '''unisce le due liste dei match e No_match alternandole'''
@@ -189,7 +188,7 @@ def csv_2_dataset(dataset_dir,ground_truth, tableL, tableR, indici, sim_function
         min_cos_sim_match=min(cos_sim_list)
     
 
-##[1:] serve per togliere l id come attributo
+    ##[1:] serve per togliere l id come attributo
         
     #costruzione lista dei non match
     i=0
@@ -209,10 +208,8 @@ def csv_2_dataset(dataset_dir,ground_truth, tableL, tableR, indici, sim_function
         stringa1=concatenate_list_data(tableL_el)
         stringa2=concatenate_list_data(tableR_el)
         cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
-        #cos_sim=cos_sim2Str(str(stringa1),str(stringa2))
-        #print(cos_sim)
-        
-        #controlla che la tupla che sto aggiungendo abbia una cos_similarity maggiore del min di quelle in match e che non sia nella lista dei match
+        '''controlla che la tupla che sto aggiungendo abbia una cos_similarity 
+        maggiore del min di quelle in match e che non sia nella lista dei match'''
         if cos_sim>min_cos_sim_match:
             sim_vector=sim_function(tableL_el,tableR_el)
             
@@ -339,19 +336,9 @@ def csvTable2datasetRANDOM_minCos(tableL, tableR, tot, indici, min_cos_sim, sim_
     #print(result_list)
     return result_list
 
-"""
-si deve fare attenzione all'ordine con cui si passano i table1 e table2
-devono essere passati come appaiono nella ground_truth
 
-ha bisogno che i csv dati siano codificati in  utf8
-in caso di errore aprirli con textpad->formato->converti in utf8
-"""
 
-'''parsing dei csv e costruzione dataset alternato(match-NOmatch) =>  (tupla1,tupla2,vettore_sim,label_match_OR_no_match)
-    indici= lista di Coppie di attributi considerati allineati(es: per Walmart Amazon (Walmart_att, Amazon_att))
-    cosi ogni coppia di tuple ha stesso num di attributi
-    ES:   indici=[(5, 9), (4, 5), (3, 3), (14, 4), (6, 11)]'''
-def csv_2_datasetALTERNATE(dataset_dir,ground_truth,tableL, tableR, indici, sim_function=lambda x, y: [1, 1]):
+def csv_2_dataset_alternate_aligned(dataset_dir,ground_truth,tableL, tableR):
     
     table1 = csv.reader(open(os.path.join(dataset_dir,tableL),encoding="utf8"), delimiter=',')
     table2 = csv.reader(open(os.path.join(dataset_dir,tableR),encoding="utf8"), delimiter=',')
@@ -366,21 +353,22 @@ def csv_2_datasetALTERNATE(dataset_dir,ground_truth,tableL, tableR, indici, sim_
     tableLlist = list(table1)
     tableRlist = list(table2)
     matches_list = list(matches_file)
-
+    #indice 0 indica l'id, dunque viene escluso
+    indici = list(map(lambda i:(i,i),range(1,len(tableLlist[0]))))
     result_list_match = []
     result_list_NOmatch= []
     cos_sim_list=[]
     '''costruisce lista dei match parsando i file di input'''
     for line_in_file in matches_list:
         #line_in_file type: id_1, id_2
-        row1=[item for item in tableLlist if item[0]==line_in_file[0]]
-        row2=[item for item in tableRlist if item[0]==line_in_file[1]]
+        lrecord=[item for item in tableLlist if item[0]==line_in_file[0]]
+        rrecord=[item for item in tableRlist if item[0]==line_in_file[1]]
         
         tableL_el=[]
         tableR_el=[]
         for i1,i2 in indici:
-            tableL_el.append(row1[0][i1])
-            tableR_el.append(row2[0][i2])
+            tableL_el.append(lrecord[0][i1])
+            tableR_el.append(rrecord[0][i2])
         
         
         stringa1=concatenate_list_data(tableL_el)
@@ -390,21 +378,15 @@ def csv_2_datasetALTERNATE(dataset_dir,ground_truth,tableL, tableR, indici, sim_
         cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
         #cos_sim=cos_sim2Str(str(stringa1),str(stringa2))
         cos_sim_list.append(cos_sim)
-        
-        sim_vector=sim_function(tableL_el,tableR_el) # Modificato
-        
-        result_list_match.append((tableL_el,tableR_el,sim_vector, 1))
+        result_list_match.append((tableL_el,tableR_el,1))
         #min_cos_sim_match= valore minimo della cos_similarity di tutte quelle in match
-        min_cos_sim_match=min(cos_sim_list)
-    
-
-##[1:] serve per togliere l id come attributo
+    min_cos_sim_match=min(cos_sim_list)
     '''costruisce la lista dei NO_match calcolando un min cos similarity'''   
     i=0
     while i<len(result_list_match):
 
         x = random.randint(1,len(tableLlist)-1)
-        y =  random.randint(1,len(tableRlist)-1)
+        y = random.randint(1,len(tableRlist)-1)
         tableL_el=[]
         tableR_el=[]
                 
@@ -416,17 +398,98 @@ def csv_2_datasetALTERNATE(dataset_dir,ground_truth,tableL, tableR, indici, sim_
         stringa1=concatenate_list_data(tableL_el)
         stringa2=concatenate_list_data(tableR_el)
         cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
-        #cos_sim=cos_sim2Str(str(stringa1),str(stringa2))
-        #print(cos_sim)
-        
+        current_ids = [tableLlist[x][0],tableRlist[y][0]]
         #controlla che la tupla che sto aggiungendo abbia una cos_similarity maggiore del min di quelle in match
-        if cos_sim>min_cos_sim_match:
-            sim_vector=sim_function(tableL_el,tableR_el)
-            
-            if (tableL_el,tableR_el,sim_vector,1) not in result_list_match :
-            
-                result_list_NOmatch.append((tableL_el,tableR_el,sim_vector,0))
-                i += 1
+        if cos_sim>min_cos_sim_match and current_ids not in matches_list:
+            result_list_NOmatch.append((tableL_el,tableR_el,0))
+            i += 1
+
+    '''unisce le due liste dei match e No_match alternandole'''
+    result_list=[]
+    for i in range(max(len(result_list_match),len(result_list_NOmatch))):
+        result_list.append(result_list_match[i])
+        result_list.append(result_list_NOmatch[i])
+
+
+    return result_list
+
+"""
+si deve fare attenzione all'ordine con cui si passano i table1 e table2
+devono essere passati come appaiono nella ground_truth
+
+ha bisogno che i csv dati siano codificati in  utf8
+in caso di errore aprirli con textpad->formato->converti in utf8
+"""
+
+'''parsing dei csv e costruzione dataset alternato(match-NOmatch) =>  (tupla1,tupla2,vettore_sim,label_match_OR_no_match)
+    indici= lista di Coppie di attributi considerati allineati(es: per Walmart Amazon (Walmart_att, Amazon_att))
+    cosi ogni coppia di tuple ha stesso num di attributi
+    ES:   indici=[(5, 9), (4, 5), (3, 3), (14, 4), (6, 11)]'''
+def csv_2_dataset_alternate(dataset_dir,ground_truth,tableL, tableR,indici,aligned=True):
+    
+    table1 = csv.reader(open(os.path.join(dataset_dir,tableL),encoding="utf8"), delimiter=',')
+    table2 = csv.reader(open(os.path.join(dataset_dir,tableR),encoding="utf8"), delimiter=',')
+    matches_file = csv.reader(open(os.path.join(dataset_dir,ground_truth),encoding="utf8"), delimiter=',')
+  
+    #skip header
+    next(table1, None)
+    next(table2, None)
+    next(matches_file, None)
+    
+    #convert to list for direct access
+    tableLlist = list(table1)
+    tableRlist = list(table2)
+    matches_list = list(matches_file)
+    if aligned:
+        indici = list(map(lambda i:(i,i),range(1,len(tableLlist[0]))))
+    result_list_match = []
+    result_list_NOmatch= []
+    cos_sim_list=[]
+    '''costruisce lista dei match parsando i file di input'''
+    for line_in_file in matches_list:
+        #line_in_file type: id_1, id_2
+        lrecord=[item for item in tableLlist if item[0]==line_in_file[0]]
+        rrecord=[item for item in tableRlist if item[0]==line_in_file[1]]
+        
+        tableL_el=[]
+        tableR_el=[]
+        for i1,i2 in indici:
+            tableL_el.append(lrecord[0][i1])
+            tableR_el.append(rrecord[0][i2])
+        
+        
+        stringa1=concatenate_list_data(tableL_el)
+        stringa2=concatenate_list_data(tableR_el)
+        
+        #calcola la cos similarita della tupla i-esima
+        cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
+        #cos_sim=cos_sim2Str(str(stringa1),str(stringa2))
+        cos_sim_list.append(cos_sim)
+        result_list_match.append((tableL_el,tableR_el,1))
+        #min_cos_sim_match= valore minimo della cos_similarity di tutte quelle in match
+    min_cos_sim_match=min(cos_sim_list)
+    '''costruisce la lista dei NO_match calcolando un min cos similarity'''   
+    i=0
+    while i<len(result_list_match):
+
+        x = random.randint(1,len(tableLlist)-1)
+        y = random.randint(1,len(tableRlist)-1)
+        tableL_el=[]
+        tableR_el=[]
+                
+        for i1,i2 in indici:
+            tableL_el.append(tableLlist[x][i1])
+            tableR_el.append(tableRlist[y][i2])              
+        
+        #serve per calcolare la cos_sim tra i due elementi della tupla, è necessario concatenare tutta la riga
+        stringa1=concatenate_list_data(tableL_el)
+        stringa2=concatenate_list_data(tableR_el)
+        cos_sim=get_cosine(text_to_vector(stringa1),text_to_vector(stringa2))
+        current_ids = [tableLlist[x][0],tableRlist[y][0]]
+        #controlla che la tupla che sto aggiungendo abbia una cos_similarity maggiore del min di quelle in match
+        if cos_sim>min_cos_sim_match and current_ids not in matches_list:
+            result_list_NOmatch.append((tableL_el,tableR_el,0))
+            i += 1
 
     '''unisce le due liste dei match e No_match alternandole'''
     result_list=[]

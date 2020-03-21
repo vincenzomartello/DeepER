@@ -5,3 +5,4 @@ main/__pycache__/
 *.pyc
 models/
 embeddings/
+*.pkl
