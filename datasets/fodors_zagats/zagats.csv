@@ -1,4 +1,4 @@
-﻿id,name,addr,city,phone,type,class
+﻿id,name,addr,city,phone,restype,class
 1,'apple pan  the','10801 w. pico blvd.','west la',310-475-3585,american,534
 2,'asahi ramen','2027 sawtelle blvd.','west la',310-479-2231,'noodle shops',535
 3,'baja fresh','3345 kimber dr.','westlake village',805-498-4049,mexican,536

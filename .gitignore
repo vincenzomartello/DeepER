@@ -6,3 +6,4 @@ main/__pycache__/
 models/
 embeddings/
 *.pkl
+*.pth

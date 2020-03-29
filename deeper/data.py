@@ -1,5 +1,5 @@
 import os
-from deeper.csv2dataset import csv_2_dataset_alternate
+from deeper.csv2dataset import csv_2_dataset_aligned,csv_2_dataset
 import numpy as np
 import pickle
 from keras.preprocessing.text import Tokenizer
@@ -12,18 +12,18 @@ from keras.utils import to_categorical
     # Questo filtro limita il numero di caratteri di un attributo a 1000.
 def shrink_data(data):
     cutPairs = []
-    for t1, t2, lb in data:
-        cutPairs.append((t1[:1000],t2[:1000],lb))
+    for t1, t2,label,pairid in data:
+        cutPairs.append((t1[:1000],t2[:1000],label,pairid))
     return cutPairs
     
     
 # Caricamento dati e split in train, validation e test
-def process_data(DATASET_DIR,DATASET_NAME,ground_truth,table1,table2,indici,LOAD_FROM_DISK_DATASET=False,aligned=True):
-    if LOAD_FROM_DISK_DATASET:
+def process_data(dataset_dir,dataset_name,ground_truth,table1,table2,indici,load_from_disk_dataset=False):
+    if load_from_disk_dataset:
         
         # Carica dataset salvato su disco.
-        allPairs = __load_list(os.path.join(DATASET_DIR,DATASET_NAME+'.pkl'))
-        match_number=sum(map(lambda x : x[3] == 1, allPairs))
+        allPairs = __load_list(os.path.join(dataset_dir,dataset_name+'.pkl'))
+        match_number=sum(map(lambda x : x[2] == 1, allPairs))
         print("match_number: " + str(match_number))
         print("len all dataset: "+ str(len(allPairs)))
 
@@ -31,13 +31,13 @@ def process_data(DATASET_DIR,DATASET_NAME,ground_truth,table1,table2,indici,LOAD
         # Necessario inserire le tabelle nell'ordine corrispondente alle coppie della ground truth.
 
         # Crea il dataset.
-        allPairs = csv_2_dataset_alternate(DATASET_DIR,ground_truth=ground_truth,
-                                    tableL=table1,tableR=table2,indici=indici,aligned=aligned)
+        allPairs = csv_2_dataset(dataset_dir,ground_truth=ground_truth,
+                                    tableL=table1,tableR=table2,indici=indici)
         #per i dataset di Anhai
         #data=parsing_anhai_data(GROUND_TRUTH_FILE, TABLE1_FILE, TABLE2_FILE, att_indexes)
         
         # Salva dataset su disco.
-        __save_list(allPairs,DATASET_DIR+'data_processed.pkl')
+        __save_list(allPairs,DATASET_DIR+DATASET_NAME+'.pkl')
 
         
     # Dataset per DeepER classico: [(tupla1, tupla2, label), ...].
@@ -62,12 +62,12 @@ def process_data(DATASET_DIR,DATASET_NAME,ground_truth,table1,table2,indici,LOAD
     
     
 # Caricamento dati e split in train, validation e test
-def process_data_aligned(DATASET_DIR,DATASET_NAME,ground_truth,table1,table2,LOAD_FROM_DISK_DATASET=False):
-    if LOAD_FROM_DISK_DATASET:
+def process_data_aligned(dataset_dir,dataset_name,ground_truth,table1,table2,load_from_disk_dataset=False):
+    if load_from_disk_dataset:
         
         # Carica dataset salvato su disco.
-        allPairs = __load_list(os.path.join(DATASET_DIR,DATASET_NAME+'.pkl'))
-        match_number=sum(map(lambda x : x[3] == 1, allPairs))
+        allPairs = __load_list(os.path.join(dataset_dir,dataset_name+'.pkl'))
+        match_number=sum(map(lambda x : x[2] == 1, allPairs))
         print("match_number: " + str(match_number))
         print("len all dataset: "+ str(len(allPairs)))
 
@@ -75,13 +75,13 @@ def process_data_aligned(DATASET_DIR,DATASET_NAME,ground_truth,table1,table2,LOA
         # Necessario inserire le tabelle nell'ordine corrispondente alle coppie della ground truth.
 
         # Crea il dataset.
-        allPairs = csv_2_dataset_alternate_aligned(DATASET_DIR,ground_truth=ground_truth,
+        allPairs = csv_2_dataset_aligned(dataset_dir,ground_truth=ground_truth,
                                     tableL=table1,tableR=table2)
         #per i dataset di Anhai
         #data=parsing_anhai_data(GROUND_TRUTH_FILE, TABLE1_FILE, TABLE2_FILE, att_indexes)
         
         # Salva dataset su disco.
-        __save_list(allPairs,DATASET_DIR+'data_processed.pkl')
+        __save_list(allPairs,dataset_dir+dataset_name+'.pkl')
 
         
     # Dataset per DeepER classico: [(tupla1, tupla2, label), ...].
@@ -124,9 +124,8 @@ def data2Inputs(data, tokenizer, categorical=True):
     #SEQUENCES_MAXLEN = 500
 
     # Tokenizza le tuple e prepara l'input per il modello
-    print('* Preparazione input......', end='', flush=True)
     table1, table2, labels = [], [], []
-    for t1, t2, label in data:
+    for t1, t2, label,_ in data:
         # Sperimentale: ordino gli attributi per lunghezza decrescente
         # Attributi con molti tokens conengono più informazioni utili 
         #t1 = sorted(t1, key=lambda s: len(s), reverse=True)
@@ -144,6 +143,28 @@ def data2Inputs(data, tokenizer, categorical=True):
         labels = to_categorical(labels)
     else:
         labels = np.array(labels)
-    print(f'Fatto. {len(labels)} tuple totali, esempio label: {data[0][2]} -> {labels[0]}, Table1 shape: {table1.shape}, Table2 shape: {table2.shape}')
 
     return table1, table2, labels
+
+
+def data2Inputs_unlabeled(data, tokenizer, categorical=True):
+    
+    # Limita la sequenza massima di tokens 
+    #SEQUENCES_MAXLEN = 500
+
+    # Tokenizza le tuple e prepara l'input per il modello
+    table1, table2 = [], []
+    for t1,t2 in data:
+        # Sperimentale: ordino gli attributi per lunghezza decrescente
+        # Attributi con molti tokens conengono più informazioni utili 
+        #t1 = sorted(t1, key=lambda s: len(s), reverse=True)
+        #t2 = sorted(t2, key=lambda s: len(s), reverse=True)                  
+        table1.append(' '.join(t1).replace(', ', ' '))
+        table2.append(' '.join(t2).replace(', ', ' '))
+    table1 = tokenizer.texts_to_sequences(table1)                      
+    #table1 = pad_sequences(table1, maxlen=SEQUENCES_MAXLEN, padding='post')
+    table1 = pad_sequences(table1, padding='post')
+    table2 = tokenizer.texts_to_sequences(table2)        
+    #table2 = pad_sequences(table2, maxlen=SEQUENCES_MAXLEN, padding='post')
+    table2 = pad_sequences(table2, padding='post')
+    return table1, table2

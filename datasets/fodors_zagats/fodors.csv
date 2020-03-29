@@ -1,4 +1,4 @@
-﻿id,name,addr,city,phone,type,class
+﻿id,name,addr,city,phone,restype,class
 534,'arnie morton\'s of chicago','435 s. la cienega blv.','los angeles',310/246-1501,american,0
 535,'art\'s delicatessen','12224 ventura blvd.','studio city',818/762-1221,american,1
 536,'hotel bel-air','701 stone canyon rd.','bel air',310/472-1211,californian,2

@@ -8,6 +8,7 @@ from keras.utils import plot_model, to_categorical
 from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import EarlyStopping, ModelCheckpoint
 from deeper.data import data2Inputs
+from tqdm import tqdm
 import os
 
 
@@ -23,7 +24,7 @@ def init_embeddings_index(embeddings_file):
     embeddings_index = {}
     with open(embeddings_file, encoding='utf8') as f:
         for line in f:
-            values = line.split()
+            values = line.split(' ')
             word = values[0]
             coefs = np.asarray(values[1:], dtype='float32')
             embeddings_index[word] = coefs
@@ -135,7 +136,7 @@ def replace_last_layer(model, new_layer):
 # InPut: Una lista di triple [(tup1, tup2, label), ...], il modello da addestrare...
 # Output: Il modello addestrato
 #def train_DeepER(deeper_model, data, embeddings_index):  
-def train_model_ER(data, model,embeddings_model, tokenizer,best_save_path='models',pretraining=False, metric='val_accuracy', end=''):
+def train_model_ER(data, model,embeddings_model, tokenizer,best_save_path='models',pretraining=False, metric='val_acc', end=''):
 
     if pretraining:
         model_name = 'VinSim'
@@ -162,7 +163,7 @@ def train_model_ER(data, model,embeddings_model, tokenizer,best_save_path='model
 
     return model
 
-def train_model_ROUND_ER(data, model, embeddings_model, tokenizer, metric='val_accuracy', end=''):
+def train_model_ROUND_ER(data, model, embeddings_model, tokenizer, metric='val_acc', end=''):
 
     model_name = 'VinSim'
 
