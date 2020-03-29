@@ -1,0 +1,99 @@
+label,ltable_name,ltable_addr,ltable_city,ltable_phone,ltable_restype,ltable_class,rtable_name,rtable_addr,rtable_city,rtable_phone,rtable_restype,rtable_class,id
+1,daniel,20 e. 76th st.,new york,212/288-0033,french,31,daniel,20 e. 76th st.,new york city,212-288-0033,french (new),31,565#250
+0,coyote cafe,3799 las vegas blvd. s,las vegas,702/891-7349,southwestern,68,spago (las vegas),3500 las vegas blvd. s.,las vegas,702-369-6300,californian,670,602#137
+0,circus circus,2880 las vegas blvd. s,las vegas,702/734-0410,buffets,437,spago (las vegas),3500 las vegas blvd. s.,las vegas,702-369-6300,californian,670,971#137
+0,bugsy\s diner,3555 las vegas blvd. s,las vegas,702/733-3111,coffee shops/diners,431,sterling brunch,3645 las vegas blvd. s.,las vegas,702-739-4651,eclectic,673,965#140
+0,bistro,3400 las vegas blvd. s,las vegas,702/791-7111,continental,429,sterling brunch,3645 las vegas blvd. s.,las vegas,702-739-4651,eclectic,673,963#140
+0,palace court,3570 las vegas blvd. s,las vegas,702/731-7547,continental,70,sterling brunch,3645 las vegas blvd. s.,las vegas,702-739-4651,eclectic,673,604#140
+0,chin\s,3200 las vegas blvd. s,las vegas,702/733-8899,asian,67,sterling brunch,3645 las vegas blvd. s.,las vegas,702-739-4651,eclectic,673,601#140
+0,bertolini\s,3570 las vegas blvd. s,las vegas,702/735-4663,italian,427,tre visi,3799 las vegas blvd. s.,las vegas,702-891-7331,italian,674,961#141
+1,dawat,210 e. 58th st.,new york,212/355-7555,asian,32,dawat,210 e. 58th st.,new york city,212-355-7555,indian,32,566#251
+0,mikado,3400 las vegas blvd. s,las vegas,702/791-7111,asian,446,morton\s of chicago (las vegas),3200 las vegas blvd. s.,las vegas,702-893-0703,steakhouses,667,980#134
+0,bistro,3400 las vegas blvd. s,las vegas,702/791-7111,continental,429,morton\s of chicago (las vegas),3200 las vegas blvd. s.,las vegas,702-893-0703,steakhouses,667,963#134
+0,mikado,3400 las vegas blvd. s,las vegas,702/791-7111,asian,446,madame ching\s,3300 las vegas blvd. s.,las vegas,702-894-7111,asian,662,980#129
+0,bistro,3400 las vegas blvd. s,las vegas,702/791-7111,continental,429,chin\s,3200 las vegas blvd. s.,las vegas,702-733-8899,chinese,67,963#286
+0,empress court,3570 las vegas blvd. s,las vegas,702/731-7888,asian,438,chin\s,3200 las vegas blvd. s.,las vegas,702-733-8899,chinese,67,972#286
+0,margarita\s mexican cantina,3120 las vegas blvd. s,las vegas,702/794-8200,mexican,444,chin\s,3200 las vegas blvd. s.,las vegas,702-733-8899,chinese,67,978#286
+1,chin\s,3200 las vegas blvd. s,las vegas,702/733-8899,asian,67,chin\s,3200 las vegas blvd. s.,las vegas,702-733-8899,chinese,67,601#286
+0,bistro,3400 las vegas blvd. s,las vegas,702/791-7111,continental,429,monte carlo,3145 las vegas blvd. s.,las vegas,702-733-4524,french (new),665,963#132
+0,bally\s big kitchen,3645 las vegas blvd. s,las vegas,702/739-4111,buffets,424,monte carlo,3145 las vegas blvd. s.,las vegas,702-733-4524,french (new),665,958#132
+0,empress court,3570 las vegas blvd. s,las vegas,702/731-7888,asian,438,buccaneer bay club,3300 las vegas blvd. s.,las vegas,702-894-7350,continental,657,972#124
+0,palace court,3570 las vegas blvd. s,las vegas,702/731-7547,continental,70,buccaneer bay club,3300 las vegas blvd. s.,las vegas,702-894-7350,continental,657,604#124
+1,palace court,3570 las vegas blvd. s,las vegas,702/731-7547,continental,70,palace court,3570 las vegas blvd. s.,las vegas,702-731-7110,french (new),70,604#289
+1,carnegie deli,854 7th ave.  between 54th and 55th sts.,new york,212/757-2245,delicatessen,29,carnegie deli,854 seventh ave.,new york city,212-757-2245,delis,29,563#248
+1,chez michel,804 northpoint,san francisco,415/775-7036,french,99,chez michel,804 north point st.,san francisco,415-775-7036,californian,99,633#318
+1,hedgerose heights inn,490 e. paces ferry rd.,atlanta,404/233-7673,international,82,hedgerose heights inn  the,490 e. paces ferry rd. ne,atlanta,404-233-7673,continental,82,616#301
+1,ciboulette,1529 piedmont ave.,atlanta,404/874-7600,french,79,ciboulette restaurant,1529 piedmont ave.,atlanta,404-874-7600,french (new),79,613#298
+0,circus circus,2880 las vegas blvd. s,las vegas,702/734-0410,buffets,437,moongate,3400 las vegas blvd. s.,las vegas,702-791-7352,chinese,666,971#133
+0,bally\s big kitchen,3645 las vegas blvd. s,las vegas,702/739-4111,buffets,424,moongate,3400 las vegas blvd. s.,las vegas,702-791-7352,chinese,666,958#133
+0,steak house,2880 las vegas blvd. s,las vegas,702/734-0410,steak houses,72,coyote cafe (las vegas),3799 las vegas blvd. s.,las vegas,702-891-7349,southwestern,68,606#287
+0,margarita\s mexican cantina,3120 las vegas blvd. s,las vegas,702/794-8200,mexican,444,coyote cafe (las vegas),3799 las vegas blvd. s.,las vegas,702-891-7349,southwestern,68,978#287
+1,steak house,2880 las vegas blvd. s,las vegas,702/734-0410,steak houses,72,steak house  the,2880 las vegas blvd. s.,las vegas,702-734-0410,steakhouses,72,606#291
+1,brasserie le coze,3393 peachtree rd.  lenox square mall  near neiman marcus,atlanta,404/266-1440,french,77,brasserie le coze,3393 peachtree rd.,atlanta,404-266-1440,french bistro,77,611#296
+1,aureole,34 e. 61st st.,new york,212/ 319-1660,american,25,aureole,34 e. 61st st.,new york city,212-319-1660,american (new),25,559#244
+0,lillie langtry\s,129 e. fremont st.,las vegas,702/385-7111,asian,442,stefano\s,129 fremont st.,las vegas,702-385-7111,italian,672,976#139
+1,georgia grille,2290 peachtree rd.  peachtree square shopping center,atlanta,404/352-3517,american,81,georgia grille,2290 peachtree rd.,atlanta,404-352-3517,southwestern,81,615#300
+0,jack\s,615 sacramento st.,san francisco,415/986-9854,old san francisco,485,san francisco bbq,1328 18th st.,san francisco,415-431-8956,thai,744,1019#210
+1,la caravelle,33 w. 55th st.,new york,212/586-4252,french,39,la caravelle,33 w. 55th st.,new york city,212-586-4252,french (classic),39,573#258
+1,second avenue deli,156 2nd ave. at 10th st.,new york,212/677-0606,delicatessen,58,second avenue deli,156 second ave.,new york city,212-677-0606,delis,58,592#277
+1,pano\s and paul\s,1232 w. paces ferry rd.,atlanta,404/261-3662,international,88,pano\s & paul\s,1232 w. paces ferry rd.,atlanta,404-261-3662,american (new),88,622#307
+1,nikolai\s roof,255 courtland st.  at harris st.,atlanta,404/221-6362,continental,87,nikolai\s roof,255 courtland st.,atlanta,404-221-6362,continental,87,621#306
+1,gramercy tavern,42 e. 20th st.  between park ave. s and broadway,new york,212/477-0777,american,36,gramercy tavern,42 e. 20th st.,new york city,212-477-0777,american (new),36,570#255
+1,valentino,3115 pico blvd.,santa monica,310/829-4313,italian,21,valentino,3115 pico blvd.,santa monica,310-829-4313,italian,21,555#240
+1,grill on the alley,9560 dayton way,los angeles,310/276-0615,american,9,grill  the,9560 dayton way,beverly hills,310-276-0615,american (traditional),9,543#228
+1,khan toke thai house,5937 geary blvd.,san francisco,415/668-6654,asian,103,khan toke thai house,5937 geary blvd.,san francisco,415-668-6654,thai,103,637#322
+1,mesa grill,102 5th ave.  between 15th and 16th sts.,new york,212/807-7400,american,47,mesa grill,102 fifth ave.,new york city,212-807-7400,southwestern,47,581#266
+0,daniel,'20 e. 76th st.','new york',212/288-0033,french,31,'tu lan','8 sixth st.','san francisco',415-626-0927,vietnamese,750,565#216
+0,'la caravelle','33 w. 55th st.','new york',212/586-4252,french,39,'tu lan','8 sixth st.','san francisco',415-626-0927,vietnamese,750,573#216
+0,'second avenue deli','156 2nd ave. at 10th st.','new york',212/677-0606,delicatessen,58,'tu lan','8 sixth st.','san francisco',415-626-0927,vietnamese,750,592#216
+0,'pano\'s and paul\'s','1232 w. paces ferry rd.',atlanta,404/261-3662,international,88,'tu lan','8 sixth st.','san francisco',415-626-0927,vietnamese,750,622#216
+0,'nikolai\'s roof','255 courtland st.  at harris st.',atlanta,404/221-6362,continental,87,'tu lan','8 sixth st.','san francisco',415-626-0927,vietnamese,750,621#216
+0,'mesa grill','102 5th ave.  between 15th and 16th sts.','new york',212/807-7400,american,47,'tu lan','8 sixth st.','san francisco',415-626-0927,vietnamese,750,581#216
+0,daniel,'20 e. 76th st.','new york',212/288-0033,french,31,'hamburger mary\'s','1582 folsom st.','san francisco',415-626-1985,hamburgers,732,565#198
+0,'la caravelle','33 w. 55th st.','new york',212/586-4252,french,39,'hamburger mary\'s','1582 folsom st.','san francisco',415-626-1985,hamburgers,732,573#198
+0,'second avenue deli','156 2nd ave. at 10th st.','new york',212/677-0606,delicatessen,58,'hamburger mary\'s','1582 folsom st.','san francisco',415-626-1985,hamburgers,732,592#198
+0,'pano\'s and paul\'s','1232 w. paces ferry rd.',atlanta,404/261-3662,international,88,'hamburger mary\'s','1582 folsom st.','san francisco',415-626-1985,hamburgers,732,622#198
+0,'nikolai\'s roof','255 courtland st.  at harris st.',atlanta,404/221-6362,continental,87,'hamburger mary\'s','1582 folsom st.','san francisco',415-626-1985,hamburgers,732,621#198
+0,'mesa grill','102 5th ave.  between 15th and 16th sts.','new york',212/807-7400,american,47,'hamburger mary\'s','1582 folsom st.','san francisco',415-626-1985,hamburgers,732,581#198
+0,daniel,'20 e. 76th st.','new york',212/288-0033,french,31,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,565#21
+0,dawat,'210 e. 58th st.','new york',212/355-7555,asian,32,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,566#21
+0,'carnegie deli','854 7th ave.  between 54th and 55th sts.','new york',212/757-2245,delicatessen,29,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,563#21
+0,'chez michel','804 northpoint','san francisco',415/775-7036,french,99,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,633#21
+0,'hedgerose heights inn','490 e. paces ferry rd.',atlanta,404/233-7673,international,82,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,616#21
+0,ciboulette,'1529 piedmont ave.',atlanta,404/874-7600,french,79,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,613#21
+0,'brasserie le coze','3393 peachtree rd.  lenox square mall  near neiman marcus',atlanta,404/266-1440,french,77,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,611#21
+0,aureole,'34 e. 61st st.','new york','212/ 319-1660',american,25,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,559#21
+0,'georgia grille','2290 peachtree rd.  peachtree square shopping center',atlanta,404/352-3517,american,81,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,615#21
+0,'la caravelle','33 w. 55th st.','new york',212/586-4252,french,39,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,573#21
+0,'second avenue deli','156 2nd ave. at 10th st.','new york',212/677-0606,delicatessen,58,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,592#21
+0,'pano\'s and paul\'s','1232 w. paces ferry rd.',atlanta,404/261-3662,international,88,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,622#21
+0,'nikolai\'s roof','255 courtland st.  at harris st.',atlanta,404/221-6362,continental,87,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,621#21
+0,'gramercy tavern','42 e. 20th st.  between park ave. s and broadway','new york',212/477-0777,american,36,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,570#21
+0,valentino,'3115 pico blvd.','santa monica',310/829-4313,italian,21,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,555#21
+0,'grill on the alley','9560 dayton way','los angeles',310/276-0615,american,9,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,543#21
+0,'khan toke thai house','5937 geary blvd.','san francisco',415/668-6654,asian,103,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,637#21
+0,'mesa grill','102 5th ave.  between 15th and 16th sts.','new york',212/807-7400,american,47,'gumbo pot  the','6333 w. third st.',la,213-933-0358,cajun/creole,554,581#21
+0,dawat,'210 e. 58th st.','new york',212/355-7555,asian,32,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,566#199
+0,'carnegie deli','854 7th ave.  between 54th and 55th sts.','new york',212/757-2245,delicatessen,29,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,563#199
+0,'chez michel','804 northpoint','san francisco',415/775-7036,french,99,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,633#199
+0,'hedgerose heights inn','490 e. paces ferry rd.',atlanta,404/233-7673,international,82,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,616#199
+0,ciboulette,'1529 piedmont ave.',atlanta,404/874-7600,french,79,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,613#199
+0,'brasserie le coze','3393 peachtree rd.  lenox square mall  near neiman marcus',atlanta,404/266-1440,french,77,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,611#199
+0,aureole,'34 e. 61st st.','new york','212/ 319-1660',american,25,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,559#199
+0,'georgia grille','2290 peachtree rd.  peachtree square shopping center',atlanta,404/352-3517,american,81,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,615#199
+0,'gramercy tavern','42 e. 20th st.  between park ave. s and broadway','new york',212/477-0777,american,36,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,570#199
+0,valentino,'3115 pico blvd.','santa monica',310/829-4313,italian,21,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,555#199
+0,'grill on the alley','9560 dayton way','los angeles',310/276-0615,american,9,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,543#199
+0,'khan toke thai house','5937 geary blvd.','san francisco',415/668-6654,asian,103,'kelly\'s on trinity','333 bush st.','san francisco',415-362-4454,californian,733,637#199
+0,dawat,'210 e. 58th st.','new york',212/355-7555,asian,32,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,566#217
+0,'carnegie deli','854 7th ave.  between 54th and 55th sts.','new york',212/757-2245,delicatessen,29,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,563#217
+0,'chez michel','804 northpoint','san francisco',415/775-7036,french,99,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,633#217
+0,'hedgerose heights inn','490 e. paces ferry rd.',atlanta,404/233-7673,international,82,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,616#217
+0,ciboulette,'1529 piedmont ave.',atlanta,404/874-7600,french,79,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,613#217
+0,'brasserie le coze','3393 peachtree rd.  lenox square mall  near neiman marcus',atlanta,404/266-1440,french,77,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,611#217
+0,aureole,'34 e. 61st st.','new york','212/ 319-1660',american,25,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,559#217
+0,'georgia grille','2290 peachtree rd.  peachtree square shopping center',atlanta,404/352-3517,american,81,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,615#217
+0,'gramercy tavern','42 e. 20th st.  between park ave. s and broadway','new york',212/477-0777,american,36,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,570#217
+0,valentino,'3115 pico blvd.','santa monica',310/829-4313,italian,21,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,555#217
+0,'grill on the alley','9560 dayton way','los angeles',310/276-0615,american,9,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,543#217
+0,'khan toke thai house','5937 geary blvd.','san francisco',415/668-6654,asian,103,'vicolo pizzeria','201 ivy st.','san francisco',415-863-2382,pizza,751,637#217

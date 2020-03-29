@@ -6,10 +6,6 @@ import math
 import string
 import os
 from tqdm import tqdm
-from .dataset_parser import generateDataset
-from .sampleBuilder import buildNegativeFromSample
-from strsimpy.normalized_levenshtein import NormalizedLevenshtein
-from strsimpy.jaccard import Jaccard
 
 
 
@@ -47,48 +43,8 @@ def _powerset(xs,minlen,maxlen):
             for subset in combinations(xs, i)]
 
 
-    
-def generateNewNegatives(df,source1,source2,newNegativesToBuild):
-    allNewNegatives = []
-    jaccard = Jaccard(3)
-    df_c = df.copy()
-    df_c['ltable_id'] = list(map(lambda lrid:lrid.split("#")[0],df_c.id.values))
-    df_c['rtable_id'] = list(map(lambda lrid:lrid.split("#")[1],df_c.id.values))
-    positives = df_c[df_c.label==1]
-    negatives = df_c[df_c.label==0]
-    newNegativesPerSample = math.ceil(newNegativesToBuild/len(positives))
-    for i in range(len(positives)):
-        locc = np.count_nonzero(negatives.ltable_id.values==positives.iloc[i]['ltable_id'])
-        rocc = np.count_nonzero(negatives.rtable_id.values == positives.iloc[i]['rtable_id'])
-        if locc==0 and rocc == 0:
-            permittedIds = [sampleid for sampleid in df_c['rtable_id'].values if sampleid!= df_c.iloc[i]['rtable_id']]
-            newNegatives_l = buildNegativeFromSample(positives.iloc[i]['ltable_id'],permittedIds,\
-                                                     newNegativesPerSample,source1,source2,jaccard,0.5)
-            newNegatives_df = pd.DataFrame(data=newNegatives_l,columns=['ltable_id','rtable_id','label'])
-            allNewNegatives.append(newNegatives_df)
-    allNewNegatives_df = pd.concat(allNewNegatives)
-    return allNewNegatives_df
 
-
-def prepareDataset(dataset_dir,dataset_filename,source1,source2,newNegativesToBuild,lprefix='ltable_',rprefix='rtable_'):
-    dataset = pd.read_csv(os.path.join(dataset_dir,dataset_filename))
-    colForDrop = [col for col in list(dataset) if col not in ['id','label']]
-    dataset = dataset.drop_duplicates(colForDrop)
-    
-    source1_df = pd.read_csv(os.path.join(dataset_dir,source1),dtype=str)
-    source2_df = pd.read_csv(os.path.join(dataset_dir,source2),dtype=str)
-    newNegatives_ids = generateNewNegatives(dataset,source1_df,source2_df,newNegativesToBuild)
-    tmp_name = "./{}.csv".format("".join([rd.choice(string.ascii_lowercase) for _ in range(10)]))
-    newNegatives_ids.to_csv(os.path.join(dataset_dir,tmp_name),index=False)
-    newNegatives_df = generateDataset(dataset_dir,source1,source2,tmp_name,lprefix,rprefix)
-    augmentedData = pd.concat([dataset,newNegatives_df],ignore_index=True)
-    os.remove(os.path.join(dataset_dir,tmp_name))
-    return augmentedData
-
-
-
-## for now we suppose to have only two sources
-## for now we suppose to have only two sources
+## for now the code works only on binary sources
 def getMixedTriangles(dataset,sources):
         triangles = []
         ##to not alter original dataset
