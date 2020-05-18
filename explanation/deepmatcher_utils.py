@@ -10,13 +10,13 @@ from sklearn.metrics import f1_score,precision_score,recall_score
 
 
 def wrapDm(test_df,model,ignore_columns=['id','label'],outputAttributes=False,batch_size=32):
-    data = test_df.copy()
+    data = test_df.copy().drop([c for c in ignore_columns if c in test_df.columns],axis=1)
+    data['id'] = np.arange(len(test_df))
     tmp_name = "./{}.csv".format("".join([random.choice(string.ascii_lowercase) for _ in range(10)]))
     data.to_csv(tmp_name,index=False)
     with open(os.devnull, 'w') as devnull:
         with contextlib.redirect_stdout(devnull):
-            data_processed = dm.data.process_unlabeled(tmp_name, trained_model = model,\
-                                                       ignore_columns=ignore_columns)
+            data_processed = dm.data.process_unlabeled(tmp_name, trained_model = model)
             predictions = model.run_prediction(data_processed, output_attributes = outputAttributes,\
                                               batch_size=batch_size)
             out_proba = predictions['match_score'].values.reshape(-1)

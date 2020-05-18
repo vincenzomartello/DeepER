@@ -115,8 +115,7 @@ def csv_2_dataset(dataset_dir,ground_truth, tableL, tableR, indici, sim_function
         
         result_list_match.append((tableL_el,tableR_el,sim_vector, 1))
         #minimo valore di cos_similarità tra tutte le tuple in match
-        min_cos_sim_match=min(cos_sim_list)
-    
+    min_cos_sim_match=min(cos_sim_list)
 
     ##[1:] serve per togliere l id come attributo
         
@@ -156,7 +155,7 @@ def csv_2_dataset(dataset_dir,ground_truth, tableL, tableR, indici, sim_function
 
 
 
-def csv_2_dataset_aligned(dataset_dir,ground_truth,tableL, tableR):
+def csv_2_dataset_aligned(dataset_dir,ground_truth,tableL,tableR,neg_pos_ratio=1):
     
     table1 = csv.reader(open(os.path.join(dataset_dir,tableL),encoding="utf8"), delimiter=',')
     table2 = csv.reader(open(os.path.join(dataset_dir,tableR),encoding="utf8"), delimiter=',')
@@ -187,7 +186,7 @@ def csv_2_dataset_aligned(dataset_dir,ground_truth,tableL, tableR):
     print("min cosine similarity of matches is {}".format(min_cos_sim_match))
     '''costruisce la lista dei NO_match calcolando un min cos similarity'''   
     i=0
-    while i<len(result_list_match):
+    while i<len(result_list_match*neg_pos_ratio):
         x,y = random.sample(ltable_ids,k=1)[0],random.sample(rtable_ids,k=1)[0]
         lrecord= next((record for record in tableLlist if record[0] == x), None)
         rrecord = next((record for record in tableRlist if record[0] == y), None)

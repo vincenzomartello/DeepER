@@ -12,8 +12,15 @@ from tqdm import tqdm
 import os
 
 
-# Workaround per warnings su codice deprecato
-#tf.logging.set_verbosity(tf.logging.ERROR)
+def __dataToText(dataset):
+    allTexts = []
+    for sample in dataset:
+        #join left and right records in a single text 
+        ltext = " ".join(sample[0])
+        rtext = " ".join(sample[1])
+        allTexts.append(ltext+" "+rtext)
+    return allTexts
+
 
 
 # InPut: Nome del file con gli embeddings
@@ -36,16 +43,13 @@ def init_embeddings_index(embeddings_file):
 
 # InPut: Nome del file contenente gli embeddings
 # OutPut: Un modello che converte vettori di token in vettori di embeddings ed un tokenizzatore
-def init_embeddings_model(embeddings_index):
-
-    print('* Creazione del modello per il calcolo degli embeddings....', flush=True)
-
+def init_embeddings_model(embeddings_filename):
+    embeddings_index = init_embeddings_index(embeddings_filename)
     print('* Inizializzo il tokenizzatore.....', end='', flush=True)
-    tokenizer = Tokenizer(filters='')
+    tokenizer = Tokenizer()
     tokenizer.fit_on_texts(embeddings_index.keys())
     words_index = tokenizer.word_index
     print(f'Fatto: {len(words_index)} parole totali.')    
-
     print('* Preparazione della matrice di embedding.....', end='', flush=True)
     embedding_dim = len(embeddings_index['cat']) # :3  
     num_words = len(words_index) + 1
@@ -69,8 +73,7 @@ def init_embeddings_model(embeddings_index):
     embedding = Embedding(num_words,
                           embedding_dim,
                           embeddings_initializer=Constant(embedding_matrix),
-                          trainable=False, 
-                          name='Embedding_lookup')
+                          name='Embedding_lookup',trainable=False)
     embedding_a = embedding(input_a)
     embedding_b = embedding(input_b)
 

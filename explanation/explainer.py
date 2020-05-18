@@ -1,10 +1,9 @@
-from utils.intermediate_layer_extraction import return_layer_input
-from utils.ri_calculator import computeRi
-from utils.deepmatcher_utils import wrapDm
-from utils.dataset_parser import generate_train_valid_test
+from .intermediate_layer_extraction import return_layer_input
+from .ri_calculator import computeRi
+from .dataset_parser import generate_train_valid_test
 import pandas as pd
 import os
-from utils.mojito2 import prepareDataset,explainSamples
+from .mojito2 import explainSamples
 
 
 class Explainer:

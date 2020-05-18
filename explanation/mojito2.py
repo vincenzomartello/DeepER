@@ -49,13 +49,13 @@ def getMixedTriangles(dataset,sources):
                 for curr_lid in relatedTuples.ltable_id.values:
                     triangles.append((sources[0][sources[0].id==lid].iloc[0],\
                                       sources[1][sources[1].id==rid].iloc[0],\
-                                      sources[0][sources[0].id==curr_lid].iloc[0]))
+                                      sources[0][sources[0].id==curr_lid].iloc[0],'L-R-L'))
             if np.count_nonzero(negatives.ltable_id.values==lid)>=1:
                 relatedTuples = negatives[negatives.ltable_id==lid]
                 for curr_rid in relatedTuples.rtable_id.values:
                     triangles.append((sources[1][sources[1].id==rid].iloc[0],\
                                       sources[0][sources[0].id==lid].iloc[0],\
-                                      sources[1][sources[1].id==curr_rid].iloc[0]))
+                                      sources[1][sources[1].id==curr_rid].iloc[0],'R-L-R'))
         return triangles
     
 
@@ -131,7 +131,7 @@ def createPerturbationsFromTriangle(triangle,attributes,maxLenAttributeSet,origi
     _renameColumnsWithPrefix(rprefix,perturbations_df)
     allPerturbations = pd.concat([r1_df,perturbations_df], axis=1)
     allPerturbations = allPerturbations.drop([lprefix+'id',rprefix+'id'],axis=1)
-    allPerturbations['id'] = np.arange(len(allPerturbations))
+    allPerturbations['alteredAttributes'] = perturbedAttributes
     return allPerturbations,perturbedAttributes
 
     
@@ -147,11 +147,12 @@ def explainSamples(dataset,sources,model,predict_fn,originalClass,maxLenAttribut
         for triangle in tqdm(allTriangles):
             currentPerturbations,currPerturbedAttr = createPerturbationsFromTriangle(triangle,attributes\
                                                                             ,maxLenAttributeSet,originalClass)
-            predictions = predict_fn(currentPerturbations,model,['id','label'])
+            predictions = predict_fn(currentPerturbations,model,['alteredAttributes'])
             curr_flippedPredictions = currentPerturbations[(predictions[:,originalClass] <0.5)]
             '''
-            currNotFlipped = currentPerturbations[(predictions[:originalClass]>0.5)]
-            notFlipped.append(currNotFlipped)'''
+            currNotFlipped = currentPerturbations[(predictions[:,originalClass]>0.5)]
+            notFlipped.append(currNotFlipped)
+            '''
             flippedPredictions.append(curr_flippedPredictions)
             ranking = getAttributeRanking(predictions,currPerturbedAttr,originalClass)
             rankings.append(ranking)
@@ -185,5 +186,5 @@ def aggregateRankings(ranking_l,lenTriangles,maxLenAttributeSet):
             if len(altered_attr)<=maxLenAttributeSet:
                 aggregateRanking[altered_attr] += ranking[altered_attr]
     aggregateRanking_normalized = {k:(v/lenTriangles) for (k,v) in aggregateRanking.items()}
-    alteredAttr = list(map(lambda t:" ".join(t),aggregateRanking_normalized.keys()))
+    alteredAttr = list(map(lambda t:"/".join(t),aggregateRanking_normalized.keys()))
     return pd.Series(data=list(aggregateRanking_normalized.values()),index=alteredAttr)

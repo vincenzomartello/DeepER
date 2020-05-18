@@ -1,15 +1,14 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
 import random as rd
+import os
 import nltk
 from nltk.corpus import stopwords
 import string
 from .dataset_parser import generateDataset
 from strsimpy.jaccard import Jaccard
 import math
-import os
+from tqdm import tqdm
 
 
 
@@ -168,12 +167,11 @@ def generateNewNegatives(df,source1,source2,newNegativesToBuild):
     positives = df_c[df_c.label==1]
     negatives = df_c[df_c.label==0]
     newNegativesPerSample = math.ceil(newNegativesToBuild/len(positives))
-    print('New negatives per sample are {}'.format(newNegativesPerSample))
-    for i in range(len(positives)):
+    for i in tqdm(range(len(positives))):
         locc = np.count_nonzero(negatives.ltable_id.values==positives.iloc[i]['ltable_id'])
         rocc = np.count_nonzero(negatives.rtable_id.values == positives.iloc[i]['rtable_id'])
         if locc==0 and rocc == 0:
-            permittedIds = [sampleid for sampleid in source2['id'].values if sampleid!= df_c.iloc[i]['rtable_id']]
+            permittedIds = [sampleid for sampleid in df_c['rtable_id'].values if sampleid!= df_c.iloc[i]['rtable_id']]
             newNegatives_l = buildNegativeFromSample(positives.iloc[i]['ltable_id'],permittedIds,\
                                                      newNegativesPerSample,source1,source2,jaccard,0.5)
             newNegatives_df = pd.DataFrame(data=newNegatives_l,columns=['ltable_id','rtable_id','label'])

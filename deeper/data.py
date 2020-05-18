@@ -62,7 +62,8 @@ def process_data(dataset_dir,dataset_name,ground_truth,table1,table2,indici,load
     
     
 # Caricamento dati e split in train, validation e test
-def process_data_aligned(dataset_dir,dataset_name,ground_truth,table1,table2,load_from_disk_dataset=False):
+def process_data_aligned(dataset_dir,dataset_name,ground_truth,table1,table2,\
+                         neg_pos_ratio=1,load_from_disk_dataset=False):
     if load_from_disk_dataset:
         
         # Carica dataset salvato su disco.
@@ -76,7 +77,7 @@ def process_data_aligned(dataset_dir,dataset_name,ground_truth,table1,table2,loa
 
         # Crea il dataset.
         allPairs = csv_2_dataset_aligned(dataset_dir,ground_truth=ground_truth,
-                                    tableL=table1,tableR=table2)
+                                    tableL=table1,tableR=table2,neg_pos_ratio=neg_pos_ratio)
         #per i dataset di Anhai
         #data=parsing_anhai_data(GROUND_TRUTH_FILE, TABLE1_FILE, TABLE2_FILE, att_indexes)
         
