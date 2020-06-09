@@ -1,0 +1,15 @@
+,0
+title,0.8633879781420765
+description,0.07103825136612021
+manufacturer,0.04371584699453552
+price,0.03825136612021858
+title/description,0.9781420765027322
+title/manufacturer,0.8688524590163934
+title/price,0.8579234972677595
+description/manufacturer,0.07103825136612021
+description/price,0.06557377049180328
+manufacturer/price,0.04371584699453552
+title/description/manufacturer,0.9836065573770492
+title/description/price,0.9890710382513661
+title/manufacturer/price,0.8743169398907104
+description/manufacturer/price,0.060109289617486336

@@ -1,0 +1,156 @@
+ltable_Beer_Name,ltable_Brew_Factory_Name,ltable_Style,ltable_ABV,rtable_Beer_Name,rtable_Brew_Factory_Name,rtable_Style,rtable_ABV,alteredAttributes,originalRightId
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Ipswich Ale Brewery,Amber Ale,-,"('Beer_Name',)",1@155
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Union Station Brewery,Amber Ale,-,"('Beer_Name', 'Brew_Factory_Name')",1@155
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Ipswich Ale Brewery,American Amber / Red Ale,-,"('Beer_Name', 'Style')",1@155
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Ipswich Ale Brewery,Amber Ale,5.10 %,"('Beer_Name', 'ABV')",1@155
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Union Station Brewery,American Amber / Red Ale,-,"('Beer_Name', 'Brew_Factory_Name', 'Style')",1@155
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Union Station Brewery,Amber Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",1@155
+Insane Mane Red Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,River Otter Ale,Ipswich Ale Brewery,American Amber / Red Ale,5.10 %,"('Beer_Name', 'Style', 'ABV')",1@155
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,"('Beer_Name',)",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,Northampton Brewing Co. &#40; NB &#41;,American Amber / Red Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,White Lion Brewing Company,Amber Ale,5.10 %,"('Beer_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,White Lion Brewing Company,American Amber / Red Ale,4.50 %,"('Beer_Name', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,Northampton Brewing Co. &#40; NB &#41;,Amber Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,Northampton Brewing Co. &#40; NB &#41;,American Amber / Red Ale,4.50 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Simeon Jones River Valley Amber Ale,White Lion Brewing Company,Amber Ale,4.50 %,"('Beer_Name', 'Style', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,"('Beer_Name',)",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,American Amber / Red Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,White Lion Brewing Company,Amber Ale,5.10 %,"('Beer_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,White Lion Brewing Company,American Amber / Red Ale,5 %,"('Beer_Name', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,Amber Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,American Amber / Red Ale,5 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Okanagan Spring Cloudy Amber Ale,White Lion Brewing Company,Amber Ale,5 %,"('Beer_Name', 'Style', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,White Lion Brewing Company,American Amber / Red Ale,5.10 %,"('Beer_Name',)",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,Fordham Brewing Company &#40; Coastal Brewing Co. &#41;,American Amber / Red Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,White Lion Brewing Company,Amber Ale,5.10 %,"('Beer_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,White Lion Brewing Company,American Amber / Red Ale,6.50 %,"('Beer_Name', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Insane Mane Red Ale,Fordham Brewing Company &#40; Coastal Brewing Co. &#41;,Amber Ale,5.10 %,"('Brew_Factory_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,Fordham Brewing Company &#40; Coastal Brewing Co. &#41;,Amber Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,Fordham Brewing Company &#40; Coastal Brewing Co. &#41;,American Amber / Red Ale,6.50 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Fordham Close Encounter Harvest Ale,White Lion Brewing Company,Amber Ale,6.50 %,"('Beer_Name', 'Style', 'ABV')",0@1157
+White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,-,Insane Mane Red Ale,Fordham Brewing Company &#40; Coastal Brewing Co. &#41;,Amber Ale,6.50 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@1157
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Iron Hill Maple Shade,Amber Ale,4.40 %,"('Beer_Name',)",1@1242
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Yalobusha Brewing Company,Amber Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name')",1@1242
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Iron Hill Maple Shade,American Amber / Red Ale,4.40 %,"('Beer_Name', 'Style')",1@1242
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Iron Hill Maple Shade,Amber Ale,5.65 %,"('Beer_Name', 'ABV')",1@1242
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Yalobusha Brewing Company,American Amber / Red Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",1@1242
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Yalobusha Brewing Company,Amber Ale,5.65 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",1@1242
+Shirt Tail Amber,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,Copperhead Amber Ale,Iron Hill Maple Shade,American Amber / Red Ale,5.65 %,"('Beer_Name', 'Style', 'ABV')",1@1242
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,"('Beer_Name',)",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,American Amber / Red Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Iron Hill Brewery & Restaurant,Amber Ale,4.40 %,"('Beer_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Iron Hill Brewery & Restaurant,American Amber / Red Ale,5 %,"('Beer_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,Amber Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,American Amber / Red Ale,5 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Okanagan Spring Cloudy Amber Ale,Iron Hill Brewery & Restaurant,Amber Ale,5 %,"('Beer_Name', 'Style', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Spiteful Brewing,American Amber / Red Ale,4.40 %,"('Brew_Factory_Name',)",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Spiteful Angry Adam Hoppy Red Ale,Spiteful Brewing,American Amber / Red Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Spiteful Angry Adam Hoppy Red Ale,Iron Hill Brewery & Restaurant,Amber Ale,4.40 %,"('Beer_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Spiteful Angry Adam Hoppy Red Ale,Iron Hill Brewery & Restaurant,American Amber / Red Ale,6 %,"('Beer_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Spiteful Brewing,Amber Ale,4.40 %,"('Brew_Factory_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Spiteful Brewing,American Amber / Red Ale,6 %,"('Brew_Factory_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Spiteful Angry Adam Hoppy Red Ale,Spiteful Brewing,Amber Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Spiteful Angry Adam Hoppy Red Ale,Spiteful Brewing,American Amber / Red Ale,6 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Spiteful Angry Adam Hoppy Red Ale,Iron Hill Brewery & Restaurant,Amber Ale,6 %,"('Beer_Name', 'Style', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Spiteful Brewing,Amber Ale,6 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.40 %,"('Beer_Name',)",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Pike Brewing Company,American Amber / Red Ale,4.40 %,"('Brew_Factory_Name',)",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Pike Brewing Company,American Amber / Red Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Iron Hill Brewery & Restaurant,Amber Ale,4.40 %,"('Beer_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Iron Hill Brewery & Restaurant,American Amber / Red Ale,4.60 %,"('Beer_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Pike Brewing Company,Amber Ale,4.40 %,"('Brew_Factory_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Pike Brewing Company,American Amber / Red Ale,4.60 %,"('Brew_Factory_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Pike Brewing Company,Amber Ale,4.40 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Pike Brewing Company,American Amber / Red Ale,4.60 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Pike Unite Red Rye Ale,Iron Hill Brewery & Restaurant,Amber Ale,4.60 %,"('Beer_Name', 'Style', 'ABV')",0@2506
+Iron Hill Shirt Tail Amber,Iron Hill Maple Shade,Amber Ale,4.40 %,Shirt Tail Amber,Pike Brewing Company,Amber Ale,4.60 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@2506
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Crooked Eye Brewery,American Amber / Red Ale,4.70 %,"('Beer_Name',)",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Capitol City Brewing Company,American Amber / Red Ale,4.70 %,"('Beer_Name', 'Brew_Factory_Name')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Crooked Eye Brewery,Amber Ale,4.70 %,"('Beer_Name', 'Style')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Crooked Eye Brewery,American Amber / Red Ale,5.60 %,"('Beer_Name', 'ABV')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Capitol City Brewing Company,Amber Ale,4.70 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Capitol City Brewing Company,American Amber / Red Ale,5.60 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Capitol City Amber Waves Ale,Crooked Eye Brewery,Amber Ale,5.60 %,"('Beer_Name', 'Style', 'ABV')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Crooked Eye Brewery,American Amber / Red Ale,4.70 %,"('Beer_Name',)",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,4.70 %,"('Beer_Name', 'Brew_Factory_Name')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Crooked Eye Brewery,Imperial IPA,4.70 %,"('Beer_Name', 'Style')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Crooked Eye Brewery,American Amber / Red Ale,8 %,"('Beer_Name', 'ABV')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,4.70 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Hillcrest Big Red Balls,Crooked Eye Brewery,Imperial IPA,8 %,"('Beer_Name', 'Style', 'ABV')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Viola Rossa,Crooked Eye Brewery,Amber Ale,4.70 %,"('Beer_Name', 'Style')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Viola Rossa,Birra Amarcord,Amber Ale,4.70 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@3035
+Crooked Eye Regimental 80 Scottish Ale,Crooked Eye Brewery,Scottish Ale,4.70 %,Viola Rossa,Crooked Eye Brewery,Amber Ale,6.60 %,"('Beer_Name', 'Style', 'ABV')",0@3035
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Union Station Brewery,American Amber / Red Ale,5.10 %,"('Beer_Name',)",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Northampton Brewing Co. &#40; NB &#41;,American Amber / Red Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Union Station Brewery,Amber Ale,5.10 %,"('Beer_Name', 'Style')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Union Station Brewery,American Amber / Red Ale,4.50 %,"('Beer_Name', 'ABV')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Northampton Brewing Co. &#40; NB &#41;,Amber Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Northampton Brewing Co. &#40; NB &#41;,American Amber / Red Ale,4.50 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,Simeon Jones River Valley Amber Ale,Union Station Brewery,Amber Ale,4.50 %,"('Beer_Name', 'Style', 'ABV')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Union Station Brewery,American Amber / Red Ale,5.10 %,"('Beer_Name',)",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Ipswich Ale Brewery,American Amber / Red Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Union Station Brewery,Amber Ale,5.10 %,"('Beer_Name', 'Style')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Union Station Brewery,American Amber / Red Ale,-,"('Beer_Name', 'ABV')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Ipswich Ale Brewery,Amber Ale,5.10 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Ipswich Ale Brewery,American Amber / Red Ale,-,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,White Lion Insane Mane Red Ale,Union Station Brewery,Amber Ale,-,"('Beer_Name', 'Style', 'ABV')",0@1672
+Sacramento River Otter Ale,Sacramento Brewing Company,English Pale Ale,5.50 %,River Otter Ale,Ipswich Ale Brewery,Amber Ale,-,"('Brew_Factory_Name', 'Style', 'ABV')",0@1672
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Hillcrest Brewing Company,Imperial IPA,8 %,"('Beer_Name',)",1@1048
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Crooked Eye Brewery,Imperial IPA,8 %,"('Beer_Name', 'Brew_Factory_Name')",1@1048
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Hillcrest Brewing Company,American Amber / Red Ale,8 %,"('Beer_Name', 'Style')",1@1048
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Hillcrest Brewing Company,Imperial IPA,4.70 %,"('Beer_Name', 'ABV')",1@1048
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Crooked Eye Brewery,American Amber / Red Ale,8 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",1@1048
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Crooked Eye Brewery,Imperial IPA,4.70 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",1@1048
+Big Red Balls,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,Regimental 80 Scottish Ale,Hillcrest Brewing Company,American Amber / Red Ale,4.70 %,"('Beer_Name', 'Style', 'ABV')",1@1048
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,"('Beer_Name',)",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,American Amber / Red Ale,8.00 %,"('Beer_Name', 'Brew_Factory_Name')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Hillcrest Brewing Company,Amber Ale,8.00 %,"('Beer_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Hillcrest Brewing Company,American Amber / Red Ale,5 %,"('Beer_Name', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,Amber Ale,8.00 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Okanagan Spring Brewery &#40; Sapporo &#41;,American Amber / Red Ale,5 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Okanagan Spring Cloudy Amber Ale,Hillcrest Brewing Company,Amber Ale,5 %,"('Beer_Name', 'Style', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,"('Beer_Name',)",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Birra Amarcord,American Amber / Red Ale,8.00 %,"('Beer_Name', 'Brew_Factory_Name')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Hillcrest Brewing Company,Amber Ale,8.00 %,"('Beer_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Hillcrest Brewing Company,American Amber / Red Ale,6.60 %,"('Beer_Name', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Big Red Balls,Birra Amarcord,Amber Ale,8.00 %,"('Brew_Factory_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Birra Amarcord,Amber Ale,8.00 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Birra Amarcord,American Amber / Red Ale,6.60 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Viola Rossa,Hillcrest Brewing Company,Amber Ale,6.60 %,"('Beer_Name', 'Style', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Big Red Balls,Birra Amarcord,Amber Ale,6.60 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Hillcrest Brewing Company,American Amber / Red Ale,8.00 %,"('Beer_Name',)",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Crazy Mountain Brewing Company,American Amber / Red Ale,8.00 %,"('Beer_Name', 'Brew_Factory_Name')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Hillcrest Brewing Company,Amber Ale,8.00 %,"('Beer_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Hillcrest Brewing Company,American Amber / Red Ale,6 %,"('Beer_Name', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Crazy Mountain Brewing Company,Amber Ale,8.00 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Crazy Mountain Brewing Company,American Amber / Red Ale,6 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Crazy Mountain Boohai Red Ale &#40; Kura Koa &#41;,Hillcrest Brewing Company,Amber Ale,6 %,"('Beer_Name', 'Style', 'ABV')",0@2242
+Hillcrest Big Red Balls,Hillcrest Brewing Company,Imperial IPA,8 %,Big Red Balls,Crazy Mountain Brewing Company,Amber Ale,6 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@2242
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Catawba Brewing Co. .,American Amber / Red Ale,5.20 %,"('Beer_Name',)",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Pike Brewing Company,American Amber / Red Ale,5.20 %,"('Brew_Factory_Name',)",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Pike Brewing Company,American Amber / Red Ale,5.20 %,"('Beer_Name', 'Brew_Factory_Name')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Catawba Brewing Co. .,Amber Ale,5.20 %,"('Beer_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Catawba Brewing Co. .,American Amber / Red Ale,4.60 %,"('Beer_Name', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Pike Brewing Company,Amber Ale,5.20 %,"('Brew_Factory_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Pike Brewing Company,American Amber / Red Ale,4.60 %,"('Brew_Factory_Name', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Catawba Brewing Co. .,Amber Ale,4.60 %,"('Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Pike Brewing Company,Amber Ale,5.20 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Pike Brewing Company,American Amber / Red Ale,4.60 %,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Pike Unite Red Rye Ale,Catawba Brewing Co. .,Amber Ale,4.60 %,"('Beer_Name', 'Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Pike Brewing Company,Amber Ale,4.60 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Catawba Brewing Co. .,Amber Ale,5.20 %,"('Style',)",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Kauai Island Brewing Company,Amber Ale,5.20 %,"('Brew_Factory_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Catawba Brewing Co. .,Amber Ale,5.80 %,"('Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Kauai Island Brewing Company,Amber Ale,5.80 %,"('Brew_Factory_Name', 'Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Rudders Seafood Restaurant & Brew Pub,American Amber / Red Ale,5.20 %,"('Brew_Factory_Name',)",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Rudders Red,Rudders Seafood Restaurant & Brew Pub,American Amber / Red Ale,5.20 %,"('Beer_Name', 'Brew_Factory_Name')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Rudders Red,Catawba Brewing Co. .,Amber Ale,5.20 %,"('Beer_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Rudders Red,Catawba Brewing Co. .,American Amber / Red Ale,-,"('Beer_Name', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Rudders Seafood Restaurant & Brew Pub,Amber Ale,5.20 %,"('Brew_Factory_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Rudders Seafood Restaurant & Brew Pub,American Amber / Red Ale,-,"('Brew_Factory_Name', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Catawba Brewing Co. .,Amber Ale,-,"('Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Rudders Red,Rudders Seafood Restaurant & Brew Pub,Amber Ale,5.20 %,"('Beer_Name', 'Brew_Factory_Name', 'Style')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Rudders Red,Rudders Seafood Restaurant & Brew Pub,American Amber / Red Ale,-,"('Beer_Name', 'Brew_Factory_Name', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Rudders Red,Catawba Brewing Co. .,Amber Ale,-,"('Beer_Name', 'Style', 'ABV')",0@1474
+Catawba Valley Revenuers Red Ale,Catawba Valley Brewing Company,Irish Ale,5.20 %,Revenuers Red Ale,Rudders Seafood Restaurant & Brew Pub,Amber Ale,-,"('Brew_Factory_Name', 'Style', 'ABV')",0@1474

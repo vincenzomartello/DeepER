@@ -1,0 +1,1406 @@
+label,ltable_label,ltable_lat,ltable_lon,ltable_ontology,ltable_ele,rtable_label,rtable_lat,rtable_lon,rtable_ontology,rtable_ele,id
+1,Lower East Side,40.7172,-73.9897,http://dbpedia.org/,,lower east side manhattan,40.719,-73.988,http://rdf.freebase.com/,,0@6644#1@759
+1,Cuernavaca,18.9186,-99.2267,http://dbpedia.org/,,cuernavaca,18.9178,-99.2267,http://rdf.freebase.com/,,0@2871#1@6921
+0,Lima (Peru),-12.05,-77.05,http://data.nytimes.com/,,arezzo,43.4667,11.8833,http://rdf.freebase.com/,,0@5416#1@6625
+0,Lima (Peru),-12.05,-77.05,http://data.nytimes.com/,,Biarritz,43.4817,-1.55611,http://dbpedia.org/,,0@5416#1@2440
+0,sintra,38.7977,-9.38919,http://rdf.freebase.com/,,Biarritz,43.4817,-1.55611,http://dbpedia.org/,,0@4885#1@2440
+0,Les Eyzies-de-Tayac-Sireuil,44.93600000000001,1.01805,http://dbpedia.org/,,Key West (Fla),24.5546,-81.7915,http://data.nytimes.com/,,0@4119#1@4232
+0,Les Eyzies-de-Tayac-Sireuil,44.93600000000001,1.01805,http://dbpedia.org/,,sago west virginia,38.9143,-80.2301,http://rdf.freebase.com/,,0@4119#1@537
+0,Frankfurt am Main,,,http://dbpedia.org/,,sago west virginia,38.9143,-80.2301,http://rdf.freebase.com/,,0@5387#1@537
+1,"Sago, West Virginia",,,http://dbpedia.org/,,sago west virginia,38.9143,-80.2301,http://rdf.freebase.com/,,0@6112#1@537
+1,Palermo (Italy),38.1158,13.3598,http://data.nytimes.com/,,Palermo,38.1167,13.3667,http://dbpedia.org/,,0@3312#1@3313
+0,Darwin (Australia),-12.4611,130.842,http://data.nytimes.com/,,Palermo,38.1167,13.3667,http://dbpedia.org/,,0@2344#1@3313
+1,Saint-Tropez,43.2667,6.63333,http://sws.geonames.org/,,saint-tropez,43.2706,6.6394,http://rdf.freebase.com/,,0@417#1@3393
+0,Estoril (Portugal),38.7057,-9.39773,http://data.nytimes.com/,,saint-tropez,43.2706,6.6394,http://rdf.freebase.com/,,0@1451#1@3393
+0,islamorada,24.9239,-80.6281,http://rdf.freebase.com/,,saint-tropez,43.2706,6.6394,http://rdf.freebase.com/,,0@4462#1@3393
+1,Saint-Tropez,43.2667,6.63333,http://sws.geonames.org/,,Saint-Tropez,43.2733,6.63962,http://dbpedia.org/,,0@417#1@1539
+0,Nairobi,-1.28333,36.8167,http://dbpedia.org/,,Patchogue,40.7657,-73.0151,http://sws.geonames.org/,,0@2989#1@1244
+1,Nairobi,-1.28333,36.8167,http://dbpedia.org/,,Nairobi (Kenya),-1.28333,36.8167,http://data.nytimes.com/,,0@2989#1@186
+0,Nairobi,-1.28333,36.8167,http://dbpedia.org/,,Pittsburgh,40.4406,-79.9959,http://sws.geonames.org/,,0@2989#1@6618
+0,Ogden (Utah),41.223,-111.974,http://data.nytimes.com/,,Sharjah (United Arab Emirates),25.3622,55.3911,http://data.nytimes.com/,,0@2685#1@2582
+0,Ogden (Utah),41.223,-111.974,http://data.nytimes.com/,,Raleigh,35.7721,-78.6386,http://sws.geonames.org/,,0@2685#1@1672
+1,Sao Paulo (Brazil),-23.5475,-46.6361,http://data.nytimes.com/,,sao paulo,-23.5,-46.6167,http://rdf.freebase.com/,,0@5305#1@5306
+0,Sao Paulo (Brazil),-23.5475,-46.6361,http://data.nytimes.com/,,tiradentes brazil,-21.1103,-44.2114,http://rdf.freebase.com/,,0@5305#1@4757
+0,Norfolk,36.8468,-76.2852,http://sws.geonames.org/,,tiradentes brazil,-21.1103,-44.2114,http://rdf.freebase.com/,,0@6242#1@4757
+0,Avignon,43.95,4.8166699999999985,http://sws.geonames.org/,,Alajuela,10.0167,-84.2167,http://dbpedia.org/,,0@6856#1@4874
+1,Alajuela (Costa Rica),10.0167,-84.2167,http://data.nytimes.com/,,Alajuela,10.0167,-84.2167,http://dbpedia.org/,,0@1156#1@4874
+1,Avignon,43.95,4.8166699999999985,http://sws.geonames.org/,,Avignon (France),43.95,4.8166699999999985,http://data.nytimes.com/,,0@6856#1@2897
+1,seneca falls new york,42.9086,-76.7978,http://rdf.freebase.com/,,Seneca Falls (NY),42.9106,-76.7966,http://data.nytimes.com/,,0@6806#1@2365
+1,seneca falls new york,42.9086,-76.7978,http://rdf.freebase.com/,,"Seneca Falls (village), New York",,,http://dbpedia.org/,,0@6806#1@2366
+0,Pisa,43.7167,10.4,http://dbpedia.org/,,Dalian,38.9122,121.602,http://sws.geonames.org/,,0@4610#1@7262
+1,Pisa,43.7167,10.4,http://dbpedia.org/,,pisa,43.7167,10.4,http://rdf.freebase.com/,,0@4610#1@6835
+1,Pisa (Italy),43.7175,10.3965,http://data.nytimes.com/,,pisa,43.7167,10.4,http://rdf.freebase.com/,,0@3996#1@6835
+1,Pisa,43.7155,10.3966,http://sws.geonames.org/,,pisa,43.7167,10.4,http://rdf.freebase.com/,,0@3997#1@6835
+0,Pattaya,12.9275,100.875,http://dbpedia.org/,,Uppsala (Sweden),59.8585,17.6454,http://data.nytimes.com/,,0@5668#1@1470
+1,Uppsala,59.85,17.6333,http://dbpedia.org/,,Uppsala (Sweden),59.8585,17.6454,http://data.nytimes.com/,,0@7381#1@1470
+0,Salt Lake City (Utah),40.7608,-111.891,http://data.nytimes.com/,,saint petersburg,59.9333,30.3333,http://rdf.freebase.com/,,0@1992#1@6412
+1,Korčula,42.9622,17.1369,http://sws.geonames.org/,,Korcula (Croatia),42.9622,17.1369,http://data.nytimes.com/,,0@4324#1@3032
+1,Courchevel,45.3974,6.63488,http://dbpedia.org/,,Courchevel,45.4154,6.636430000000002,http://sws.geonames.org/,,0@7241#1@2412
+1,Damascus (Syria),33.5,36.3,http://data.nytimes.com/,,damascus,33.5,36.3,http://rdf.freebase.com/,,0@142#1@6058
+1,Versailles,,,http://dbpedia.org/,,versailles,48.8053,2.135,http://rdf.freebase.com/,,0@4656#1@5090
+0,"Natchez, Mississippi",,,http://dbpedia.org/,,Salt Lake City (Utah),40.7608,-111.891,http://data.nytimes.com/,,0@4697#1@1992
+0,"Natchez, Mississippi",,,http://dbpedia.org/,,"Long Beach, California",,,http://dbpedia.org/,,0@4697#1@4152
+1,long beach,33.7669,-118.188,http://rdf.freebase.com/,,"Long Beach, California",,,http://dbpedia.org/,,0@5284#1@4152
+0,St. Moritz,46.5,9.83333,http://sws.geonames.org/,,"Long Beach, California",,,http://dbpedia.org/,,0@2934#1@4152
+0,Kinsale,51.7075,-8.530560000000001,http://dbpedia.org/,,Agra (India),27.1833,78.0167,http://data.nytimes.com/,,0@4821#1@3069
+1,Oxnard (Calif),34.1975,-119.177,http://data.nytimes.com/,,oxnard,34.1975,-119.176,http://rdf.freebase.com/,,0@4258#1@4804
+1,"Oxnard, California",,,http://dbpedia.org/,,oxnard,34.1975,-119.176,http://rdf.freebase.com/,,0@4259#1@4804
+0,Limoges,45.85,1.25,http://sws.geonames.org/,,Ghent,51.05,3.733330000000001,http://dbpedia.org/,,0@6020#1@5604
+1,Orleans,41.7898,-69.9897,http://sws.geonames.org/,,"Orleans, Massachusetts",,,http://dbpedia.org/,,0@1172#1@4519
+1,brasilia,-15.781,-47.9196,http://rdf.freebase.com/,1172.0,Brasilia,,,http://dbpedia.org/,,0@6886#1@5726
+1,"Ogunquit, Maine",,,http://dbpedia.org/,,Ogunquit (Me),43.249,-70.5992,http://data.nytimes.com/,,0@1946#1@1945
+0,Kirkuk (Iraq),35.4681,44.3922,http://data.nytimes.com/,,hamilton heights manhattan,40.825,-73.949,http://rdf.freebase.com/,,0@2673#1@3014
+0,Millerton,41.9537,-73.5107,http://sws.geonames.org/,,hamilton heights manhattan,40.825,-73.949,http://rdf.freebase.com/,,0@2406#1@3014
+0,Newburyport (Mass),42.8126,-70.8773,http://data.nytimes.com/,,"Punta Gorda, Florida",,,http://dbpedia.org/,,0@3658#1@932
+0,Beslan,43.1919,44.5388,http://sws.geonames.org/,,"Punta Gorda, Florida",,,http://dbpedia.org/,,0@5513#1@932
+1,kansas city,39.0997,-94.5783,http://rdf.freebase.com/,,Kansas City (Mo),39.0997,-94.5786,http://data.nytimes.com/,,0@3444#1@3443
+1,Dunhuang,40.15,94.6667,http://dbpedia.org/,,Dunhuang,40.1667,94.6833,http://sws.geonames.org/,,0@4043#1@675
+0,Arles (France),43.6768,4.63031,http://data.nytimes.com/,,Dunhuang,40.1667,94.6833,http://sws.geonames.org/,,0@4608#1@675
+0,Salt Lake City,40.7608,-111.891,http://sws.geonames.org/,,Dunhuang,40.1667,94.6833,http://sws.geonames.org/,,0@2380#1@675
+0,Ronda (Spain),36.7423,-5.16709,http://data.nytimes.com/,,amalfi,40.6333,14.6,http://rdf.freebase.com/,,0@5481#1@858
+0,Ronda (Spain),36.7423,-5.16709,http://data.nytimes.com/,,Sheepshead Bay (NYC),40.5912,-73.9446,http://data.nytimes.com/,,0@5481#1@1090
+0,Vienna (Austria),48.2085,16.3721,http://data.nytimes.com/,,Sheepshead Bay (NYC),40.5912,-73.9446,http://data.nytimes.com/,,0@110#1@1090
+0,Cannes,43.55,7.01667,http://sws.geonames.org/,,Sheepshead Bay (NYC),40.5912,-73.9446,http://data.nytimes.com/,,0@3483#1@1090
+1,Ronda (Spain),36.7423,-5.16709,http://data.nytimes.com/,,Ronda,36.7372,-5.16472,http://dbpedia.org/,,0@5481#1@6565
+1,Ronda,36.7423,-5.16709,http://sws.geonames.org/,,Ronda,36.7372,-5.16472,http://dbpedia.org/,,0@6663#1@6565
+1,Kent,41.7248,-73.4771,http://sws.geonames.org/,,kent connecticut,41.7247,-73.4775,http://rdf.freebase.com/,,0@6087#1@1469
+0,Skaneateles,42.947,-76.4291,http://sws.geonames.org/,,kent connecticut,41.7247,-73.4775,http://rdf.freebase.com/,,0@3562#1@1469
+0,Stuttgart (Germany),48.7823,9.17702,http://data.nytimes.com/,,kent connecticut,41.7247,-73.4775,http://rdf.freebase.com/,,0@1835#1@1469
+1,Kent,41.7248,-73.4771,http://sws.geonames.org/,,Kent (Conn),41.7248,-73.4771,http://data.nytimes.com/,,0@6087#1@1468
+1,portland,45.5236,-122.675,http://rdf.freebase.com/,,"Portland, Oregon",,,http://dbpedia.org/,,0@5554#1@3714
+1,Portland,45.5235,-122.676,http://sws.geonames.org/,,"Portland, Oregon",,,http://dbpedia.org/,,0@4721#1@3714
+1,Petra,,,http://dbpedia.org/,,Petra,30.3167,35.4833,http://sws.geonames.org/,,0@1#1@6478
+0,Islip,40.7298,-73.2104,http://sws.geonames.org/,,Sarasota (Fla),27.3364,-82.5307,http://data.nytimes.com/,,0@7170#1@4997
+1,Bath (England),51.3794,-2.36556,http://data.nytimes.com/,,"Bath, Somerset",,,http://dbpedia.org/,,0@685#1@3696
+1,bath,51.3833,-2.3667,http://rdf.freebase.com/,,"Bath, Somerset",,,http://dbpedia.org/,,0@686#1@3696
+0,patzcuaro,19.5158,-101.609,http://rdf.freebase.com/,,"Seward, Alaska",,,http://dbpedia.org/,,0@5346#1@2081
+0,patzcuaro,19.5158,-101.609,http://rdf.freebase.com/,,Vladivostok,43.1333,131.9,http://dbpedia.org/,,0@5346#1@6546
+0,Stockholm,59.35,18.0667,http://dbpedia.org/,,Vladivostok,43.1333,131.9,http://dbpedia.org/,,0@5841#1@6546
+1,Scottsdale (Ariz),33.5092,-111.899,http://data.nytimes.com/,,Scottsdale,33.5092,-111.899,http://sws.geonames.org/,,0@595#1@596
+1,Scottsdale (Ariz),33.5092,-111.899,http://data.nytimes.com/,,scottsdale,33.5092,-111.898,http://rdf.freebase.com/,,0@595#1@6627
+1,"Scottsdale, Arizona",,,http://dbpedia.org/,,scottsdale,33.5092,-111.898,http://rdf.freebase.com/,,0@1918#1@6627
+0,sarasota,27.3361,-82.5308,http://rdf.freebase.com/,7.0,Puerto Morelos,20.8417,-86.8824,http://sws.geonames.org/,,0@5710#1@6480
+0,siena,43.3333,11.3333,http://rdf.freebase.com/,,Berchtesgaden (Germany),47.6333,13.0,http://data.nytimes.com/,,0@5682#1@324
+0,San Pedro de Atacama,-22.9167,-68.2167,http://sws.geonames.org/,,Berchtesgaden (Germany),47.6333,13.0,http://data.nytimes.com/,,0@1341#1@324
+0,siena,43.3333,11.3333,http://rdf.freebase.com/,,Nantes,47.2173,-1.55336,http://sws.geonames.org/,,0@5682#1@4198
+0,Lhasa,29.65,91.1,http://dbpedia.org/,,Ajman,25.4167,55.5,http://dbpedia.org/,,0@369#1@1852
+1,Lhasa,29.65,91.1,http://dbpedia.org/,,lhasa,29.65,91.1,http://rdf.freebase.com/,3650.0,0@369#1@2745
+0,Vladivostok,43.1333,131.9,http://dbpedia.org/,,Saugatuck (Mich),42.655,-86.20200000000001,http://data.nytimes.com/,,0@6546#1@1870
+0,Nagasaki,32.755,129.868,http://sws.geonames.org/,,Saugatuck (Mich),42.655,-86.20200000000001,http://data.nytimes.com/,,0@7474#1@1870
+1,Hanoi (Vietnam),21.0333,105.85,http://data.nytimes.com/,,Hanoi,21.0333,105.85,http://dbpedia.org/,,0@2907#1@4632
+1,hanoi,21.0409,105.798,http://rdf.freebase.com/,,Hanoi,21.0333,105.85,http://dbpedia.org/,,0@5945#1@4632
+1,Lyon,45.75,4.85,http://sws.geonames.org/,,Lyon (France),45.75,4.85,http://data.nytimes.com/,,0@7421#1@4288
+1,perth,-31.9554,115.859,http://rdf.freebase.com/,,"Perth, Western Australia",,,http://dbpedia.org/,,0@7068#1@6499
+0,shanksville,40.0172,-78.9058,http://rdf.freebase.com/,,port jefferson,40.9464,-73.0697,http://rdf.freebase.com/,,0@4952#1@5076
+1,alice springs,-23.7,133.87,http://rdf.freebase.com/,,Alice Springs (Australia),-23.7,133.88299999999998,http://data.nytimes.com/,,0@2115#1@343
+0,alice springs,-23.7,133.87,http://rdf.freebase.com/,,Ithaca,42.4406,-76.4966,http://sws.geonames.org/,,0@2115#1@5373
+0,lower east side manhattan,40.719,-73.988,http://rdf.freebase.com/,,Ithaca,42.4406,-76.4966,http://sws.geonames.org/,,0@759#1@5373
+1,"Ithaca, New York",,,http://dbpedia.org/,,Ithaca,42.4406,-76.4966,http://sws.geonames.org/,,0@5662#1@5373
+0,Sleepy Hollow (NY),41.0857,-73.8585,http://data.nytimes.com/,,Johannesburg (South Africa),-26.2,28.0833,http://data.nytimes.com/,,0@1039#1@1393
+1,karlovy vary,50.2306,12.8725,http://rdf.freebase.com/,,Karlovy Vary,50.2283,12.8661,http://dbpedia.org/,,0@7455#1@5939
+0,Cascais (Portugal),38.6979,-9.42146,http://data.nytimes.com/,,Chamonix,45.9231,6.86972,http://dbpedia.org/,,0@504#1@4536
+0,ottawa,45.4214,-75.6919,http://rdf.freebase.com/,,Chamonix,45.9231,6.86972,http://dbpedia.org/,,0@4884#1@4536
+1,Cascais (Portugal),38.6979,-9.42146,http://data.nytimes.com/,,cascais,38.696944,-9.420556,http://rdf.freebase.com/,,0@504#1@505
+1,"Perth, Western Australia",,,http://dbpedia.org/,,Perth (Australia),-31.9333,115.833,http://data.nytimes.com/,,0@6499#1@6498
+1,Bristol,51.45,-2.58333,http://sws.geonames.org/,,Bristol (England),51.45,-2.58333,http://data.nytimes.com/,,0@4597#1@571
+0,Helsinki,60.1695,24.9354,http://sws.geonames.org/,,Downtown Brooklyn,,,http://dbpedia.org/,,0@1314#1@5048
+1,Montecito (Calif),34.4367,-119.632,http://data.nytimes.com/,,Montecito,34.4367,-119.632,http://sws.geonames.org/,,0@579#1@892
+1,Roosevelt,40.6787,-73.589,http://sws.geonames.org/,,Roosevelt (NY),40.6787,-73.589,http://data.nytimes.com/,,0@3649#1@3410
+1,Roosevelt,40.6787,-73.589,http://sws.geonames.org/,,"Roosevelt, New York",,,http://dbpedia.org/,,0@3649#1@5958
+0,Santa Monica,34.0195,-118.491,http://sws.geonames.org/,,Puerto Jimenez,,,http://dbpedia.org/,,0@4606#1@7112
+0,Santa Monica,34.0195,-118.491,http://sws.geonames.org/,,Malindi,-3.21667,40.1167,http://dbpedia.org/,,0@4606#1@6995
+0,San Cristobal de las Casas (Mexico),16.75,-92.6333,http://data.nytimes.com/,,Malindi,-3.21667,40.1167,http://dbpedia.org/,,0@895#1@6995
+1,Santa Monica,34.0195,-118.491,http://sws.geonames.org/,,santa monica california,34.0194,-118.49,http://rdf.freebase.com/,32.0,0@4606#1@6059
+0,Doha (Qatar),25.2867,51.5333,http://data.nytimes.com/,,Palm Springs (Calif),33.8303,-116.545,http://data.nytimes.com/,,0@2104#1@1719
+0,Doha (Qatar),25.2867,51.5333,http://data.nytimes.com/,,Oakland,37.8044,-122.271,http://sws.geonames.org/,,0@2104#1@4074
+0,Geneva,46.2022,6.14569,http://sws.geonames.org/,,Hague (Netherlands),52.0767,4.29861,http://data.nytimes.com/,,0@6681#1@3028
+1,Geneva,46.2022,6.14569,http://sws.geonames.org/,,Geneva,46.2,6.15,http://dbpedia.org/,,0@6681#1@4907
+1,Geneva (Switzerland),46.2022,6.14569,http://data.nytimes.com/,,Geneva,46.2,6.15,http://dbpedia.org/,,0@248#1@4907
+0,Kitzbuhel (Austria),47.4464,12.3921,http://data.nytimes.com/,,Geneva,46.2,6.15,http://dbpedia.org/,,0@2665#1@4907
+0,Lockerbie,55.12,-3.357,http://dbpedia.org/,,Key Largo (Fla),25.0865,-80.4473,http://data.nytimes.com/,,0@938#1@3974
+0,Dublin,53.3478,-6.25972,http://dbpedia.org/,,Key Largo (Fla),25.0865,-80.4473,http://data.nytimes.com/,,0@5664#1@3974
+0,Lockerbie,55.12,-3.357,http://dbpedia.org/,,Amalfi,40.6333,14.6,http://dbpedia.org/,,0@938#1@7217
+1,jackson,32.2986,-90.1847,http://rdf.freebase.com/,,Jackson,32.2988,-90.1848,http://sws.geonames.org/,,0@614#1@4972
+1,Jackson (Miss),32.2988,-90.1848,http://data.nytimes.com/,,Jackson,32.2988,-90.1848,http://sws.geonames.org/,,0@613#1@4972
+1,Jaffna,9.66667,80.0,http://dbpedia.org/,,jaffna,9.6667,80.0,http://rdf.freebase.com/,,0@6437#1@6042
+0,Raleigh (NC),35.7721,-78.6386,http://data.nytimes.com/,,jaffna,9.6667,80.0,http://rdf.freebase.com/,,0@1671#1@6042
+1,Kalkan,36.2581,29.4083,http://dbpedia.org/,,Kalkan,36.2656,29.4153,http://sws.geonames.org/,,0@926#1@4816
+1,Kalkan (Turkey),36.2656,29.4153,http://data.nytimes.com/,,Kalkan,36.2656,29.4153,http://sws.geonames.org/,,0@925#1@4816
+0,Fontainebleau,48.4,2.7,http://sws.geonames.org/,,guimaraes,41.4428,-8.294,http://rdf.freebase.com/,,0@2032#1@6348
+0,Turin,45.0667,7.7,http://dbpedia.org/,,Sausalito (Calif),37.8591,-122.485,http://data.nytimes.com/,,0@5191#1@3976
+0,puerto viejo de sarapiqui,10.455556,-84.005556,http://rdf.freebase.com/,,Regensburg (Germany),49.015,12.0956,http://data.nytimes.com/,,0@1648#1@6301
+0,Dharamsala (India),32.2167,76.3167,http://data.nytimes.com/,,Ridgefield (Conn),41.2815,-73.4982,http://data.nytimes.com/,,0@50#1@3733
+1,"Pawleys Island, South Carolina",,,http://dbpedia.org/,,pawleys island,33.4292,-79.125,http://rdf.freebase.com/,,0@131#1@7047
+1,Pawleys Island (SC),33.4296,-79.1217,http://data.nytimes.com/,,pawleys island,33.4292,-79.125,http://rdf.freebase.com/,,0@130#1@7047
+0,"Pawleys Island, South Carolina",,,http://dbpedia.org/,,Casablanca,33.5333,-7.58333,http://dbpedia.org/,,0@131#1@5840
+0,"Pawleys Island, South Carolina",,,http://dbpedia.org/,,Saint-Petersburg,59.8944,30.2642,http://sws.geonames.org/,,0@131#1@1208
+0,Punta Arenas (Chile),-53.15,-70.9167,http://data.nytimes.com/,,Osaka,34.6937,135.502,http://sws.geonames.org/,,0@3233#1@4139
+1,sochi,43.6127,39.7228,http://rdf.freebase.com/,,Sochi,43.5853,39.7203,http://dbpedia.org/,,0@5375#1@1262
+1,"North Adams, Massachusetts",,,http://dbpedia.org/,,North Adams (Mass),42.7009,-73.1087,http://data.nytimes.com/,,0@4021#1@212
+0,Diamond District,40.7566,-73.9786,http://sws.geonames.org/,,North Adams (Mass),42.7009,-73.1087,http://data.nytimes.com/,,0@3896#1@212
+0,Dafen (town of painting replicas),,,http://dbpedia.org/,,North Adams (Mass),42.7009,-73.1087,http://data.nytimes.com/,,0@3383#1@212
+1,Jackson Heights (NYC),40.7557,-73.8854,http://data.nytimes.com/,,jackson heights queens,40.7521,-73.8791,http://rdf.freebase.com/,,0@2311#1@4285
+0,sleepy hollow new york,41.0856,-73.8589,http://rdf.freebase.com/,,San Pedro de Atacama,-22.9167,-68.2,http://dbpedia.org/,,0@7448#1@441
+1,sleepy hollow new york,41.0856,-73.8589,http://rdf.freebase.com/,,Sleepy Hollow (NY),41.0857,-73.8585,http://data.nytimes.com/,,0@7448#1@1039
+1,valencia,39.4767,-0.374444,http://rdf.freebase.com/,,"Valencia, Spain",,,http://dbpedia.org/,,0@6794#1@4255
+0,New Paltz (NY),41.7476,-74.0868,http://data.nytimes.com/,,Ottawa (Ontario),45.4209,-75.6903,http://data.nytimes.com/,,0@3978#1@4883
+1,ottawa,45.4214,-75.6919,http://rdf.freebase.com/,,Ottawa (Ontario),45.4209,-75.6903,http://data.nytimes.com/,,0@4884#1@4883
+1,Ottawa,45.4208,-75.69,http://dbpedia.org/,,Ottawa (Ontario),45.4209,-75.6903,http://data.nytimes.com/,,0@5934#1@4883
+1,Menton,43.775,7.5,http://dbpedia.org/,,Menton (France),43.7765,7.50435,http://data.nytimes.com/,,0@3205#1@3204
+1,Diamond District,40.7566,-73.9786,http://sws.geonames.org/,,Diamond District,40.7575,-73.9806,http://dbpedia.org/,,0@3896#1@2953
+1,Diamond District (NYC),40.7566,-73.9786,http://data.nytimes.com/,,Diamond District,40.7575,-73.9806,http://dbpedia.org/,,0@2952#1@2953
+0,greenburgh,41.031944,-73.833056,http://rdf.freebase.com/,52.1208,Adelaide,-34.9333,138.6,http://sws.geonames.org/,,0@2045#1@2618
+1,Manaus,-3.1019400000000004,-60.025,http://sws.geonames.org/,,manaus,-3.12917,-60.0214,http://rdf.freebase.com/,,0@3075#1@6712
+0,Manaus,-3.1019400000000004,-60.025,http://sws.geonames.org/,,"Rossville, Staten Island",,,http://dbpedia.org/,,0@3075#1@5692
+0,Vevey,46.4667,6.85,http://dbpedia.org/,,Baden-Baden,48.75,8.25,http://sws.geonames.org/,,0@4489#1@4056
+1,Mott Haven (NYC),40.809,-73.9229,http://data.nytimes.com/,,"Mott Haven, Bronx",,,http://dbpedia.org/,,0@214#1@6388
+1,Arles,43.6768,4.63031,http://sws.geonames.org/,,arles,43.6667,4.61667,http://rdf.freebase.com/,,0@4609#1@7123
+1,Rye Brook,41.0193,-73.6835,http://sws.geonames.org/,,"Rye Brook, New York",,,http://dbpedia.org/,,0@4504#1@3739
+1,pucon,-39.2667,-71.9667,http://rdf.freebase.com/,,Pucon,,,http://dbpedia.org/,,0@1104#1@2085
+1,Mobile (Ala),30.6944,-88.0431,http://data.nytimes.com/,,"Mobile, Alabama",,,http://dbpedia.org/,,0@4335#1@6299
+1,Nairobi (Kenya),-1.28333,36.8167,http://data.nytimes.com/,,Nairobi,-1.28333,36.8167,http://sws.geonames.org/,,0@186#1@187
+1,Nairobi (Kenya),-1.28333,36.8167,http://data.nytimes.com/,,nairobi,-1.28333,36.8167,http://rdf.freebase.com/,,0@186#1@4787
+0,Nairobi (Kenya),-1.28333,36.8167,http://data.nytimes.com/,,Rotterdam,51.9217,4.47917,http://dbpedia.org/,,0@186#1@2968
+1,Tokyo (Japan),35.6895,139.692,http://data.nytimes.com/,,Tokyo,35.6149,139.58100000000002,http://sws.geonames.org/,,0@2326#1@2923
+0,Ljubljana,46.0511,14.5051,http://sws.geonames.org/,,shelter island,41.078056,-72.350833,http://rdf.freebase.com/,17.0688,0@7523#1@5588
+1,cahors,44.4483,1.44139,http://rdf.freebase.com/,,Cahors (France),44.4491,1.43663,http://data.nytimes.com/,,0@618#1@617
+1,cahors,44.4483,1.44139,http://rdf.freebase.com/,,Cahors,44.4491,1.43663,http://sws.geonames.org/,,0@618#1@2925
+0,metuchen,40.5431,-74.3636,http://rdf.freebase.com/,,Addis Ababa,9.03,38.74,http://dbpedia.org/,,0@299#1@6551
+0,San Miguel de Allende (Mexico),20.9167,-100.75,http://data.nytimes.com/,,Addis Ababa,9.03,38.74,http://dbpedia.org/,,0@1910#1@6551
+1,carcassonne,43.2167,2.35,http://rdf.freebase.com/,,Carcassonne,43.2167,2.35,http://sws.geonames.org/,,0@7465#1@6840
+1,Fontainebleau,48.4097,2.7025,http://dbpedia.org/,,Fontainebleau,48.4,2.7,http://sws.geonames.org/,,0@1032#1@2032
+0,Villarrica (Chile),-39.2857,-72.2279,http://data.nytimes.com/,,Nice,43.7031,7.26608,http://sws.geonames.org/,,0@3460#1@3409
+1,San Germán,18.0816,-67.0449,http://sws.geonames.org/,,san german puerto rico,18.0,-67.0,http://rdf.freebase.com/,161.0,0@7074#1@6906
+0,puntarenas,9.9667,-84.8333,http://rdf.freebase.com/,,san german puerto rico,18.0,-67.0,http://rdf.freebase.com/,161.0,0@5380#1@6906
+0,islip,40.756667,-73.19888900000002,http://rdf.freebase.com/,2.1336,verona,45.4333,10.9833,http://rdf.freebase.com/,,0@2460#1@1917
+0,fontainebleau,48.4053,2.70222,http://rdf.freebase.com/,,verona,45.4333,10.9833,http://rdf.freebase.com/,,0@3591#1@1917
+0,Cuenca (Ecuador),-2.88333,-78.9833,http://data.nytimes.com/,,Kitzbuhel,,,http://dbpedia.org/,,0@2753#1@7097
+0,Chichen Itza,20.6667,-88.5667,http://sws.geonames.org/,,Kitzbuhel,,,http://dbpedia.org/,,0@4234#1@7097
+1,Bonn (Germany),50.7333,7.1,http://data.nytimes.com/,,Bonn,50.734,7.0998100000000015,http://dbpedia.org/,,0@2383#1@4936
+0,Dresden (Germany),51.0509,13.7383,http://data.nytimes.com/,,Bonn,50.734,7.0998100000000015,http://dbpedia.org/,,0@2#1@4936
+0,ulyanovsk,54.3249,48.3852,http://rdf.freebase.com/,,San Luis Obispo (Calif),35.2828,-120.66,http://data.nytimes.com/,,0@620#1@3748
+0,ulyanovsk,54.3249,48.3852,http://rdf.freebase.com/,,rio de janeiro,-22.9083,-43.2436,http://rdf.freebase.com/,,0@620#1@1018
+1,Rio de Janeiro (Brazil),-22.9028,-43.2075,http://data.nytimes.com/,,rio de janeiro,-22.9083,-43.2436,http://rdf.freebase.com/,,0@1017#1@1018
+1,"Seward, Alaska",,,http://dbpedia.org/,,Seward,60.1042,-149.442,http://sws.geonames.org/,,0@2081#1@1847
+0,Rincon (Puerto Rico),18.3402,-67.2499,http://data.nytimes.com/,,Split (city),,,http://dbpedia.org/,,0@1729#1@3252
+1,split,43.5139,16.4558,http://rdf.freebase.com/,,Split (city),,,http://dbpedia.org/,,0@3811#1@3252
+1,Rincon (Puerto Rico),18.3402,-67.2499,http://data.nytimes.com/,,Rincon,18.3402,-67.2499,http://sws.geonames.org/,,0@1729#1@6163
+1,Rincon (Puerto Rico),18.3402,-67.2499,http://data.nytimes.com/,,rincon puerto rico,18.3403,-67.2517,http://rdf.freebase.com/,,0@1729#1@1730
+1,"Sag Harbor, New York",,,http://dbpedia.org/,,Sag Harbor,40.9979,-72.2926,http://sws.geonames.org/,,0@3555#1@1328
+0,"Sag Harbor, New York",,,http://dbpedia.org/,,Padua (Italy),45.4152,11.8818,http://data.nytimes.com/,,0@3555#1@1443
+1,Bamberg,49.8917,10.8917,http://dbpedia.org/,,Bamberg (Germany),49.8667,10.8667,http://data.nytimes.com/,,0@7069#1@2275
+1,Bamberg,49.8917,10.8917,http://dbpedia.org/,,bamberg,49.8955,10.8854,http://rdf.freebase.com/,,0@7069#1@4751
+0,dresden,51.05,13.7333,http://rdf.freebase.com/,113.0,tel aviv,32.0833,34.8,http://rdf.freebase.com/,,0@3#1@6766
+1,Tel Aviv (Israel),32.0678,34.7647,http://data.nytimes.com/,,tel aviv,32.0833,34.8,http://rdf.freebase.com/,,0@2011#1@6766
+1,Kaesong (North Korea),37.9708,126.554,http://data.nytimes.com/,,kaesong,37.9722,126.556,http://rdf.freebase.com/,,0@3679#1@6882
+0,Malmö,55.6059,13.0007,http://sws.geonames.org/,,Scituate (Mass),42.1959,-70.7259,http://data.nytimes.com/,,0@1923#1@272
+0,Kennebunkport,43.3618,-70.4767,http://sws.geonames.org/,,Canaima,10.6311,-63.1917,http://sws.geonames.org/,,0@3457#1@5595
+1,sucre,-19.0428,-65.2553,http://rdf.freebase.com/,,Sucre (Bolivia),-19.0431,-65.2592,http://data.nytimes.com/,,0@7342#1@2122
+1,Sucre,-19.0333,-65.2627,http://sws.geonames.org/,,Sucre (Bolivia),-19.0431,-65.2592,http://data.nytimes.com/,,0@7477#1@2122
+1,Hamilton Heights,40.8244,-73.95,http://sws.geonames.org/,,Hamilton Heights,,,http://dbpedia.org/,,0@3669#1@2910
+1,Ixtapa,17.6367,-101.551,http://dbpedia.org/,,Ixtapa (Mexico),17.6678,-101.642,http://data.nytimes.com/,,0@2835#1@994
+0,Patzcuaro (Mexico),19.5167,-101.6,http://data.nytimes.com/,,Ixtapa (Mexico),17.6678,-101.642,http://data.nytimes.com/,,0@94#1@994
+0,Skaneateles,42.947,-76.4291,http://sws.geonames.org/,,Wellington,-41.2889,174.77700000000004,http://dbpedia.org/,,0@3562#1@7351
+0,Cusco,-13.5183,-71.9781,http://sws.geonames.org/,,"Bedford-Stuyvesant, Brooklyn",,,http://dbpedia.org/,,0@6820#1@2807
+0,Naples,40.8333,14.25,http://dbpedia.org/,,"Bedford-Stuyvesant, Brooklyn",,,http://dbpedia.org/,,0@755#1@2807
+1,Bedford-Stuyvesant (NYC),40.6834,-73.9412,http://data.nytimes.com/,,"Bedford-Stuyvesant, Brooklyn",,,http://dbpedia.org/,,0@1633#1@2807
+0,Aubusson,45.95,2.16667,http://sws.geonames.org/,,paris texas,33.6608,-95.5553,http://rdf.freebase.com/,,0@6494#1@2888
+1,"Long Beach, New York",,,http://dbpedia.org/,,Long Beach (NY),40.5884,-73.6579,http://data.nytimes.com/,,0@854#1@853
+0,Glasgow,55.858,-4.259,http://dbpedia.org/,,shenzhen,22.55,114.1,http://rdf.freebase.com/,,0@3207#1@4700
+1,Glasgow,55.858,-4.259,http://dbpedia.org/,,glasgow,55.87,-4.27,http://rdf.freebase.com/,,0@3207#1@1225
+1,Zanzibar (Tanzania),-6.16394,39.1979,http://data.nytimes.com/,,Zanzibar,-6.16394,39.1979,http://sws.geonames.org/,,0@144#1@5863
+0,New York City,40.7143,-74.006,http://data.nytimes.com/,,Zanzibar,-6.16394,39.1979,http://sws.geonames.org/,,0@5445#1@5863
+0,clinton hill brooklyn,40.6897,-73.9653,http://rdf.freebase.com/,,Bhopal (India),23.2667,77.4,http://data.nytimes.com/,,0@3937#1@4224
+0,Veracruz,19.4347,-96.3831,http://dbpedia.org/,,Lugano,46.0101,8.96004,http://sws.geonames.org/,,0@5808#1@5505
+0,Cortona (Italy),43.2747,11.9853,http://data.nytimes.com/,,Oakland (Calif),37.8044,-122.271,http://data.nytimes.com/,,0@1436#1@4073
+0,Rome,41.8947,12.4839,http://sws.geonames.org/,,Hong Kong,22.2855,114.158,http://sws.geonames.org/,,0@6708#1@2628
+0,Bayeux,49.2794,-0.702778,http://dbpedia.org/,,Hong Kong,22.2855,114.158,http://sws.geonames.org/,,0@4487#1@2628
+0,lucca,43.8442,10.5014,http://rdf.freebase.com/,,"Scarsdale, New York",,,http://dbpedia.org/,,0@3590#1@5978
+1,Shimla,31.1,77.1667,http://sws.geonames.org/,,Shimla (India),31.1,77.1667,http://data.nytimes.com/,,0@81#1@80
+1,Shimla,31.1,77.1667,http://sws.geonames.org/,,shimla,31.1033,77.1722,http://rdf.freebase.com/,,0@81#1@2569
+1,Shimla,31.0,77.0,http://dbpedia.org/,,shimla,31.1033,77.1722,http://rdf.freebase.com/,,0@5272#1@2569
+1,Shimla,31.1,77.1667,http://sws.geonames.org/,,Shimla,31.0,77.0,http://dbpedia.org/,,0@81#1@5272
+1,Beirut,33.8869,35.5131,http://dbpedia.org/,,Beirut,33.8889,35.4944,http://sws.geonames.org/,,0@6748#1@2485
+1,nantucket,41.2833,-70.1,http://rdf.freebase.com/,9.0,Nantucket (Mass),41.2835,-70.0995,http://data.nytimes.com/,,0@2886#1@890
+1,nantucket,41.2833,-70.1,http://rdf.freebase.com/,9.0,Nantucket,41.2835,-70.0995,http://sws.geonames.org/,,0@2886#1@2102
+0,"Orlando, Florida",,,http://dbpedia.org/,,Nantucket,41.2835,-70.0995,http://sws.geonames.org/,,0@5233#1@2102
+0,Korcula (Croatia),42.9622,17.1369,http://data.nytimes.com/,,Killington (Vt),43.6776,-72.7798,http://data.nytimes.com/,,0@3032#1@82
+0,"Rye Brook, New York",,,http://dbpedia.org/,,Frankfurt (Germany),50.1167,8.68333,http://data.nytimes.com/,,0@3739#1@1441
+0,beaune,47.025,4.83972,http://rdf.freebase.com/,,nasiriyah,31.05,46.2667,http://rdf.freebase.com/,,0@6571#1@4791
+0,Tikrit,34.5967,43.6769,http://sws.geonames.org/,,Hanau (Germany),50.1333,8.91667,http://data.nytimes.com/,,0@4725#1@3764
+1,Tikrit,34.5967,43.6769,http://sws.geonames.org/,,tikrit,34.5947,43.6814,http://rdf.freebase.com/,,0@4725#1@3617
+0,Kuala Lumpur,3.1475,101.693,http://dbpedia.org/,,tikrit,34.5947,43.6814,http://rdf.freebase.com/,,0@5546#1@3617
+1,Sofia (Bulgaria),42.6975,23.3241,http://data.nytimes.com/,,Sofia,42.6975,23.3241,http://sws.geonames.org/,,0@2029#1@3230
+0,Hermanus (South Africa),-34.4167,19.2333,http://data.nytimes.com/,,plovdiv,42.15,24.75,http://rdf.freebase.com/,,0@2273#1@5419
+1,revelstoke canada,51.01,-118.214,http://rdf.freebase.com/,,Revelstoke (British Columbia),50.9832,-118.202,http://data.nytimes.com/,,0@6981#1@2863
+0,Punta del Este,-34.9667,-54.95,http://dbpedia.org/,,Revelstoke (British Columbia),50.9832,-118.202,http://data.nytimes.com/,,0@389#1@2863
+0,Lucca,43.85,10.5,http://dbpedia.org/,,Revelstoke (British Columbia),50.9832,-118.202,http://data.nytimes.com/,,0@1204#1@2863
+0,"Reno, Nevada",,,http://dbpedia.org/,,"Granada, Nicaragua",,,http://dbpedia.org/,,0@4091#1@1829
+0,"Reno, Nevada",,,http://dbpedia.org/,,Bangkok,13.75,100.517,http://sws.geonames.org/,,0@4091#1@1540
+1,Strasbourg (France),48.5833,7.75,http://data.nytimes.com/,,strasbourg,48.5829,7.74375,http://rdf.freebase.com/,,0@623#1@2690
+0,St Ives (England),50.2086,-5.4875,http://data.nytimes.com/,,strasbourg,48.5829,7.74375,http://rdf.freebase.com/,,0@689#1@2690
+0,Hobart,-42.9167,147.333,http://sws.geonames.org/,,lima,-12.0433,-77.0283,http://rdf.freebase.com/,,0@4042#1@5417
+1,Uppsala,59.85,17.6333,http://dbpedia.org/,,uppsala,59.8586,17.6389,http://rdf.freebase.com/,,0@7381#1@3702
+1,Uppsala,59.85,17.6333,http://dbpedia.org/,,Uppsala,59.8585,17.6454,http://sws.geonames.org/,,0@7381#1@1471
+1,bodrum,37.0409,27.4339,http://rdf.freebase.com/,,Bodrum,37.0383,27.4292,http://sws.geonames.org/,,0@1252#1@1055
+0,Placentia Village,16.5167,-88.3667,http://sws.geonames.org/,,Bodrum,37.0383,27.4292,http://sws.geonames.org/,,0@3644#1@1055
+1,bodrum,37.0409,27.4339,http://rdf.freebase.com/,,Bodrum (Turkey),37.0383,27.4292,http://data.nytimes.com/,,0@1252#1@1054
+0,Lucerne,47.0505,8.30635,http://sws.geonames.org/,,Amman,31.9333,35.9328,http://dbpedia.org/,,0@7020#1@5697
+0,Lucerne,47.0505,8.30635,http://sws.geonames.org/,,"Pasadena, California",,,http://dbpedia.org/,,0@7020#1@7483
+1,"New Haven, Connecticut",,,http://dbpedia.org/,,New Haven (Conn),41.3082,-72.9282,http://data.nytimes.com/,,0@2759#1@2758
+1,"Amagansett, New York",,,http://dbpedia.org/,,amagansett,40.9736,-72.1442,http://rdf.freebase.com/,,0@6912#1@7527
+0,La Jolla (Calif),32.8473,-117.274,http://data.nytimes.com/,,amagansett,40.9736,-72.1442,http://rdf.freebase.com/,,0@4227#1@7527
+1,ayacucho,-13.1631,-74.2244,http://rdf.freebase.com/,,Ayacucho (Peru),-13.1583,-74.2239,http://data.nytimes.com/,,0@4847#1@949
+1,Ayacucho,-13.1631,-74.2244,http://dbpedia.org/,,Ayacucho (Peru),-13.1583,-74.2239,http://data.nytimes.com/,,0@6942#1@949
+0,ayacucho,-13.1631,-74.2244,http://rdf.freebase.com/,,St Mawes (England),50.1594,-5.01222,http://data.nytimes.com/,,0@4847#1@216
+1,Saint Mawes,50.1594,-5.01222,http://sws.geonames.org/,,St Mawes (England),50.1594,-5.01222,http://data.nytimes.com/,,0@3668#1@216
+0,carnegie hill manhattan,40.784722,-73.95611099999998,http://rdf.freebase.com/,,Ojai (Calif),34.448,-119.243,http://data.nytimes.com/,,0@5058#1@2795
+1,san diego,32.7153,-117.156,http://rdf.freebase.com/,,San Diego,32.715,-117.162,http://dbpedia.org/,,0@5829#1@3671
+1,San Diego (Calif),32.7153,-117.157,http://data.nytimes.com/,,San Diego,32.715,-117.162,http://dbpedia.org/,,0@1688#1@3671
+1,Nagoya,35.1815,136.906,http://sws.geonames.org/,,Nagoya (Japan),35.1815,136.906,http://data.nytimes.com/,,0@1194#1@1193
+0,Nagoya,35.1815,136.906,http://sws.geonames.org/,,"Kansas City, Missouri",,,http://dbpedia.org/,,0@1194#1@4710
+0,Doha,25.2867,51.5333,http://dbpedia.org/,,Sedona (Ariz),34.8697,-111.761,http://data.nytimes.com/,,0@7412#1@5311
+1,Broome (Australia),-17.9667,122.233,http://data.nytimes.com/,,Broome,-17.9667,122.233,http://sws.geonames.org/,,0@2891#1@5325
+1,"Broome, Western Australia",,,http://dbpedia.org/,,Broome,-17.9667,122.233,http://sws.geonames.org/,,0@7212#1@5325
+0,Broome (Australia),-17.9667,122.233,http://data.nytimes.com/,,Honfleur,49.4199,0.232944,http://sws.geonames.org/,,0@2891#1@6702
+1,honfleur,49.4194,0.2325,http://rdf.freebase.com/,,Honfleur,49.4199,0.232944,http://sws.geonames.org/,,0@6137#1@6702
+0,Mustique,12.8667,-61.1833,http://dbpedia.org/,,Manaus,-3.1,-60.0167,http://dbpedia.org/,,0@6530#1@5364
+0,armacao dos buzios,-22.7469,-41.8819,http://rdf.freebase.com/,,patzcuaro,19.5158,-101.609,http://rdf.freebase.com/,,0@7520#1@5346
+1,Dharamsala,32.2167,76.3167,http://sws.geonames.org/,,dharamsala,32.2167,76.3167,http://rdf.freebase.com/,,0@2069#1@6798
+1,Kunming,25.0417,102.705,http://dbpedia.org/,,kunming,25.0417,102.705,http://rdf.freebase.com/,,0@1988#1@7220
+1,Phnom Penh,11.55,104.917,http://dbpedia.org/,,Phnom Penh,11.55,104.917,http://sws.geonames.org/,,0@3006#1@5822
+1,Phnom Penh,11.55,104.917,http://dbpedia.org/,,phnom penh,11.55,104.917,http://rdf.freebase.com/,,0@3006#1@7222
+1,Kandahar,31.6169,65.7169,http://dbpedia.org/,,Kandahar,31.61,65.7,http://sws.geonames.org/,,0@3887#1@6051
+1,Kandahar (Afghanistan),31.61,65.7,http://data.nytimes.com/,,Kandahar,31.61,65.7,http://sws.geonames.org/,,0@2324#1@6051
+1,Cologne (Germany),50.9333,6.95,http://data.nytimes.com/,,cologne,50.9424,7.02919,http://rdf.freebase.com/,,0@1520#1@3190
+0,arezzo,43.4667,11.8833,http://rdf.freebase.com/,,Dar es Salaam (Tanzania),-6.8,39.2833,http://data.nytimes.com/,,0@6625#1@5591
+1,Verbier,46.1,7.21667,http://sws.geonames.org/,,Verbier (Switzerland),46.1,7.21667,http://data.nytimes.com/,,0@7426#1@3113
+1,Belgrade,44.8206,20.4622,http://dbpedia.org/,,Belgrade (Serbia),44.8186,20.4681,http://data.nytimes.com/,,0@6419#1@1432
+0,Abu Dhabi (United Arab Emirates),24.4667,54.3667,http://data.nytimes.com/,,Belgrade (Serbia),44.8186,20.4681,http://data.nytimes.com/,,0@676#1@1432
+1,Belgrade,44.8206,20.4622,http://dbpedia.org/,,belgrade,44.8206,20.4622,http://rdf.freebase.com/,116.75,0@6419#1@1433
+1,Belgrade,44.8206,20.4622,http://dbpedia.org/,,Belgrade,44.804,20.4651,http://sws.geonames.org/,,0@6419#1@3499
+1,baghdad,33.3191,44.392,http://rdf.freebase.com/,34.0,Baghdad (Iraq),33.3386,44.3939,http://data.nytimes.com/,,0@6746#1@3723
+0,"Malibu, California",,,http://dbpedia.org/,,Baghdad (Iraq),33.3386,44.3939,http://data.nytimes.com/,,0@5069#1@3723
+1,Baghdad,33.3386,44.3939,http://sws.geonames.org/,,Baghdad (Iraq),33.3386,44.3939,http://data.nytimes.com/,,0@4589#1@3723
+1,Placentia Village,16.5167,-88.3667,http://sws.geonames.org/,,Placencia,16.5139,-88.3667,http://dbpedia.org/,,0@3644#1@7408
+1,amalfi,40.6333,14.6,http://rdf.freebase.com/,,Amalfi,40.6349,14.6024,http://sws.geonames.org/,,0@858#1@7159
+0,"Haines, Alaska",,,http://dbpedia.org/,,Amalfi,40.6349,14.6024,http://sws.geonames.org/,,0@6549#1@7159
+0,New Rochelle (NY),40.9115,-73.7824,http://data.nytimes.com/,,Kaesong,37.9667,126.55,http://dbpedia.org/,,0@1631#1@3680
+0,New Rochelle (NY),40.9115,-73.7824,http://data.nytimes.com/,,Fujairah,25.1231,56.3375,http://sws.geonames.org/,,0@1631#1@5385
+1,New Rochelle (NY),40.9115,-73.7824,http://data.nytimes.com/,,new rochelle,40.9114,-73.7828,http://rdf.freebase.com/,,0@1631#1@5807
+1,vevey,46.4592,6.841939999999999,http://rdf.freebase.com/,,Vevey,46.4612,6.84328,http://sws.geonames.org/,,0@3612#1@4322
+1,vevey,46.4592,6.841939999999999,http://rdf.freebase.com/,,Vevey (Switzerland),46.4612,6.84328,http://data.nytimes.com/,,0@3612#1@3611
+0,"Ojai, California",,,http://dbpedia.org/,,Vevey (Switzerland),46.4612,6.84328,http://data.nytimes.com/,,0@5736#1@3611
+1,"Savannah, Georgia",,,http://dbpedia.org/,,savannah,32.0507,-81.1038,http://rdf.freebase.com/,15.0,0@5455#1@57
+1,"Savannah, Georgia",,,http://dbpedia.org/,,Savannah (Ga),32.0835,-81.0998,http://data.nytimes.com/,,0@5455#1@56
+1,savannah,32.0507,-81.1038,http://rdf.freebase.com/,15.0,Savannah (Ga),32.0835,-81.0998,http://data.nytimes.com/,,0@57#1@56
+1,"Savannah, Georgia",,,http://dbpedia.org/,,Savannah,32.0835,-81.0998,http://sws.geonames.org/,,0@5455#1@2070
+0,Vienna (Austria),48.2085,16.3721,http://data.nytimes.com/,,"Ogunquit, Maine",,,http://dbpedia.org/,,0@110#1@1946
+1,Islamorada (Fla),24.9243,-80.6278,http://data.nytimes.com/,,islamorada,24.9239,-80.6281,http://rdf.freebase.com/,,0@4461#1@4462
+1,Islamorada,24.9243,-80.6278,http://sws.geonames.org/,,islamorada,24.9239,-80.6281,http://rdf.freebase.com/,,0@7186#1@4462
+0,Bilbao,43.2569,-2.92361,http://dbpedia.org/,,islamorada,24.9239,-80.6281,http://rdf.freebase.com/,,0@3959#1@4462
+0,Islamorada (Fla),24.9243,-80.6278,http://data.nytimes.com/,,jakarta,-6.1333,106.75,http://rdf.freebase.com/,,0@4461#1@4568
+1,Jakarta,-6.2,106.8,http://dbpedia.org/,,jakarta,-6.1333,106.75,http://rdf.freebase.com/,,0@6892#1@4568
+1,Frankfurt (Germany),50.1167,8.68333,http://data.nytimes.com/,,Frankfurt am Main,,,http://dbpedia.org/,,0@1441#1@5387
+0,"Skaneateles (town), New York",,,http://dbpedia.org/,,Naypyidaw (Myanmar),19.745,96.1297,http://data.nytimes.com/,,0@7334#1@2987
+1,"Skaneateles (town), New York",,,http://dbpedia.org/,,Skaneateles,42.947,-76.4291,http://sws.geonames.org/,,0@7334#1@3562
+1,Skaneateles (NY),42.947,-76.4291,http://data.nytimes.com/,,Skaneateles,42.947,-76.4291,http://sws.geonames.org/,,0@3561#1@3562
+1,Dar es Salaam (Tanzania),-6.8,39.2833,http://data.nytimes.com/,,Dar es Salaam,-6.8,39.2833,http://dbpedia.org/,,0@5591#1@6282
+1,Ankara (Turkey),39.9272,32.8644,http://data.nytimes.com/,,Ankara,39.9199,32.8543,http://sws.geonames.org/,,0@1855#1@2169
+1,Ankara,39.8667,32.8333,http://dbpedia.org/,,Ankara,39.9199,32.8543,http://sws.geonames.org/,,0@1856#1@2169
+0,Portofino,44.3039,9.20778,http://dbpedia.org/,,Dingle (Ireland),52.1408,-10.2689,http://data.nytimes.com/,,0@5362#1@5533
+1,Lugano,46.0101,8.96004,http://sws.geonames.org/,,Lugano,46.0,8.95,http://dbpedia.org/,,0@5505#1@2771
+1,Punta Arenas,-53.1667,-70.9333,http://dbpedia.org/,,Punta Arenas,-53.15,-70.9167,http://sws.geonames.org/,,0@3234#1@5235
+1,punta arenas,-53.1554,-70.9064,http://rdf.freebase.com/,,Punta Arenas,-53.15,-70.9167,http://sws.geonames.org/,,0@6266#1@5235
+0,Tirana,41.326,19.816,http://dbpedia.org/,,philadelphia,39.9522,-75.1642,http://rdf.freebase.com/,,0@6162#1@6336
+0,Lucca (Italy),43.8436,10.5058,http://data.nytimes.com/,,Blackpool (England),53.8167,-3.05,http://data.nytimes.com/,,0@1203#1@2360
+1,Lucca (Italy),43.8436,10.5058,http://data.nytimes.com/,,Lucca,43.8436,10.5058,http://sws.geonames.org/,,0@1203#1@4105
+0,Scranton (Pa),41.409,-75.6624,http://data.nytimes.com/,,Lucca,43.8436,10.5058,http://sws.geonames.org/,,0@1149#1@4105
+1,Lucca (Italy),43.8436,10.5058,http://data.nytimes.com/,,lucca,43.8442,10.5014,http://rdf.freebase.com/,,0@1203#1@3590
+1,Oxford,51.7522,-1.25596,http://sws.geonames.org/,,oxford,51.7511,-1.25583,http://rdf.freebase.com/,,0@1882#1@4342
+1,Oxford,51.7519,-1.25778,http://dbpedia.org/,,oxford,51.7511,-1.25583,http://rdf.freebase.com/,,0@6281#1@4342
+1,Oxford,51.7522,-1.25596,http://sws.geonames.org/,,Oxford (England),51.7522,-1.25596,http://data.nytimes.com/,,0@1882#1@1881
+0,Klosterneuburg (Austria),48.3052,16.3252,http://data.nytimes.com/,,Warsaw,52.2278,21.0127,http://sws.geonames.org/,,0@1679#1@7435
+0,Klosterneuburg (Austria),48.3052,16.3252,http://data.nytimes.com/,,Aubusson,45.95,2.16667,http://sws.geonames.org/,,0@1679#1@6494
+0,brighton,50.83,-0.155556,http://rdf.freebase.com/,,Aubusson,45.95,2.16667,http://sws.geonames.org/,,0@7519#1@6494
+1,"Bedford-Stuyvesant, Brooklyn",,,http://dbpedia.org/,,Bedford-Stuyvesant,40.6834,-73.9412,http://sws.geonames.org/,,0@2807#1@4600
+0,Dingle,52.1408,-10.2689,http://sws.geonames.org/,,Bedford-Stuyvesant,40.6834,-73.9412,http://sws.geonames.org/,,0@6732#1@4600
+1,Bedford-Stuyvesant (NYC),40.6834,-73.9412,http://data.nytimes.com/,,Bedford-Stuyvesant,40.6834,-73.9412,http://sws.geonames.org/,,0@1633#1@4600
+1,Aswan (Egypt),24.0875,32.8989,http://data.nytimes.com/,,Aswan,24.0889,32.8997,http://dbpedia.org/,,0@1002#1@7478
+1,Aswan (Egypt),24.0875,32.8989,http://data.nytimes.com/,,Aswan,24.0875,32.8989,http://sws.geonames.org/,,0@1002#1@4466
+0,Chinatown,40.7165,-73.9963,http://sws.geonames.org/,,L'Aquila (Italy),42.3506,13.3995,http://data.nytimes.com/,,0@6568#1@2004
+1,laquila,42.35,13.4,http://rdf.freebase.com/,714.0,L'Aquila,42.35,13.4,http://dbpedia.org/,,0@4402#1@6540
+0,laquila,42.35,13.4,http://rdf.freebase.com/,714.0,ljubljana,46.05,14.5,http://rdf.freebase.com/,,0@4402#1@5147
+0,Locust Valley (NY),40.8759,-73.5971,http://data.nytimes.com/,,Verona (Italy),45.4342,10.9978,http://data.nytimes.com/,,0@3152#1@1916
+1,Locust Valley (NY),40.8759,-73.5971,http://data.nytimes.com/,,"Locust Valley, New York",,,http://dbpedia.org/,,0@3152#1@5453
+1,Locust Valley,40.8759,-73.5971,http://sws.geonames.org/,,"Locust Valley, New York",,,http://dbpedia.org/,,0@3153#1@5453
+0,Shimla (India),31.1,77.1667,http://data.nytimes.com/,,"Mont-Tremblant, Quebec",,,http://dbpedia.org/,,0@80#1@6620
+1,saint paul,44.9444,-93.0931,http://rdf.freebase.com/,,St Paul (Minn),44.9444,-93.0933,http://data.nytimes.com/,,0@4520#1@1859
+1,prague,50.0833,14.4167,http://rdf.freebase.com/,,Prague,50.088,14.4208,http://sws.geonames.org/,,0@6285#1@7
+0,prague,50.0833,14.4167,http://rdf.freebase.com/,,Rio de Janeiro,-22.9028,-43.2075,http://sws.geonames.org/,,0@6285#1@7402
+0,Bangalore,12.9762,77.6033,http://sws.geonames.org/,,"Lake Louise, Alberta",,,http://dbpedia.org/,,0@6895#1@2060
+1,Diamond District (NYC),40.7566,-73.9786,http://data.nytimes.com/,,Diamond District,40.7566,-73.9786,http://sws.geonames.org/,,0@2952#1@3896
+0,Algiers,36.7525,3.04197,http://sws.geonames.org/,,Munich (Germany),48.1374,11.5755,http://data.nytimes.com/,,0@3309#1@472
+1,Fukuoka,33.5833,130.4,http://dbpedia.org/,,Fukuoka (Japan),33.5833,130.4,http://data.nytimes.com/,,0@2101#1@2100
+1,Riga,56.94600000000001,24.1059,http://sws.geonames.org/,,Riga (Latvia),56.95,24.1,http://data.nytimes.com/,,0@1858#1@1857
+0,Riga,56.94600000000001,24.1059,http://sws.geonames.org/,,Regensburg,49.015,12.0956,http://sws.geonames.org/,,0@1858#1@6599
+1,regensburg,49.0,12.0,http://rdf.freebase.com/,,Regensburg,49.015,12.0956,http://sws.geonames.org/,,0@6302#1@6599
+1,Ramadi (Iraq),33.4235,43.3093,http://data.nytimes.com/,,Ramadi,33.4226,43.3058,http://sws.geonames.org/,,0@3691#1@6032
+0,Ho Chi Minh City,10.7694,106.682,http://dbpedia.org/,,qom,34.6461,50.8789,http://rdf.freebase.com/,,0@6178#1@3836
+1,Qom,34.6453,50.8808,http://sws.geonames.org/,,qom,34.6461,50.8789,http://rdf.freebase.com/,,0@3971#1@3836
+1,Qum (Iran),34.6453,50.8808,http://data.nytimes.com/,,qom,34.6461,50.8789,http://rdf.freebase.com/,,0@2298#1@3836
+1,Bangkok (Thailand),13.75,100.517,http://data.nytimes.com/,,bangkok,13.75,100.483,http://rdf.freebase.com/,1.5,0@730#1@4372
+0,"Broome, Western Australia",,,http://dbpedia.org/,,"Cutchogue, New York",,,http://dbpedia.org/,,0@7212#1@7487
+0,new haven,41.3081,-72.9286,http://rdf.freebase.com/,,Reno,39.5296,-119.814,http://sws.geonames.org/,,0@4886#1@6082
+1,new haven,41.3081,-72.9286,http://rdf.freebase.com/,,New Haven,41.3082,-72.9282,http://sws.geonames.org/,,0@4886#1@5522
+1,Stockholm (Sweden),59.3326,18.0649,http://data.nytimes.com/,,Stockholm,59.3326,18.0649,http://sws.geonames.org/,,0@2589#1@2590
+1,Portsmouth,43.0718,-70.7626,http://sws.geonames.org/,,"Portsmouth, New Hampshire",,,http://dbpedia.org/,,0@6115#1@2857
+1,aveiro,40.6333,-8.65,http://rdf.freebase.com/,,Aveiro (Portugal),40.6333,-8.65,http://data.nytimes.com/,,0@6256#1@773
+0,aveiro,40.6333,-8.65,http://rdf.freebase.com/,,Doha,25.2793,51.5224,http://sws.geonames.org/,,0@6256#1@2105
+0,Lausanne,46.51600000000001,6.63282,http://sws.geonames.org/,,Curitiba,-25.4278,-49.2731,http://sws.geonames.org/,,0@4470#1@4750
+0,"Valencia, Spain",,,http://dbpedia.org/,,"Savannah, Georgia",,,http://dbpedia.org/,,0@4255#1@5455
+0,"New Brunswick, New Jersey",,,http://dbpedia.org/,,Moab,38.5733,-109.55,http://sws.geonames.org/,,0@241#1@5737
+0,Qom,34.6453,50.8808,http://sws.geonames.org/,,Birmingham (England),52.4667,-1.91667,http://data.nytimes.com/,,0@3971#1@2574
+1,birmingham,52.48,-1.91,http://rdf.freebase.com/,,Birmingham (England),52.4667,-1.91667,http://data.nytimes.com/,,0@3918#1@2574
+0,Kiawah Island,32.6082,-80.0848,http://sws.geonames.org/,,Birmingham (England),52.4667,-1.91667,http://data.nytimes.com/,,0@2066#1@2574
+1,Qom,34.6453,50.8808,http://sws.geonames.org/,,Qom,34.65,50.8833,http://dbpedia.org/,,0@3971#1@2299
+0,"Santa Barbara, California",,,http://dbpedia.org/,,san pedro de atacama,-22.9147,-68.1942,http://rdf.freebase.com/,,0@7153#1@348
+1,San Pedro de Atacama,-22.9167,-68.2167,http://sws.geonames.org/,,san pedro de atacama,-22.9147,-68.1942,http://rdf.freebase.com/,,0@1341#1@348
+0,"Santa Barbara, California",,,http://dbpedia.org/,,Riga,56.9489,24.1064,http://dbpedia.org/,,0@7153#1@6002
+1,riga,56.9496,24.104,http://rdf.freebase.com/,,Riga,56.9489,24.1064,http://dbpedia.org/,,0@5182#1@6002
+1,bursa,40.1861,29.0667,http://rdf.freebase.com/,,Bursa (Turkey),40.1917,29.0611,http://data.nytimes.com/,,0@6053#1@2093
+0,catano puerto rico,18.4414,-66.1183,http://rdf.freebase.com/,,beverley,53.845,-0.4270000000000001,http://rdf.freebase.com/,,0@3745#1@5477
+1,catano puerto rico,18.4414,-66.1183,http://rdf.freebase.com/,,Cataño,18.4413,-66.1182,http://sws.geonames.org/,,0@3745#1@5628
+0,granada nicaragua,11.9333,-85.95,http://rdf.freebase.com/,,"Saint Paul, Minnesota",,,http://dbpedia.org/,,0@3862#1@4925
+0,zaragoza,41.65,-0.9,http://rdf.freebase.com/,,bologna,44.5,11.35,http://rdf.freebase.com/,,0@6521#1@6726
+1,Bologna (Italy),44.4938,11.3387,http://data.nytimes.com/,,bologna,44.5,11.35,http://rdf.freebase.com/,,0@4083#1@6726
+1,scituate,42.1958,-70.7264,http://rdf.freebase.com/,,"Scituate, Massachusetts",,,http://dbpedia.org/,,0@273#1@7504
+1,Kitzbuhel,,,http://dbpedia.org/,,kitzbuhel,47.4333,12.4,http://rdf.freebase.com/,,0@7097#1@2666
+1,Messene,,,http://dbpedia.org/,,messene,37.05,22.0,http://rdf.freebase.com/,,0@978#1@4535
+0,Messene,,,http://dbpedia.org/,,Athenry (Parliament of Ireland constituency),,,http://dbpedia.org/,,0@978#1@7365
+0,La Paz (Bolivia),-16.5,-68.15,http://data.nytimes.com/,,Cabarete,19.7511,-70.4083,http://dbpedia.org/,,0@2691#1@3334
+1,mantua,45.1667,10.8,http://rdf.freebase.com/,,Mantua (Italy),45.1521,10.7738,http://data.nytimes.com/,,0@743#1@742
+0,Red Hook Houses,40.6753,-74.0047,http://sws.geonames.org/,,Mantua (Italy),45.1521,10.7738,http://data.nytimes.com/,,0@6831#1@742
+0,Cannes,43.55,7.01667,http://sws.geonames.org/,,cochabamba,-17.3836,-66.1667,http://rdf.freebase.com/,,0@3483#1@2284
+0,Bangkok,13.7522,100.494,http://dbpedia.org/,,Sderot (Israel),31.5167,34.5833,http://data.nytimes.com/,,0@731#1@1518
+0,Brzezinka,51.9667,15.0333,http://sws.geonames.org/,,Blackpool,53.8167,-3.05,http://sws.geonames.org/,,0@4920#1@3141
+1,key largo,25.0865,-80.4473,http://rdf.freebase.com/,,Key Largo,25.0865,-80.4473,http://dbpedia.org/,,0@5206#1@3975
+0,Santiago de Compostela,42.8804,-8.5463,http://dbpedia.org/,,niagara on the lake,43.2585,-79.0841,http://rdf.freebase.com/,82.296,0@6504#1@2961
+1,Chengde (China),40.9725,117.936,http://data.nytimes.com/,,Chengde,40.9725,117.936,http://sws.geonames.org/,,0@4192#1@4193
+0,Passaic (NJ),40.8568,-74.1285,http://data.nytimes.com/,,Padua,45.4152,11.8818,http://sws.geonames.org/,,0@652#1@7278
+0,Passaic (NJ),40.8568,-74.1285,http://data.nytimes.com/,,San Francisco,37.7749,-122.419,http://sws.geonames.org/,,0@652#1@2746
+1,Perth,-31.9333,115.833,http://sws.geonames.org/,,perth,-31.9554,115.859,http://rdf.freebase.com/,,0@7129#1@7068
+0,Perth,-31.9333,115.833,http://sws.geonames.org/,,Avignon,43.95,4.83333,http://dbpedia.org/,,0@7129#1@4430
+1,ottawa,45.4214,-75.6919,http://rdf.freebase.com/,,Ottawa,45.4208,-75.69,http://dbpedia.org/,,0@4884#1@5934
+1,monhegan,43.7622,-69.3203,http://rdf.freebase.com/,,Monhegan Island (Me),43.7665,-69.3114,http://data.nytimes.com/,,0@4857#1@3517
+0,monhegan,43.7622,-69.3203,http://rdf.freebase.com/,,Orleans (France),47.9167,1.9,http://data.nytimes.com/,,0@4857#1@484
+1,Da Nang,16.0678,108.221,http://sws.geonames.org/,,Danang (Vietnam),16.0678,108.221,http://data.nytimes.com/,,0@5296#1@1226
+1,New Brunswick (NJ),40.4862,-74.4518,http://data.nytimes.com/,,"New Brunswick, New Jersey",,,http://dbpedia.org/,,0@240#1@241
+0,Arles (France),43.6768,4.63031,http://data.nytimes.com/,,karbala,32.6161,44.0339,http://rdf.freebase.com/,,0@4608#1@4818
+1,Karbala (Iraq),32.5978,44.0161,http://data.nytimes.com/,,karbala,32.6161,44.0339,http://rdf.freebase.com/,,0@3880#1@4818
+0,Manila (Philippines),14.6042,120.982,http://data.nytimes.com/,,guangzhou,23.133333,113.266667,http://rdf.freebase.com/,21.0,0@3421#1@3788
+1,"Paris, Texas",,,http://dbpedia.org/,,Paris (Texas),33.6609,-95.5555,http://data.nytimes.com/,,0@4781#1@2887
+0,Oxford (Miss),34.3665,-89.5192,http://data.nytimes.com/,,Paris (Texas),33.6609,-95.5555,http://data.nytimes.com/,,0@2999#1@2887
+0,trieste,45.6333,13.8,http://rdf.freebase.com/,,Mumbai,18.975,72.8258,http://dbpedia.org/,,0@5031#1@1467
+1,mumbai,18.9647,72.8258,http://rdf.freebase.com/,,Mumbai,18.975,72.8258,http://dbpedia.org/,,0@3285#1@1467
+1,trieste,45.6333,13.8,http://rdf.freebase.com/,,Trieste (Italy),45.6486,13.78,http://data.nytimes.com/,,0@5031#1@711
+0,Vevey (Switzerland),46.4612,6.84328,http://data.nytimes.com/,,Trieste (Italy),45.6486,13.78,http://data.nytimes.com/,,0@3611#1@711
+1,Trieste,45.6486,13.78,http://sws.geonames.org/,,Trieste (Italy),45.6486,13.78,http://data.nytimes.com/,,0@2986#1@711
+0,trieste,45.6333,13.8,http://rdf.freebase.com/,,Mendocino (Calif),39.3077,-123.799,http://data.nytimes.com/,,0@5031#1@2454
+0,Dalian (China),38.9122,121.602,http://data.nytimes.com/,,Dominical,9.25,-83.8667,http://dbpedia.org/,,0@7082#1@534
+0,Dalian (China),38.9122,121.602,http://data.nytimes.com/,,Huntington Beach,33.6603,-117.999,http://sws.geonames.org/,,0@7082#1@3998
+1,huntington beach,33.6603,-117.998,http://rdf.freebase.com/,,Huntington Beach,33.6603,-117.999,http://sws.geonames.org/,,0@5266#1@3998
+1,Huntington Beach (Calif),33.6603,-117.999,http://data.nytimes.com/,,Huntington Beach,33.6603,-117.999,http://sws.geonames.org/,,0@1414#1@3998
+1,"Newport, Rhode Island",,,http://dbpedia.org/,,Newport (RI),41.4901,-71.3128,http://data.nytimes.com/,,0@2642#1@2519
+0,huntington beach,33.6603,-117.998,http://rdf.freebase.com/,,Mustique,12.8667,-61.1833,http://dbpedia.org/,,0@5266#1@6530
+0,Nagano (Japan),36.65,138.183,http://data.nytimes.com/,,Pisa (Italy),43.7175,10.3965,http://data.nytimes.com/,,0@5714#1@3996
+1,Kelowna,49.8801,-119.444,http://dbpedia.org/,,Kelowna (British Columbia),49.8831,-119.486,http://data.nytimes.com/,,0@3164#1@3163
+1,Kelowna,49.8801,-119.444,http://dbpedia.org/,,kelowna,49.8849,-119.491,http://rdf.freebase.com/,344.0,0@3164#1@5959
+1,cancun,21.1617,-86.848,http://rdf.freebase.com/,,Cancun,,,http://dbpedia.org/,,0@5029#1@7271
+1,berlin,52.5233,13.4127,http://rdf.freebase.com/,34.0,Berlin,52.5244,13.4105,http://sws.geonames.org/,,0@4601#1@3031
+1,berlin,52.5233,13.4127,http://rdf.freebase.com/,34.0,Berlin (Germany),52.5167,13.4,http://data.nytimes.com/,,0@4601#1@3030
+0,berlin,52.5233,13.4127,http://rdf.freebase.com/,34.0,St Petersburg (Russia),59.8944,30.2642,http://data.nytimes.com/,,0@4601#1@1207
+0,"Patchogue, New York",,,http://dbpedia.org/,,Granada (Spain),37.1882,-3.60667,http://data.nytimes.com/,,0@281#1@3111
+1,granada,37.1742,-3.5975,http://rdf.freebase.com/,,Granada (Spain),37.1882,-3.60667,http://data.nytimes.com/,,0@7366#1@3111
+1,merca,1.7167,44.8833,http://rdf.freebase.com/,,Merca,1.71667,44.8833,http://sws.geonames.org/,,0@3049#1@1877
+0,Bethel (NY),41.9545,-73.6337,http://data.nytimes.com/,,Korčula,42.9622,17.1369,http://sws.geonames.org/,,0@2702#1@4324
+1,Bethel (NY),41.9545,-73.6337,http://data.nytimes.com/,,Bethel,41.9545,-73.6337,http://sws.geonames.org/,,0@2702#1@2703
+1,"Bethel, New York",,,http://dbpedia.org/,,Bethel,41.9545,-73.6337,http://sws.geonames.org/,,0@6339#1@2703
+0,santa barbara,34.4208,-119.697,http://rdf.freebase.com/,,Milford (Pa),41.3223,-74.8024,http://data.nytimes.com/,,0@1336#1@645
+0,santa barbara,34.4208,-119.697,http://rdf.freebase.com/,,Beverley,53.8459,-0.423317,http://sws.geonames.org/,,0@1336#1@5704
+0,Hanau (Germany),50.1333,8.91667,http://data.nytimes.com/,,indianapolis,39.7683,-86.1581,http://rdf.freebase.com/,,0@3764#1@6184
+0,gaiman,-43.29,-65.4971,http://rdf.freebase.com/,,indianapolis,39.7683,-86.1581,http://rdf.freebase.com/,,0@5427#1@6184
+1,kaesong,37.9722,126.556,http://rdf.freebase.com/,,Kaesong,37.9708,126.554,http://sws.geonames.org/,,0@6882#1@5205
+0,Hiroshima,34.4,132.45,http://sws.geonames.org/,,Kaesong,37.9708,126.554,http://sws.geonames.org/,,0@6443#1@5205
+0,Nancy,48.6833,6.2,http://sws.geonames.org/,,Edinburgh (Scotland),55.95,-3.2,http://data.nytimes.com/,,0@3816#1@3378
+0,Millbrook (NY),41.7851,-73.694,http://data.nytimes.com/,,limoges,45.8192,1.25139,http://rdf.freebase.com/,,0@1840#1@7371
+0,Kolkata,22.5697,88.3697,http://sws.geonames.org/,,Nagano,36.65,138.183,http://sws.geonames.org/,,0@7077#1@5715
+1,"Nagano, Nagano",,,http://dbpedia.org/,,Nagano,36.65,138.183,http://sws.geonames.org/,,0@6298#1@5715
+0,Kolkata,22.5697,88.3697,http://sws.geonames.org/,,Rossville,40.5557,-74.2135,http://sws.geonames.org/,,0@7077#1@436
+1,Rossville (NYC),40.5557,-74.2135,http://data.nytimes.com/,,Rossville,40.5557,-74.2135,http://sws.geonames.org/,,0@435#1@436
+0,Kolkata,22.5697,88.3697,http://sws.geonames.org/,,Auxerre,47.8,3.56667,http://sws.geonames.org/,,0@7077#1@1879
+1,Kolkata,22.5697,88.3697,http://sws.geonames.org/,,Calcutta (India),22.5697,88.3697,http://data.nytimes.com/,,0@7077#1@796
+1,chennai,13.081,80.274,http://rdf.freebase.com/,6.0,Chennai,13.0839,80.27,http://dbpedia.org/,,0@4270#1@3171
+0,Zaragoza,41.65,-0.883333,http://dbpedia.org/,,Sāmthar,26.9833,88.5,http://sws.geonames.org/,,0@4973#1@3446
+0,Toulouse,43.6043,1.44367,http://sws.geonames.org/,,Sāmthar,26.9833,88.5,http://sws.geonames.org/,,0@2092#1@3446
+1,Santa Monica (Calif),34.0195,-118.491,http://data.nytimes.com/,,"Santa Monica, California",,,http://dbpedia.org/,,0@4605#1@5476
+0,Helsinki (Finland),60.1756,24.9342,http://data.nytimes.com/,,Ljubljana (Slovenia),46.0553,14.5144,http://data.nytimes.com/,,0@1313#1@5146
+0,Helsinki (Finland),60.1756,24.9342,http://data.nytimes.com/,,Red Bank (NJ),40.3471,-74.0643,http://data.nytimes.com/,,0@1313#1@701
+0,Bonn,50.7333,7.1,http://sws.geonames.org/,,Red Bank (NJ),40.3471,-74.0643,http://data.nytimes.com/,,0@7168#1@701
+1,Soweto (South Africa),-26.2667,27.8667,http://data.nytimes.com/,,Soweto,-26.2667,27.8667,http://sws.geonames.org/,,0@855#1@856
+1,Soweto,-26.2661,27.8658,http://dbpedia.org/,,Soweto,-26.2667,27.8667,http://sws.geonames.org/,,0@6211#1@856
+1,Berchtesgaden,47.6314,13.0042,http://dbpedia.org/,,berchtesgaden,47.6312,13.0023,http://rdf.freebase.com/,,0@325#1@5293
+1,Acapulco,16.8634,-99.8901,http://sws.geonames.org/,,acapulco,16.8517,-99.9097,http://rdf.freebase.com/,,0@372#1@7308
+1,Chiangmai,18.7903,98.9817,http://sws.geonames.org/,,Chiang Mai (Thailand),18.7903,98.9817,http://data.nytimes.com/,,0@6221#1@4480
+1,Natal,-5.795,-35.2094,http://sws.geonames.org/,,Natal (Brazil),-5.795,-35.2094,http://data.nytimes.com/,,0@5928#1@2267
+0,Liverpool (England),53.4106,-2.9779400000000003,http://data.nytimes.com/,,Tikrit,34.61,43.6833,http://dbpedia.org/,,0@4512#1@4775
+1,Liverpool (England),53.4106,-2.9779400000000003,http://data.nytimes.com/,,liverpool,53.4167,-3.0,http://rdf.freebase.com/,,0@4512#1@4513
+0,Monopoli,40.9559,17.2896,http://sws.geonames.org/,,Mogadishu,2.03711,45.3438,http://sws.geonames.org/,,0@5933#1@4946
+0,Monopoli,40.9559,17.2896,http://sws.geonames.org/,,São Paulo,-23.5475,-46.6361,http://sws.geonames.org/,,0@5933#1@5806
+1,Monopoli,40.9559,17.2896,http://sws.geonames.org/,,monopoli,40.95,17.3,http://rdf.freebase.com/,,0@5933#1@2222
+0,New Delhi (India),28.6128,77.2311,http://data.nytimes.com/,,monopoli,40.95,17.3,http://rdf.freebase.com/,,0@5124#1@2222
+0,Corinth,37.9378,22.9322,http://sws.geonames.org/,,monopoli,40.95,17.3,http://rdf.freebase.com/,,0@5864#1@2222
+1,Fez (Morocco),34.05,-4.98,http://data.nytimes.com/,,Fes,34.05,-4.98,http://sws.geonames.org/,,0@687#1@7132
+1,Cahuita (Costa Rica),9.73333,-82.85,http://data.nytimes.com/,,Cahuita,9.73333,-82.85,http://sws.geonames.org/,,0@1205#1@5415
+0,klosterneuburg,48.3042,16.3167,http://rdf.freebase.com/,,Cahuita,9.73333,-82.85,http://sws.geonames.org/,,0@4046#1@5415
+1,newport rhode island,41.49,-71.3133,http://rdf.freebase.com/,,Newport,41.4901,-71.3128,http://sws.geonames.org/,,0@2520#1@6735
+0,Bruges,51.2098,3.225,http://sws.geonames.org/,,Newport,41.4901,-71.3128,http://sws.geonames.org/,,0@3385#1@6735
+1,rome,41.9,12.5,http://rdf.freebase.com/,,Rome (Italy),41.9,12.4833,http://data.nytimes.com/,,0@1517#1@1516
+0,rome,41.9,12.5,http://rdf.freebase.com/,,florence,43.7717,11.2536,http://rdf.freebase.com/,,0@1517#1@7239
+1,Florence,43.7833,11.25,http://dbpedia.org/,,florence,43.7717,11.2536,http://rdf.freebase.com/,,0@5433#1@7239
+1,rome,41.9,12.5,http://rdf.freebase.com/,,Rome,41.9,12.5,http://dbpedia.org/,,0@1517#1@3442
+1,Niagara-on-the-Lake,43.2553,-79.0717,http://dbpedia.org/,,Niagara-on-the-Lake,43.2501,-79.0663,http://sws.geonames.org/,,0@574#1@4277
+1,El Chalten (Patagonia),-49.3286,-72.93,http://data.nytimes.com/,,el chalten,-49.3289,-72.93,http://rdf.freebase.com/,,0@427#1@2939
+0,Vilnius,54.6892,25.2798,http://sws.geonames.org/,,el chalten,-49.3289,-72.93,http://rdf.freebase.com/,,0@2599#1@2939
+1,Kobe,34.6833,135.2,http://dbpedia.org/,,Kobe (Japan),34.6833,135.167,http://data.nytimes.com/,,0@4617#1@4616
+0,Agra (India),27.1833,78.0167,http://data.nytimes.com/,,Kobe (Japan),34.6833,135.167,http://data.nytimes.com/,,0@3069#1@4616
+0,Kobe,34.6833,135.2,http://dbpedia.org/,,Mantova,45.1603,10.7978,http://sws.geonames.org/,,0@4617#1@2142
+0,"Salvador, Bahia",,,http://dbpedia.org/,,Mantova,45.1603,10.7978,http://sws.geonames.org/,,0@3091#1@2142
+1,Nasiriyah,31.05,46.2667,http://dbpedia.org/,,Nasiriyah,31.0542,46.2594,http://sws.geonames.org/,,0@5605#1@2168
+1,nasiriyah,31.05,46.2667,http://rdf.freebase.com/,,Nasiriyah,31.0542,46.2594,http://sws.geonames.org/,,0@4791#1@2168
+0,Key Largo (Fla),25.0865,-80.4473,http://data.nytimes.com/,,Milan (Italy),45.4643,9.18951,http://data.nytimes.com/,,0@3974#1@5096
+0,Key Largo (Fla),25.0865,-80.4473,http://data.nytimes.com/,,old lyme,41.3159,-72.329,http://rdf.freebase.com/,,0@3974#1@728
+1,Key Largo (Fla),25.0865,-80.4473,http://data.nytimes.com/,,key largo,25.0865,-80.4473,http://rdf.freebase.com/,,0@3974#1@5206
+0,"Mont-Tremblant, Quebec",,,http://dbpedia.org/,,key largo,25.0865,-80.4473,http://rdf.freebase.com/,,0@6620#1@5206
+0,Lausanne,46.5198,6.6335,http://dbpedia.org/,,Marathon,24.7138,-81.0904,http://sws.geonames.org/,,0@5330#1@3812
+0,skaneateles new york,42.9469,-76.4294,http://rdf.freebase.com/,,Ossining,41.1629,-73.8615,http://sws.geonames.org/,,0@6450#1@4881
+1,Ossining (NY),41.1629,-73.8615,http://data.nytimes.com/,,Ossining,41.1629,-73.8615,http://sws.geonames.org/,,0@3584#1@4881
+1,Pisa (Italy),43.7175,10.3965,http://data.nytimes.com/,,Pisa,43.7155,10.3966,http://sws.geonames.org/,,0@3996#1@3997
+1,Agra (India),27.1833,78.0167,http://data.nytimes.com/,,Agra,27.18,78.02,http://dbpedia.org/,,0@3069#1@3070
+0,pensacola,30.4211,-87.2169,http://rdf.freebase.com/,,Agra,27.18,78.02,http://dbpedia.org/,,0@5355#1@3070
+0,Hague (Netherlands),52.0767,4.29861,http://data.nytimes.com/,,ithaca new york,42.4406,-76.4969,http://rdf.freebase.com/,,0@3028#1@5796
+0,qingdao,36.0833,120.333,http://rdf.freebase.com/,,ithaca new york,42.4406,-76.4969,http://rdf.freebase.com/,,0@5399#1@5796
+0,Hague (Netherlands),52.0767,4.29861,http://data.nytimes.com/,,perugia,43.1167,12.3833,http://rdf.freebase.com/,,0@3028#1@2783
+1,Perugia,43.0967,12.3829,http://sws.geonames.org/,,perugia,43.1167,12.3833,http://rdf.freebase.com/,,0@5230#1@2783
+0,Phoenix,33.4484,-112.074,http://sws.geonames.org/,,perugia,43.1167,12.3833,http://rdf.freebase.com/,,0@4218#1@2783
+0,Hague (Netherlands),52.0767,4.29861,http://data.nytimes.com/,,Amenia,41.8493,-73.5568,http://sws.geonames.org/,,0@3028#1@7143
+1,Laguna Beach (Calif),33.5422,-117.783,http://data.nytimes.com/,,laguna beach,33.5422,-117.782,http://rdf.freebase.com/,,0@1595#1@3586
+0,bangalore,12.9833,77.5833,http://rdf.freebase.com/,,laguna beach,33.5422,-117.782,http://rdf.freebase.com/,,0@5003#1@3586
+0,reykjavik,64.1333,-21.9333,http://rdf.freebase.com/,,Soweto (South Africa),-26.2667,27.8667,http://data.nytimes.com/,,0@6290#1@855
+1,Soweto,-26.2661,27.8658,http://dbpedia.org/,,Soweto (South Africa),-26.2667,27.8667,http://data.nytimes.com/,,0@6211#1@855
+1,soweto,-26.2661,27.8659,http://rdf.freebase.com/,,Soweto (South Africa),-26.2667,27.8667,http://data.nytimes.com/,,0@3380#1@855
+0,reykjavik,64.1333,-21.9333,http://rdf.freebase.com/,,rawalpindi,33.6,73.05,http://rdf.freebase.com/,,0@6290#1@2341
+1,reykjavik,64.1333,-21.9333,http://rdf.freebase.com/,,Reykjavik,,,http://dbpedia.org/,,0@6290#1@6237
+0,Mendoza (Argentina),-32.8833,-68.8167,http://data.nytimes.com/,,klosterneuburg,48.3042,16.3167,http://rdf.freebase.com/,,0@3541#1@4046
+0,Mendoza (Argentina),-32.8833,-68.8167,http://data.nytimes.com/,,Budapest (Hungary),47.5,19.0833,http://data.nytimes.com/,,0@3541#1@3544
+1,Mendoza (Argentina),-32.8833,-68.8167,http://data.nytimes.com/,,mendoza,-32.8905,-68.842,http://rdf.freebase.com/,746.5,0@3541#1@5811
+0,leeds,53.81,-1.55,http://rdf.freebase.com/,,roosevelt,40.6786,-73.5894,http://rdf.freebase.com/,,0@5143#1@3411
+1,Santiago,-33.4263,-70.5666,http://sws.geonames.org/,,"Santiago, Chile",,,http://dbpedia.org/,,0@2144#1@6327
+0,London,51.5072,-0.1275,http://dbpedia.org/,,Girona (Spain),41.9831,2.82493,http://data.nytimes.com/,,0@7073#1@12
+0,"Jamaica, Queens",,,http://dbpedia.org/,,Osaka,34.6937,135.502,http://dbpedia.org/,,0@4612#1@5085
+1,"Jamaica, Queens",,,http://dbpedia.org/,,Jamaica,40.6915,-73.8057,http://sws.geonames.org/,,0@4612#1@6438
+1,Pensacola (Fla),30.4213,-87.2169,http://data.nytimes.com/,,Pensacola,30.4213,-87.2169,http://sws.geonames.org/,,0@2735#1@2736
+0,Kyoto,35.0116,135.768,http://dbpedia.org/,,Kansas City,39.1142,-94.6275,http://sws.geonames.org/,,0@1963#1@7379
+1,Sucre,-19.0333,-65.2627,http://sws.geonames.org/,,Sucre,-19.0339,-65.2626,http://dbpedia.org/,,0@7477#1@2123
+1,Milford,41.2223,-73.0565,http://sws.geonames.org/,,"Milford, Connecticut",,,http://dbpedia.org/,,0@7451#1@5158
+1,milford connecticut,41.2222,-73.0569,http://rdf.freebase.com/,,"Milford, Connecticut",,,http://dbpedia.org/,,0@7257#1@5158
+1,Milford,41.2223,-73.0565,http://sws.geonames.org/,,milford connecticut,41.2222,-73.0569,http://rdf.freebase.com/,,0@7451#1@7257
+1,Fujairah,25.1231,56.3375,http://sws.geonames.org/,,fujairah,25.266667,56.333333,http://rdf.freebase.com/,,0@5385#1@5426
+0,Budapest,47.4719,19.0503,http://dbpedia.org/,,fujairah,25.266667,56.333333,http://rdf.freebase.com/,,0@6123#1@5426
+1,moscow,55.75,37.616667,http://rdf.freebase.com/,,Moscow (Russia),55.7522,37.6156,http://data.nytimes.com/,,0@3861#1@30
+1,moscow,55.75,37.616667,http://rdf.freebase.com/,,Moscow,55.7522,37.6156,http://sws.geonames.org/,,0@3861#1@31
+1,Moscow,55.7517,37.6178,http://dbpedia.org/,,Moscow,55.7522,37.6156,http://sws.geonames.org/,,0@7148#1@31
+1,Quebec City (Quebec),46.8123,-71.2145,http://data.nytimes.com/,,Quebec City,46.8123,-71.2145,http://sws.geonames.org/,,0@1790#1@1791
+0,essaouira,31.5131,-9.7697,http://rdf.freebase.com/,,Phoenix,33.4484,-112.074,http://sws.geonames.org/,,0@7267#1@4218
+1,krakow,50.0614,19.9372,http://rdf.freebase.com/,,Kraków,50.0833,19.9167,http://sws.geonames.org/,,0@4456#1@5998
+0,Jakarta,-6.21462,106.845,http://sws.geonames.org/,,Florence,43.7667,11.25,http://sws.geonames.org/,,0@6373#1@6985
+1,Baquba (Iraq),33.75,44.6411,http://data.nytimes.com/,,Baqubah,33.75,44.6411,http://sws.geonames.org/,,0@3182#1@7095
+1,Baquba (Iraq),33.75,44.6411,http://data.nytimes.com/,,baqubah,33.75,44.6333,http://rdf.freebase.com/,,0@3182#1@3183
+0,antwerp,51.2209,4.4020800000000015,http://rdf.freebase.com/,,Haditha (Iraq),34.1397,42.3781,http://data.nytimes.com/,,0@840#1@794
+0,Krakow,,,http://dbpedia.org/,,"Irvington, New Jersey",,,http://dbpedia.org/,,0@5981#1@4981
+0,Mombasa,-4.05,39.6667,http://dbpedia.org/,,agra,27.1833,78.0167,http://rdf.freebase.com/,,0@3434#1@7195
+0,Rockland,44.1037,-69.1089,http://sws.geonames.org/,,Florence,43.7833,11.25,http://dbpedia.org/,,0@6456#1@5433
+0,Seville (Spain),37.3772,-5.98694,http://data.nytimes.com/,,Florence,43.7833,11.25,http://dbpedia.org/,,0@264#1@5433
+1,minneapolis,44.98,-93.2636,http://rdf.freebase.com/,,Minneapolis,44.9833,-93.2667,http://dbpedia.org/,,0@2473#1@2134
+0,minneapolis,44.98,-93.2636,http://rdf.freebase.com/,,Ajman,25.4111,55.435,http://sws.geonames.org/,,0@2473#1@7488
+1,mont tremblant,46.2122,-74.5856,http://rdf.freebase.com/,,Mont-Tremblant,46.1949,-74.6264,http://sws.geonames.org/,,0@5932#1@7105
+1,mont tremblant,46.2122,-74.5856,http://rdf.freebase.com/,,Mont Tremblant (Canada),46.1949,-74.6264,http://data.nytimes.com/,,0@5932#1@5931
+0,Dunhuang (China),40.1667,94.6833,http://data.nytimes.com/,,Naples (Italy),40.8333,14.25,http://data.nytimes.com/,,0@674#1@754
+1,naples,40.8333,14.25,http://rdf.freebase.com/,,Naples (Italy),40.8333,14.25,http://data.nytimes.com/,,0@1611#1@754
+0,Dunhuang (China),40.1667,94.6833,http://data.nytimes.com/,,Crans-Montana,46.3119,7.48278,http://dbpedia.org/,,0@674#1@2422
+1,Crans-sur-Sierre (Switzerland),46.3132,7.479139999999999,http://data.nytimes.com/,,Crans-Montana,46.3119,7.48278,http://dbpedia.org/,,0@2421#1@2422
+1,jakarta,-6.1333,106.75,http://rdf.freebase.com/,,Jakarta,-6.21462,106.845,http://sws.geonames.org/,,0@4568#1@6373
+1,La Rochelle,46.1591,-1.15165,http://dbpedia.org/,,La Rochelle (France),46.1667,-1.15,http://data.nytimes.com/,,0@3511#1@1690
+0,dominical,9.25,-83.8667,http://rdf.freebase.com/,,La Rochelle (France),46.1667,-1.15,http://data.nytimes.com/,,0@2183#1@1690
+0,Kelowna,49.8831,-119.486,http://sws.geonames.org/,,Lafayette (La),30.2241,-92.0198,http://data.nytimes.com/,,0@6147#1@174
+0,marseille,43.2975,5.3772,http://rdf.freebase.com/,,Lafayette (La),30.2241,-92.0198,http://data.nytimes.com/,,0@3151#1@174
+1,mazatlan,23.2167,-106.417,http://rdf.freebase.com/,,Mazatlán,23.2167,-106.417,http://sws.geonames.org/,,0@5074#1@6717
+1,Cairo,30.0581,31.2289,http://dbpedia.org/,,Cairo (Egypt),30.05,31.25,http://data.nytimes.com/,,0@6328#1@599
+0,Baden-Baden (Germany),48.75,8.25,http://data.nytimes.com/,,Cairo (Egypt),30.05,31.25,http://data.nytimes.com/,,0@1969#1@599
+0,puerto vallarta,20.6031,-105.234,http://rdf.freebase.com/,,Grasse,43.6667,6.9167,http://dbpedia.org/,,0@3720#1@1577
+1,grasse,43.6589,6.9258,http://rdf.freebase.com/,,Grasse,43.6667,6.9167,http://dbpedia.org/,,0@1897#1@1577
+0,"Orlando, Florida",,,http://dbpedia.org/,,Ludlow,43.3959,-72.7007,http://sws.geonames.org/,,0@5233#1@1301
+0,"Orlando, Florida",,,http://dbpedia.org/,,long beach,33.7669,-118.188,http://rdf.freebase.com/,,0@5233#1@5284
+1,Segovia,40.95,-4.11667,http://sws.geonames.org/,,segovia,40.95,-4.11667,http://rdf.freebase.com/,,0@3106#1@3045
+0,Hay-on-Wye,52.08,-3.13,http://dbpedia.org/,,segovia,40.95,-4.11667,http://rdf.freebase.com/,,0@6014#1@3045
+1,Segovia,40.95,-4.11667,http://sws.geonames.org/,,Segovia (Spain),40.95,-4.11667,http://data.nytimes.com/,,0@3106#1@3044
+1,cirencester,51.7124,-1.96346,http://rdf.freebase.com/,,Cirencester (England),51.7333,-1.98333,http://data.nytimes.com/,,0@3717#1@1773
+1,Cirencester,51.719,-1.968,http://dbpedia.org/,,Cirencester (England),51.7333,-1.98333,http://data.nytimes.com/,,0@2331#1@1773
+1,Kirkuk,35.4667,44.3167,http://dbpedia.org/,,Kirkuk,35.4681,44.3922,http://sws.geonames.org/,,0@6965#1@3301
+0,cardiff,51.478,-3.1771,http://rdf.freebase.com/,,palm beach,26.7053,-80.0367,http://rdf.freebase.com/,,0@1722#1@6092
+0,Bilbao (Spain),43.2627,-2.92528,http://data.nytimes.com/,,palm beach,26.7053,-80.0367,http://rdf.freebase.com/,,0@2315#1@6092
+1,Salem (Mass),42.5195,-70.8967,http://data.nytimes.com/,,Salem,42.5195,-70.8967,http://sws.geonames.org/,,0@1269#1@4988
+0,islamabad,33.6667,73.1667,http://rdf.freebase.com/,,Saint Michaels,38.7851,-76.2244,http://sws.geonames.org/,,0@3676#1@7236
+1,St Michaels (Md),38.7851,-76.2244,http://data.nytimes.com/,,Saint Michaels,38.7851,-76.2244,http://sws.geonames.org/,,0@6589#1@7236
+0,madison,43.0731,-89.4011,http://rdf.freebase.com/,,Saint Michaels,38.7851,-76.2244,http://sws.geonames.org/,,0@2129#1@7236
+1,"Saint Michaels, Maryland",,,http://dbpedia.org/,,Saint Michaels,38.7851,-76.2244,http://sws.geonames.org/,,0@6590#1@7236
+0,Zihuatanejo,17.6367,-101.551,http://dbpedia.org/,,Indianapolis (Ind),39.7684,-86.15799999999999,http://data.nytimes.com/,,0@85#1@1410
+1,Bruges,51.2098,3.225,http://sws.geonames.org/,,Bruges,51.2167,3.23333,http://dbpedia.org/,,0@3385#1@3851
+0,"Lake Placid, New York",,,http://dbpedia.org/,,New York City,40.7143,-74.006,http://data.nytimes.com/,,0@7269#1@5445
+1,new york,40.7142,-74.0064,http://rdf.freebase.com/,,New York City,40.7143,-74.006,http://data.nytimes.com/,,0@7048#1@5445
+1,New York,40.7143,-74.006,http://sws.geonames.org/,,New York City,40.7143,-74.006,http://data.nytimes.com/,,0@4423#1@5445
+0,"Lake Placid, New York",,,http://dbpedia.org/,,barcelona,41.3857,2.16994,http://rdf.freebase.com/,,0@7269#1@6687
+0,"Lake Placid, New York",,,http://dbpedia.org/,,passaic,40.8567,-74.1289,http://rdf.freebase.com/,,0@7269#1@653
+0,Galway,53.2719,-9.04889,http://sws.geonames.org/,,Nancy,48.6936,6.1846,http://dbpedia.org/,,0@5142#1@4506
+1,Jena,31.6832,-92.1337,http://sws.geonames.org/,,jena louisiana,31.69,-92.1247,http://rdf.freebase.com/,,0@6866#1@1014
+0,Hood River,45.7054,-121.521,http://sws.geonames.org/,,bayeux,49.2753,-0.7019,http://rdf.freebase.com/,,0@3221#1@6762
+1,Manila,14.5833,121.0,http://dbpedia.org/,,Manila,14.5846,120.971,http://sws.geonames.org/,,0@3422#1@7110
+0,Manila,14.5833,121.0,http://dbpedia.org/,,Da Nang,16.0678,108.221,http://sws.geonames.org/,,0@3422#1@5296
+1,Manila,14.5833,121.0,http://dbpedia.org/,,manila,14.5833,121.0,http://rdf.freebase.com/,,0@3422#1@5701
+0,patchogue,40.7656,-73.0156,http://rdf.freebase.com/,,Sharjah,25.3622,55.3911,http://sws.geonames.org/,,0@3066#1@6423
+1,Houston,29.7628,-95.3831,http://dbpedia.org/,,Houston,29.7633,-95.3633,http://sws.geonames.org/,,0@4282#1@4100
+1,Houston (Tex),29.7633,-95.3633,http://data.nytimes.com/,,Houston,29.7633,-95.3633,http://sws.geonames.org/,,0@4099#1@4100
+0,Kuala Lumpur,3.1412,101.687,http://sws.geonames.org/,,"Ocean City, New Jersey",,,http://dbpedia.org/,,0@757#1@1531
+1,Ocean City,39.2776,-74.5746,http://sws.geonames.org/,,"Ocean City, New Jersey",,,http://dbpedia.org/,,0@1536#1@1531
+1,Ocean City (NJ),39.2776,-74.5746,http://data.nytimes.com/,,"Ocean City, New Jersey",,,http://dbpedia.org/,,0@200#1@1531
+0,liverpool,53.4167,-3.0,http://rdf.freebase.com/,,"Ludlow (town), Vermont",,,http://dbpedia.org/,,0@4513#1@2307
+1,Hyderabad,17.3753,78.4744,http://sws.geonames.org/,,"Hyderabad, India",,,http://dbpedia.org/,,0@609#1@430
+1,donostia,43.32,-1.98,http://rdf.freebase.com/,,San Sebastian,43.3128,-1.97499,http://sws.geonames.org/,,0@4231#1@2188
+1,Pittsburgh,40.4406,-79.9959,http://sws.geonames.org/,,Pittsburgh,40.6388,-80.0,http://dbpedia.org/,,0@6618#1@6466
+1,Al ‘Amārah,31.8453,47.1753,http://sws.geonames.org/,,Amarah,32.0,47.0,http://dbpedia.org/,,0@7350#1@6127
+0,Timbuktu (Mali),16.7735,-3.00742,http://data.nytimes.com/,,Graz (Austria),47.0667,15.45,http://data.nytimes.com/,,0@697#1@5070
+1,New Delhi (India),28.6128,77.2311,http://data.nytimes.com/,,New Delhi,28.6358,77.2244,http://sws.geonames.org/,,0@5124#1@5551
+1,New Delhi (India),28.6128,77.2311,http://data.nytimes.com/,,new delhi,28.6667,77.2167,http://rdf.freebase.com/,,0@5124#1@5957
+0,Panama City,8.98333,-79.5167,http://dbpedia.org/,,Vevey,46.4667,6.85,http://dbpedia.org/,,0@2294#1@4489
+1,Brisbane (Australia),-27.4679,153.028,http://data.nytimes.com/,,brisbane,-27.4667,153.033,http://rdf.freebase.com/,,0@825#1@826
+0,Gothenburg,57.7072,11.9668,http://sws.geonames.org/,,puno,-15.8433,-70.0236,http://rdf.freebase.com/,,0@5396#1@3502
+1,Puno,-15.8433,-70.0236,http://dbpedia.org/,,puno,-15.8433,-70.0236,http://rdf.freebase.com/,,0@5694#1@3502
+1,Cabarete (Dominican Republic),19.75,-70.4,http://data.nytimes.com/,,Cabarete,19.75,-70.4,http://sws.geonames.org/,,0@656#1@3290
+1,Cabarete,19.7511,-70.4083,http://dbpedia.org/,,Cabarete,19.75,-70.4,http://sws.geonames.org/,,0@3334#1@3290
+1,Cabarete (Dominican Republic),19.75,-70.4,http://data.nytimes.com/,,cabarete,19.7511,-70.4083,http://rdf.freebase.com/,,0@656#1@657
+0,malibu,34.0306,-118.779,http://rdf.freebase.com/,,Bologna (Italy),44.4938,11.3387,http://data.nytimes.com/,,0@6860#1@4083
+0,kashgar,39.4667,76.05,http://rdf.freebase.com/,,Oxford (Conn),41.434,-73.1168,http://data.nytimes.com/,,0@5279#1@1119
+1,St Michaels (Md),38.7851,-76.2244,http://data.nytimes.com/,,st michaels,38.785,-76.2247,http://rdf.freebase.com/,,0@6589#1@7341
+0,kunming,25.0417,102.705,http://rdf.freebase.com/,,st michaels,38.785,-76.2247,http://rdf.freebase.com/,,0@7220#1@7341
+1,Strasbourg,48.5844,7.74861,http://dbpedia.org/,,Strasbourg (France),48.5833,7.75,http://data.nytimes.com/,,0@624#1@623
+0,Xian (China),34.2583,108.929,http://data.nytimes.com/,,Ayacucho,-13.1631,-74.2244,http://dbpedia.org/,,0@2269#1@6942
+0,Xian (China),34.2583,108.929,http://data.nytimes.com/,,Salvador,-12.9711,-38.5108,http://sws.geonames.org/,,0@2269#1@4072
+0,brighton,50.83,-0.155556,http://rdf.freebase.com/,,Istanbul,41.0138,28.9497,http://sws.geonames.org/,,0@7519#1@6188
+0,bonn,50.73,7.1,http://rdf.freebase.com/,,Dresden,51.0509,13.7383,http://sws.geonames.org/,,0@2384#1@5407
+0,bonn,50.73,7.1,http://rdf.freebase.com/,,Cortina d'Ampezzo,46.5333,12.1333,http://dbpedia.org/,,0@2384#1@3505
+0,mosul,36.3414,43.1292,http://rdf.freebase.com/,,Chiangmai,18.7903,98.9817,http://sws.geonames.org/,,0@6444#1@6221
+1,auxerre,47.7983,3.5677800000000004,http://rdf.freebase.com/,,Auxerre,47.7986,3.5672,http://dbpedia.org/,,0@7175#1@7417
+1,Auxerre (France),47.8,3.56667,http://data.nytimes.com/,,Auxerre,47.7986,3.5672,http://dbpedia.org/,,0@1878#1@7417
+1,paterson,40.9167,-74.1722,http://rdf.freebase.com/,,Paterson (NJ),40.9168,-74.1718,http://data.nytimes.com/,,0@5896#1@454
+1,paterson,40.9167,-74.1722,http://rdf.freebase.com/,,"Paterson, New Jersey",,,http://dbpedia.org/,,0@5896#1@455
+1,New Orleans,29.9546,-90.0751,http://sws.geonames.org/,,new orleans,29.9728,-90.059,http://rdf.freebase.com/,,0@267#1@6990
+1,New Orleans (La),29.9546,-90.0751,http://data.nytimes.com/,,new orleans,29.9728,-90.059,http://rdf.freebase.com/,,0@266#1@6990
+0,"Scituate, Massachusetts",,,http://dbpedia.org/,,Rawalpindi,33.6,73.0333,http://dbpedia.org/,,0@7504#1@4581
+1,Rawalpindi,33.6,73.0667,http://sws.geonames.org/,,Rawalpindi,33.6,73.0333,http://dbpedia.org/,,0@3376#1@4581
+1,passaic,40.8567,-74.1289,http://rdf.freebase.com/,,Passaic (NJ),40.8568,-74.1285,http://data.nytimes.com/,,0@653#1@652
+0,"Chachapoyas, Peru",,,http://dbpedia.org/,,Mobile (Ala),30.6944,-88.0431,http://data.nytimes.com/,,0@167#1@4335
+0,Munich,48.1374,11.5755,http://sws.geonames.org/,,Mobile (Ala),30.6944,-88.0431,http://data.nytimes.com/,,0@473#1@4335
+1,isle of palms,32.7867,-79.795,http://rdf.freebase.com/,,"Isle of Palms, South Carolina",,,http://dbpedia.org/,,0@7501#1@7384
+0,Pawling,41.562,-73.6026,http://sws.geonames.org/,,Hollywood,34.0983,-118.327,http://sws.geonames.org/,,0@3436#1@1939
+0,stuttgart,48.7767,9.1775,http://rdf.freebase.com/,247.0,Ferrara,44.8333,11.6167,http://dbpedia.org/,,0@5126#1@7331
+1,mendocino,39.3078,-123.798,http://rdf.freebase.com/,,"Mendocino, California",,,http://dbpedia.org/,,0@2455#1@6219
+1,Piermont (NY),41.042,-73.9182,http://data.nytimes.com/,,Piermont,41.042,-73.9182,http://sws.geonames.org/,,0@1037#1@1038
+1,Lagos (Nigeria),6.45306,3.39583,http://data.nytimes.com/,,Lagos,6.45306,3.39583,http://dbpedia.org/,,0@341#1@3427
+0,Kips Bay (NYC),40.7395,-73.9771,http://data.nytimes.com/,,Bradford,53.7939,-1.75206,http://sws.geonames.org/,,0@357#1@5929
+1,Kips Bay (NYC),40.7395,-73.9771,http://data.nytimes.com/,,Kips Bay,40.7414,-73.9783,http://dbpedia.org/,,0@357#1@7166
+0,Xi'an,34.2583,108.929,http://sws.geonames.org/,,Kips Bay,40.7414,-73.9783,http://dbpedia.org/,,0@2270#1@7166
+0,marfa,30.3078,-104.019,http://rdf.freebase.com/,,"Salvador, Bahia",,,http://dbpedia.org/,,0@6323#1@3091
+1,Da Nang,16.0667,108.233,http://dbpedia.org/,,da nang,16.0667,108.233,http://rdf.freebase.com/,,0@3484#1@1227
+0,Norwalk (Conn),41.1176,-73.4079,http://data.nytimes.com/,,Seattle,47.6097,-122.333,http://dbpedia.org/,,0@58#1@6362
+1,el calafate,-50.3402,-72.2663,http://rdf.freebase.com/,,El Calafate,-50.3407,-72.2768,http://sws.geonames.org/,,0@6915#1@1243
+1,Sydney,-33.86,151.211,http://dbpedia.org/,,Sydney (Australia),-33.8679,151.207,http://data.nytimes.com/,,0@3389#1@1725
+0,Courchevel (France),45.4167,6.65,http://data.nytimes.com/,,Sydney (Australia),-33.8679,151.207,http://data.nytimes.com/,,0@1412#1@1725
+0,Long Island City (NYC),40.7448,-73.9487,http://data.nytimes.com/,,Sydney (Australia),-33.8679,151.207,http://data.nytimes.com/,,0@2448#1@1725
+0,"Homer, Alaska",,,http://dbpedia.org/,,Canberra,-35.3081,149.124,http://dbpedia.org/,,0@7317#1@5236
+1,"Homer, Alaska",,,http://dbpedia.org/,,Homer (Alaska),59.6425,-151.548,http://data.nytimes.com/,,0@7317#1@784
+0,Franschhoek,-33.9167,19.1167,http://sws.geonames.org/,,Adelaide,-34.929,138.601,http://dbpedia.org/,,0@4723#1@6384
+0,Lyon,45.7597,4.842219999999998,http://dbpedia.org/,,villarrica chile,-39.2667,-72.2167,http://rdf.freebase.com/,,0@5339#1@6677
+0,Lyon,45.7597,4.842219999999998,http://dbpedia.org/,,Tokyo,35.7006,139.715,http://dbpedia.org/,,0@5339#1@7070
+0,Lyon,45.7597,4.842219999999998,http://dbpedia.org/,,portofino,44.3,9.2,http://rdf.freebase.com/,4.0,0@5339#1@6870
+0,Lyon,45.7597,4.842219999999998,http://dbpedia.org/,,Juneau (Alaska),58.3019,-134.42,http://data.nytimes.com/,,0@5339#1@4438
+0,Lyon,45.7597,4.842219999999998,http://dbpedia.org/,,taipei,25.0333,121.533,http://rdf.freebase.com/,,0@5339#1@7039
+1,Punta Gorda,26.9298,-82.0454,http://sws.geonames.org/,,Punta Gorda (Fla),26.9298,-82.0454,http://data.nytimes.com/,,0@4652#1@931
+0,Vezelay,,,http://dbpedia.org/,,Punta Gorda (Fla),26.9298,-82.0454,http://data.nytimes.com/,,0@3485#1@931
+0,Tallinn (Estonia),59.437,24.7535,http://data.nytimes.com/,,bogota,4.59806,-74.0758,http://rdf.freebase.com/,,0@1625#1@271
+1,Tours,47.3833,0.683333,http://sws.geonames.org/,,Tours (France),47.3833,0.683333,http://data.nytimes.com/,,0@5145#1@1182
+0,Tours,47.3833,0.683333,http://sws.geonames.org/,,Nassau,25.0582,-77.3431,http://sws.geonames.org/,,0@5145#1@3498
+0,"Nagano, Nagano",,,http://dbpedia.org/,,falls village connecticut,41.9564,-73.3636,http://rdf.freebase.com/,,0@6298#1@1371
+0,Salzburg,47.8,13.0333,http://dbpedia.org/,,Darjeeling (India),27.0333,88.2667,http://data.nytimes.com/,,0@2487#1@670
+1,san jose del cabo,23.05,-109.683,http://rdf.freebase.com/,,San José del Cabo,23.0589,-109.698,http://sws.geonames.org/,,0@4222#1@6303
+0,Arosa (Switzerland),46.7833,9.66667,http://data.nytimes.com/,,Casablanca,33.59,-7.61,http://sws.geonames.org/,,0@256#1@1475
+0,Arosa (Switzerland),46.7833,9.66667,http://data.nytimes.com/,,memphis tennessee,35.1494,-90.0489,http://rdf.freebase.com/,,0@256#1@4638
+1,Memphis (Tenn),35.1495,-90.04899999999998,http://data.nytimes.com/,,memphis tennessee,35.1494,-90.0489,http://rdf.freebase.com/,,0@3707#1@4638
+1,rochester,43.1547,-77.6158,http://rdf.freebase.com/,,Rochester,43.1548,-77.6156,http://sws.geonames.org/,,0@683#1@4653
+1,Rochester (NY),43.1548,-77.6156,http://data.nytimes.com/,,Rochester,43.1548,-77.6156,http://sws.geonames.org/,,0@682#1@4653
+1,rochester,43.1547,-77.6158,http://rdf.freebase.com/,,Rochester (NY),43.1548,-77.6156,http://data.nytimes.com/,,0@683#1@682
+0,Cadiz,36.5333,-6.28333,http://dbpedia.org/,,Rochester (NY),43.1548,-77.6156,http://data.nytimes.com/,,0@7255#1@682
+0,Eilat,,,http://dbpedia.org/,,Shimla,31.1,77.1667,http://sws.geonames.org/,,0@4865#1@81
+0,dubrovnik,42.6403,18.1083,http://rdf.freebase.com/,,chinatown manhattan,40.7183,-74.0025,http://rdf.freebase.com/,,0@6903#1@4764
+0,Potsdam,52.4,13.0667,http://dbpedia.org/,,chinatown manhattan,40.7183,-74.0025,http://rdf.freebase.com/,,0@4040#1@4764
+0,Huntington Station (NY),40.8534,-73.4115,http://data.nytimes.com/,,"New Rochelle, New York",,,http://dbpedia.org/,,0@444#1@7375
+0,Klosterneuburg,,,http://dbpedia.org/,,"New Rochelle, New York",,,http://dbpedia.org/,,0@3972#1@7375
+0,oxford,51.7511,-1.25583,http://rdf.freebase.com/,,cuenca ecuador,-2.89917,-79.0153,http://rdf.freebase.com/,,0@4342#1@2754
+0,oxford,51.7511,-1.25583,http://rdf.freebase.com/,,Helsinki (Finland),60.1756,24.9342,http://data.nytimes.com/,,0@4342#1@1313
+1,seoul,37.5833,127.0,http://rdf.freebase.com/,,Seoul (South Korea),37.5664,127.0,http://data.nytimes.com/,,0@2285#1@823
+1,seoul,37.5833,127.0,http://rdf.freebase.com/,,Seoul,37.5683,126.978,http://sws.geonames.org/,,0@2285#1@6372
+0,riga,56.9496,24.104,http://rdf.freebase.com/,,isla mujeres,21.2167,-86.7167,http://rdf.freebase.com/,,0@5182#1@2148
+0,Girona,41.9831,2.82493,http://sws.geonames.org/,,"Rehoboth Beach, Delaware",,,http://dbpedia.org/,,0@13#1@5804
+1,Rehoboth Beach,38.7209,-75.07600000000002,http://sws.geonames.org/,,"Rehoboth Beach, Delaware",,,http://dbpedia.org/,,0@5512#1@5804
+1,Girona,41.9831,2.82493,http://sws.geonames.org/,,Girona,41.9844,2.82111,http://dbpedia.org/,,0@13#1@2272
+0,naypyidaw,19.75,96.1,http://rdf.freebase.com/,,Davos,46.8,9.83333,http://dbpedia.org/,,0@5912#1@2176
+0,Vientiane (Laos),17.9667,102.6,http://data.nytimes.com/,,sintra,38.7977,-9.38919,http://rdf.freebase.com/,,0@1259#1@4885
+1,Sintra (Portugal),38.8,-9.38333,http://data.nytimes.com/,,sintra,38.7977,-9.38919,http://rdf.freebase.com/,,0@1348#1@4885
+1,Vézelay,47.4667,3.733330000000001,http://sws.geonames.org/,,Vezelay,,,http://dbpedia.org/,,0@4262#1@3485
+0,Armação de Búzios,-22.7469,-41.8817,http://sws.geonames.org/,,osaka,34.6603,135.523,http://rdf.freebase.com/,,0@237#1@5611
+0,kiawah island,32.6094,-80.0978,http://rdf.freebase.com/,,osaka,34.6603,135.523,http://rdf.freebase.com/,,0@5833#1@5611
+1,Knoxville,35.9606,-83.9207,http://sws.geonames.org/,,knoxville,35.9606,-83.9208,http://rdf.freebase.com/,,0@5722#1@6210
+0,Ras al-Khaimah (United Arab Emirates),25.7911,55.9428,http://data.nytimes.com/,,Graz,47.0667,15.45,http://sws.geonames.org/,,0@300#1@5906
+0,Key Largo,25.0865,-80.4473,http://sws.geonames.org/,,Kelowna,49.8831,-119.486,http://sws.geonames.org/,,0@4965#1@6147
+0,new delhi,28.6667,77.2167,http://rdf.freebase.com/,,Kelowna,49.8831,-119.486,http://sws.geonames.org/,,0@5957#1@6147
+1,Cancun (Mexico),21.1743,-86.8466,http://data.nytimes.com/,,cancun,21.1617,-86.848,http://rdf.freebase.com/,,0@5028#1@5029
+1,"Norwalk, Connecticut",,,http://dbpedia.org/,,Norwalk,41.1176,-73.4079,http://sws.geonames.org/,,0@415#1@5340
+0,bergama,39.1234,27.1757,http://rdf.freebase.com/,68.0,"Islamorada, Florida",,,http://dbpedia.org/,,0@283#1@6240
+1,Red Bank,40.3471,-74.0643,http://sws.geonames.org/,,red bank new jersey,40.3469,-74.0647,http://rdf.freebase.com/,,0@702#1@1075
+0,Plainsboro (NJ),40.3334,-74.6004,http://data.nytimes.com/,,Strasbourg,48.5844,7.74861,http://dbpedia.org/,,0@448#1@624
+0,sago west virginia,38.9143,-80.2301,http://rdf.freebase.com/,,Petra,,,http://dbpedia.org/,,0@537#1@1
+1,Mombasa (Kenya),-4.05,39.6667,http://data.nytimes.com/,,mombasa,-4.05,39.6667,http://rdf.freebase.com/,,0@100#1@101
+0,"Kansas City, Missouri",,,http://dbpedia.org/,,"Manteca, California",,,http://dbpedia.org/,,0@4710#1@7187
+1,"Kansas City, Missouri",,,http://dbpedia.org/,,Kansas City,39.0997,-94.5786,http://sws.geonames.org/,,0@4710#1@7392
+0,Almagro,38.8833,-3.71667,http://sws.geonames.org/,,Kansas City,39.0997,-94.5786,http://sws.geonames.org/,,0@3494#1@7392
+0,Cannes,43.5513,7.01275,http://dbpedia.org/,,Kansas City,39.0997,-94.5786,http://sws.geonames.org/,,0@6394#1@7392
+1,"Natal, Rio Grande do Norte",,,http://dbpedia.org/,,Natal,-5.795,-35.2094,http://sws.geonames.org/,,0@2869#1@5928
+0,"Alta, Utah",,,http://dbpedia.org/,,Natal,-5.795,-35.2094,http://sws.geonames.org/,,0@6920#1@5928
+1,Antalya,36.9,30.6833,http://dbpedia.org/,,antalya,36.8906,30.7047,http://rdf.freebase.com/,30.0,0@5883#1@7043
+0,Nagasaki,32.7833,129.86700000000002,http://dbpedia.org/,,Guangzhou (China),23.1167,113.25,http://data.nytimes.com/,,0@5181#1@3787
+1,Nagasaki,32.7833,129.86700000000002,http://dbpedia.org/,,nagasaki,32.7833,129.86700000000002,http://rdf.freebase.com/,,0@5181#1@872
+1,peshawar,34.0117,71.5389,http://rdf.freebase.com/,,Peshawar (Pakistan),34.0078,71.5733,http://data.nytimes.com/,,0@5484#1@5483
+1,City Island,40.8473,-73.7865,http://sws.geonames.org/,,City Island (NYC),40.8473,-73.7865,http://data.nytimes.com/,,0@4570#1@1294
+1,Belfast (Northern Ireland),54.6,-5.9333300000000015,http://data.nytimes.com/,,Belfast,54.597,-5.93,http://dbpedia.org/,,0@425#1@426
+1,Los Angeles,34.05,-118.25,http://dbpedia.org/,,los angeles,34.0522,-118.243,http://rdf.freebase.com/,71.0,0@7296#1@2943
+1,Ossining (NY),41.1629,-73.8615,http://data.nytimes.com/,,ossining new york,41.165278,-73.856667,http://rdf.freebase.com/,49.0728,0@3584#1@3585
+1,Ossining,41.1629,-73.8615,http://sws.geonames.org/,,ossining new york,41.165278,-73.856667,http://rdf.freebase.com/,49.0728,0@4881#1@3585
+0,Ossining (NY),41.1629,-73.8615,http://data.nytimes.com/,,Lisbon,38.7138,-9.13939,http://dbpedia.org/,,0@3584#1@275
+0,Beslan (Russia),43.1919,44.5388,http://data.nytimes.com/,,Las Cruces (NM),32.3123,-106.778,http://data.nytimes.com/,,0@3823#1@4955
+1,"Richmond, Virginia",,,http://dbpedia.org/,,Richmond (Va),37.5538,-77.4603,http://data.nytimes.com/,,0@2141#1@2140
+0,Revelstoke,50.9832,-118.202,http://sws.geonames.org/,,Richmond (Va),37.5538,-77.4603,http://data.nytimes.com/,,0@3311#1@2140
+1,Siwa (Egypt),29.2,25.5167,http://data.nytimes.com/,,Siwa Oasis,29.1833,25.55,http://dbpedia.org/,,0@3256#1@5037
+1,Sīwah,29.2,25.5167,http://sws.geonames.org/,,Siwa Oasis,29.1833,25.55,http://dbpedia.org/,,0@5537#1@5037
+1,siwa oasis,29.1833,25.55,http://rdf.freebase.com/,,Siwa Oasis,29.1833,25.55,http://dbpedia.org/,,0@3257#1@5037
+1,Munich,48.1333,11.5667,http://dbpedia.org/,,Munich,48.1374,11.5755,http://sws.geonames.org/,,0@2678#1@473
+1,akihabara,35.6984,139.77200000000002,http://rdf.freebase.com/,,Akihabara,35.6973,139.77200000000002,http://dbpedia.org/,,0@4124#1@6079
+0,akihabara,35.6984,139.77200000000002,http://rdf.freebase.com/,,Corona (NYC),40.747,-73.8601,http://data.nytimes.com/,,0@4124#1@5192
+1,Orvieto,42.7167,12.1,http://dbpedia.org/,,Orvieto,42.7195,12.1116,http://sws.geonames.org/,,0@6862#1@1655
+1,"Montclair, New Jersey",,,http://dbpedia.org/,,Montclair,40.8259,-74.209,http://sws.geonames.org/,,0@3674#1@3666
+1,Montclair (NJ),40.8259,-74.209,http://data.nytimes.com/,,Montclair,40.8259,-74.209,http://sws.geonames.org/,,0@3665#1@3666
+0,Malmo (Sweden),55.6059,13.0007,http://data.nytimes.com/,,Montclair,40.8259,-74.209,http://sws.geonames.org/,,0@1922#1@3666
+0,Almagro,38.8833,-3.71667,http://sws.geonames.org/,,"Huntsville, Alabama",,,http://dbpedia.org/,,0@3494#1@6598
+0,Shelter Island (NY),41.0682,-72.3387,http://data.nytimes.com/,,Genoa,44.4111,8.932780000000003,http://dbpedia.org/,,0@5255#1@6993
+1,Provincetown,42.0584,-70.1786,http://sws.geonames.org/,,Provincetown (Mass),42.0584,-70.1786,http://data.nytimes.com/,,0@3917#1@1228
+0,panama city,9.0,-79.5,http://rdf.freebase.com/,,Provincetown (Mass),42.0584,-70.1786,http://data.nytimes.com/,,0@5294#1@1228
+1,Provincetown,42.0584,-70.1786,http://sws.geonames.org/,,provincetown,42.0583,-70.1792,http://rdf.freebase.com/,,0@3917#1@1229
+0,Provincetown,42.0584,-70.1786,http://sws.geonames.org/,,Beijing,39.9075,116.397,http://sws.geonames.org/,,0@3917#1@7182
+1,Beijing (China),39.9075,116.397,http://data.nytimes.com/,,Beijing,39.9075,116.397,http://sws.geonames.org/,,0@627#1@7182
+1,Port Elizabeth (South Africa),-33.9667,25.5833,http://data.nytimes.com/,,port elizabeth eastern cape,-33.9608,25.602,http://rdf.freebase.com/,,0@1342#1@2791
+1,Cork (Ireland),51.8986,-8.49583,http://data.nytimes.com/,,cork,51.9,-8.47306,http://rdf.freebase.com/,,0@1750#1@5577
+0,Málaga,36.7202,-4.42034,http://sws.geonames.org/,,cork,51.9,-8.47306,http://rdf.freebase.com/,,0@6919#1@5577
+0,hollywood,34.1,-118.333,http://rdf.freebase.com/,,Sderot,31.5167,34.5833,http://sws.geonames.org/,,0@6902#1@1519
+0,Ithaca (NY),42.4406,-76.4966,http://data.nytimes.com/,,Sandwich (Mass),41.75899999999999,-70.4939,http://data.nytimes.com/,,0@5372#1@3264
+0,lima,-12.0433,-77.0283,http://rdf.freebase.com/,,"New Paltz (village), New York",,,http://dbpedia.org/,,0@5417#1@7003
+1,lima,-12.0433,-77.0283,http://rdf.freebase.com/,,Lima,-12.0433,-77.0283,http://dbpedia.org/,,0@5417#1@6857
+1,jaipur,26.92,75.82,http://rdf.freebase.com/,,Jaipur (India),26.9167,75.8167,http://data.nytimes.com/,,0@5462#1@3742
+1,Kuala Lumpur,3.1475,101.693,http://dbpedia.org/,,Kuala Lumpur,3.1412,101.687,http://sws.geonames.org/,,0@5546#1@757
+1,kuala lumpur,3.15972,101.7,http://rdf.freebase.com/,,Kuala Lumpur,3.1412,101.687,http://sws.geonames.org/,,0@6754#1@757
+0,Zagreb,45.8167,15.9833,http://dbpedia.org/,,Kuala Lumpur,3.1412,101.687,http://sws.geonames.org/,,0@5713#1@757
+0,Stuttgart,48.7823,9.17702,http://sws.geonames.org/,,sedona,34.8697,-111.76,http://rdf.freebase.com/,,0@1836#1@6938
+1,"Sedona, Arizona",,,http://dbpedia.org/,,sedona,34.8697,-111.76,http://rdf.freebase.com/,,0@6026#1@6938
+1,Sedona,34.8697,-111.761,http://sws.geonames.org/,,sedona,34.8697,-111.76,http://rdf.freebase.com/,,0@5312#1@6938
+0,Auxerre,47.8,3.56667,http://sws.geonames.org/,,sedona,34.8697,-111.76,http://rdf.freebase.com/,,0@1879#1@6938
+0,lower east side manhattan,40.719,-73.988,http://rdf.freebase.com/,,Assisi,43.0691,12.6165,http://sws.geonames.org/,,0@759#1@5673
+0,Salt Lake City,40.75,-111.883,http://dbpedia.org/,,Assisi,43.0691,12.6165,http://sws.geonames.org/,,0@1993#1@5673
+0,Nagoya,35.1815,136.906,http://dbpedia.org/,,cadiz,36.5167,-6.28333,http://rdf.freebase.com/,,0@3902#1@4674
+0,"Shelter Island (town), New York",,,http://dbpedia.org/,,manchester united kingdom,53.48,-2.24,http://rdf.freebase.com/,,0@5256#1@6355
+0,santa cruz de la sierra,-17.7892,-63.1975,http://rdf.freebase.com/,,manchester united kingdom,53.48,-2.24,http://rdf.freebase.com/,,0@6012#1@6355
+1,Manchester,53.4809,-2.23743,http://sws.geonames.org/,,manchester united kingdom,53.48,-2.24,http://rdf.freebase.com/,,0@3475#1@6355
+1,"Shelter Island (town), New York",,,http://dbpedia.org/,,Shelter Island,41.0682,-72.3387,http://sws.geonames.org/,,0@5256#1@5753
+1,shelter island,41.078056,-72.350833,http://rdf.freebase.com/,17.0688,Shelter Island,41.0682,-72.3387,http://sws.geonames.org/,,0@5588#1@5753
+1,Goreme,,,http://dbpedia.org/,,goreme,38.6667,34.8333,http://rdf.freebase.com/,,0@2900#1@4858
+0,Maspeth (NYC),40.7232,-73.9126,http://data.nytimes.com/,,Jakarta,-6.2,106.8,http://dbpedia.org/,,0@3471#1@6892
+1,Millbrook,41.7851,-73.694,http://sws.geonames.org/,,"Millbrook, New York",,,http://dbpedia.org/,,0@6630#1@1841
+1,Darjeeling,27.0333,88.2667,http://sws.geonames.org/,,darjeeling,27.0436,88.2644,http://rdf.freebase.com/,,0@671#1@6250
+0,Nay Pyi Taw,19.745,96.1297,http://sws.geonames.org/,,Almagro (Spain),38.8833,-3.71667,http://data.nytimes.com/,,0@2988#1@3493
+0,Amsterdam,52.374,4.88969,http://sws.geonames.org/,,Almagro (Spain),38.8833,-3.71667,http://data.nytimes.com/,,0@2459#1@3493
+1,Bilbao,43.2627,-2.92528,http://sws.geonames.org/,,Bilbao (Spain),43.2627,-2.92528,http://data.nytimes.com/,,0@3129#1@2315
+1,Bilbao,43.2627,-2.92528,http://sws.geonames.org/,,bilbao,43.25,-2.9667,http://rdf.freebase.com/,,0@3129#1@2316
+1,New Canaan (Conn),41.1468,-73.4948,http://data.nytimes.com/,,new canaan,41.1467,-73.4953,http://rdf.freebase.com/,,0@5171#1@5172
+1,New Canaan,41.1468,-73.4948,http://sws.geonames.org/,,new canaan,41.1467,-73.4953,http://rdf.freebase.com/,,0@6099#1@5172
+1,la jolla,32.84,-117.277,http://rdf.freebase.com/,,La Jolla (Calif),32.8473,-117.274,http://data.nytimes.com/,,0@7440#1@4227
+0,Seattle (Wash),47.6062,-122.332,http://data.nytimes.com/,,Damascus,33.5102,36.2913,http://sws.geonames.org/,,0@394#1@143
+0,Luxor (Egypt),25.6989,32.6421,http://data.nytimes.com/,,kyoto,35.0,135.75,http://rdf.freebase.com/,,0@3267#1@5409
+0,Franschhoek,-33.9167,19.1333,http://dbpedia.org/,,Islamabad,33.43,73.04,http://dbpedia.org/,,0@6354#1@6065
+1,baden-baden,48.7629,8.2411,http://rdf.freebase.com/,,Baden-Baden,48.7628,8.24083,http://dbpedia.org/,,0@4797#1@1970
+0,Cannes (France),43.55,7.01667,http://data.nytimes.com/,,Baden-Baden,48.7628,8.24083,http://dbpedia.org/,,0@3482#1@1970
+0,baden-baden,48.7629,8.2411,http://rdf.freebase.com/,,Villarrica (Chile),-39.2857,-72.2279,http://data.nytimes.com/,,0@4797#1@3460
+1,Clarence Center (NY),43.0106,-78.6375,http://data.nytimes.com/,,clarence center,43.0111,-78.6347,http://rdf.freebase.com/,,0@4299#1@5229
+1,Orléans,47.9167,1.9,http://sws.geonames.org/,,orleans,47.9031,1.905,http://rdf.freebase.com/,,0@7284#1@485
+1,Orleans,,,http://dbpedia.org/,,orleans,47.9031,1.905,http://rdf.freebase.com/,,0@1746#1@485
+0,Orléans,47.9167,1.9,http://sws.geonames.org/,,Liverpool,53.4,-2.98333,http://dbpedia.org/,,0@7284#1@5086
+0,beverley,53.845,-0.4270000000000001,http://rdf.freebase.com/,,Bay Ridge (NYC),40.634,-74.0146,http://data.nytimes.com/,,0@5477#1@986
+1,beverley,53.845,-0.4270000000000001,http://rdf.freebase.com/,,Beverley (England),53.8459,-0.423317,http://data.nytimes.com/,,0@5477#1@5276
+0,beverley,53.845,-0.4270000000000001,http://rdf.freebase.com/,,Orlando,28.5383,-81.3792,http://sws.geonames.org/,,0@5477#1@2981
+0,beverley,53.845,-0.4270000000000001,http://rdf.freebase.com/,,louisville,38.2542,-85.7594,http://rdf.freebase.com/,,0@5477#1@3347
+1,ani,40.5075,43.5728,http://rdf.freebase.com/,,Ani,40.5333,43.5667,http://sws.geonames.org/,,0@6260#1@4927
+0,scottsdale,33.5092,-111.898,http://rdf.freebase.com/,,Ani,40.5333,43.5667,http://sws.geonames.org/,,0@6627#1@4927
+1,ani,40.5075,43.5728,http://rdf.freebase.com/,,Ani,40.5075,43.5728,http://dbpedia.org/,,0@6260#1@7098
+1,Nelson (British Columbia),49.4999,-117.286,http://data.nytimes.com/,,"Nelson, British Columbia",,,http://dbpedia.org/,,0@2709#1@2710
+0,Raleigh (NC),35.7721,-78.6386,http://data.nytimes.com/,,marathon florida,24.7133,-81.0906,http://rdf.freebase.com/,,0@1671#1@1320
+1,heidelberg,49.4034,8.6792,http://rdf.freebase.com/,,Heidelberg,49.4077,8.69079,http://sws.geonames.org/,,0@5065#1@4246
+1,Innsbruck,47.2627,11.3945,http://sws.geonames.org/,,innsbruck,47.2671,11.3928,http://rdf.freebase.com/,574.0,0@6067#1@5835
+1,silverton colorado,37.8119,-107.664,http://rdf.freebase.com/,,Silverton (Colo),37.8119,-107.665,http://data.nytimes.com/,,0@3919#1@2262
+1,samarra,34.1985,43.8742,http://rdf.freebase.com/,,Samarra,34.1983,43.8742,http://dbpedia.org/,,0@5766#1@6916
+0,Darwin,-12.4611,130.842,http://sws.geonames.org/,,ronda,36.7394,-5.16392,http://rdf.freebase.com/,,0@2619#1@5482
+0,Darwin,-12.4611,130.842,http://sws.geonames.org/,,jamesport,40.9444,-72.5772,http://rdf.freebase.com/,,0@2619#1@7227
+1,Jamesport,40.9495,-72.5815,http://sws.geonames.org/,,jamesport,40.9444,-72.5772,http://rdf.freebase.com/,,0@6865#1@7227
+0,Long Beach,33.767,-118.189,http://sws.geonames.org/,,"Ocean City, Maryland",,,http://dbpedia.org/,,0@503#1@1276
+0,giverny,49.0769,1.53,http://rdf.freebase.com/,,"Ocean City, Maryland",,,http://dbpedia.org/,,0@2969#1@1276
+0,"Corona, Queens",,,http://dbpedia.org/,,"Montclair, New Jersey",,,http://dbpedia.org/,,0@5193#1@3674
+0,Jacksonville (Fla),30.3322,-81.6556,http://data.nytimes.com/,,huntington station,40.8533,-73.4119,http://rdf.freebase.com/,,0@3819#1@7081
+0,Kabul (Afghanistan),34.5167,69.1833,http://data.nytimes.com/,,Plainsboro (NJ),40.3334,-74.6004,http://data.nytimes.com/,,0@5059#1@448
+0,Kabul (Afghanistan),34.5167,69.1833,http://data.nytimes.com/,,Morelia,19.7008,-101.184,http://sws.geonames.org/,,0@5059#1@6280
+0,Veracruz,19.2,-96.1333,http://sws.geonames.org/,,Morelia,19.7008,-101.184,http://sws.geonames.org/,,0@4867#1@6280
+0,messene,37.05,22.0,http://rdf.freebase.com/,,Guangzhou,23.1333,113.267,http://dbpedia.org/,,0@4535#1@5467
+0,yangon,16.7833,96.15,http://rdf.freebase.com/,,Innsbruck,47.2667,11.3833,http://dbpedia.org/,,0@5168#1@4366
+1,Puerto Jimenez (Costa Rica),8.53333,-83.3167,http://data.nytimes.com/,,puerto jimenez,8990.33,-5170.87,http://rdf.freebase.com/,,0@3076#1@3077
+1,Montreal (Quebec),45.5088,-73.5878,http://data.nytimes.com/,,Montreal,45.5089,-73.5542,http://dbpedia.org/,,0@3556#1@3806
+1,Montreal,45.5088,-73.5878,http://sws.geonames.org/,,Montreal,45.5089,-73.5542,http://dbpedia.org/,,0@3741#1@3806
+0,Verbier (Switzerland),46.1,7.21667,http://data.nytimes.com/,,berne,46.95,7.44583,http://rdf.freebase.com/,,0@3113#1@3938
+1,lafayette louisiana,30.2139,-92.0294,http://rdf.freebase.com/,,"Lafayette, Louisiana",,,http://dbpedia.org/,,0@4681#1@4839
+0,Lahinch,52.937,-9.345,http://dbpedia.org/,,Catano (Puerto Rico),18.4413,-66.1182,http://data.nytimes.com/,,0@6287#1@3744
+1,Urumqi (China),43.8,87.5833,http://data.nytimes.com/,,urumqi,43.7958,87.6089,http://rdf.freebase.com/,,0@4432#1@6761
+1,"Metuchen, New Jersey",,,http://dbpedia.org/,,Metuchen,40.5432,-74.3632,http://sws.geonames.org/,,0@5447#1@5013
+1,"Metuchen, New Jersey",,,http://dbpedia.org/,,Metuchen (NJ),40.5432,-74.3632,http://data.nytimes.com/,,0@5447#1@298
+1,Southampton (England),50.9,-1.4,http://data.nytimes.com/,,southampton,50.9339,-1.39609,http://rdf.freebase.com/,,0@402#1@7072
+0,Southampton (England),50.9,-1.4,http://data.nytimes.com/,,paris,48.8742,2.34695,http://rdf.freebase.com/,,0@402#1@4475
+0,Southampton (England),50.9,-1.4,http://data.nytimes.com/,,kochi,9.9667,76.2167,http://rdf.freebase.com/,,0@402#1@5369
+0,Knoxville (Tenn),35.9606,-83.9207,http://data.nytimes.com/,,Ottawa,45.4112,-75.6981,http://sws.geonames.org/,,0@5721#1@6182
+0,"New Milford, Connecticut",,,http://dbpedia.org/,,Bristol,51.45,-2.58333,http://sws.geonames.org/,,0@3731#1@4597
+1,"New Milford, Connecticut",,,http://dbpedia.org/,,New Milford,41.577,-73.4085,http://sws.geonames.org/,,0@3731#1@7088
+0,"Northport, New York",,,http://dbpedia.org/,,Girona,41.9831,2.82493,http://sws.geonames.org/,,0@3652#1@13
+0,Gaiman (Argentina),-43.2833,-65.4833,http://data.nytimes.com/,,Nasiriyah,31.05,46.2667,http://dbpedia.org/,,0@2474#1@5605
+1,Gaiman (Argentina),-43.2833,-65.4833,http://data.nytimes.com/,,Gaimán,-43.2833,-65.4833,http://sws.geonames.org/,,0@2474#1@3175
+1,Cortona,43.2747,11.9853,http://sws.geonames.org/,,Cortona,43.2756,11.9881,http://dbpedia.org/,,0@4186#1@1437
+0,silver city,32.77,-108.28,http://rdf.freebase.com/,,las vegas,,-115.136389,http://rdf.freebase.com/,,0@2849#1@974
+0,Hong Kong,22.284,114.15,http://data.nytimes.com/,,las vegas,,-115.136389,http://rdf.freebase.com/,,0@1797#1@974
+1,silver city,32.77,-108.28,http://rdf.freebase.com/,,Silver City,32.7701,-108.28,http://sws.geonames.org/,,0@2849#1@1174
+1,Silver City (New Mexico),32.7781,-108.274,http://dbpedia.org/,,Silver City,32.7701,-108.28,http://sws.geonames.org/,,0@6830#1@1174
+0,Mashpee,41.6484,-70.4811,http://sws.geonames.org/,,San José,9.93333,-84.0833,http://sws.geonames.org/,,0@2209#1@5381
+1,Yangon,16.8053,96.1561,http://sws.geonames.org/,,Yangon,16.8,96.15,http://dbpedia.org/,,0@2496#1@5566
+0,Brussels,50.85,4.35,http://dbpedia.org/,,"Hyannis, Massachusetts",,,http://dbpedia.org/,,0@6386#1@1944
+1,"Madison, Wisconsin",,,http://dbpedia.org/,,madison,43.0731,-89.4011,http://rdf.freebase.com/,,0@5507#1@2129
+0,Palm Springs (Calif),33.8303,-116.545,http://data.nytimes.com/,,Aragon,41.0,-1.0,http://dbpedia.org/,,0@1719#1@4344
+1,Isla Mujeres (Mexico),21.2311,-86.7311,http://data.nytimes.com/,,Isla Mujeres,21.2311,-86.7311,http://sws.geonames.org/,,0@2147#1@5092
+0,Isla Mujeres (Mexico),21.2311,-86.7311,http://data.nytimes.com/,,honfleur,49.4194,0.2325,http://rdf.freebase.com/,,0@2147#1@6137
+1,Honfleur,49.4194,0.2325,http://dbpedia.org/,,honfleur,49.4194,0.2325,http://rdf.freebase.com/,,0@1965#1@6137
+1,Tokyo,35.7006,139.715,http://dbpedia.org/,,tokyo,35.6833,139.767,http://rdf.freebase.com/,,0@7070#1@2327
+0,Paris,48.8534,2.3488,http://sws.geonames.org/,,Athens (Greece),37.9833,23.7333,http://data.nytimes.com/,,0@4071#1@2442
+0,Dunedin,-45.8667,170.5,http://dbpedia.org/,,Dalian,38.9208,121.639,http://dbpedia.org/,,0@5547#1@7083
+0,Dunedin,-45.8667,170.5,http://dbpedia.org/,,"Park City, Utah",,,http://dbpedia.org/,,0@5547#1@3336
+0,Pyongyang (North Korea),39.0194,125.755,http://data.nytimes.com/,,Athens,,,http://dbpedia.org/,,0@762#1@2443
+0,punta gorda,26.9294,-82.0456,http://rdf.freebase.com/,,Athens,,,http://dbpedia.org/,,0@6286#1@2443
+1,Athens (Greece),37.9833,23.7333,http://data.nytimes.com/,,Athens,,,http://dbpedia.org/,,0@2442#1@2443
+0,Lake Placid,44.2795,-73.9799,http://sws.geonames.org/,,Oxford,51.7519,-1.25778,http://dbpedia.org/,,0@7106#1@6281
+0,"Montecito, California",,,http://dbpedia.org/,,Kobe,34.6833,135.167,http://sws.geonames.org/,,0@580#1@7422
+0,shimla,31.1033,77.1722,http://rdf.freebase.com/,,"Oxnard, California",,,http://dbpedia.org/,,0@2569#1@4259
+0,Glasgow,55.8652,-4.257630000000002,http://sws.geonames.org/,,"Cleveland, Ohio",,,http://dbpedia.org/,,0@6461#1@2885
+0,Pasadena (Calif),34.1478,-118.145,http://data.nytimes.com/,,Rio de Janeiro (Brazil),-22.9028,-43.2075,http://data.nytimes.com/,,0@5538#1@1017
+0,Pasadena (Calif),34.1478,-118.145,http://data.nytimes.com/,,Isle of Palms (SC),32.7868,-79.7948,http://data.nytimes.com/,,0@5538#1@4963
+0,Mendocino (Calif),39.3077,-123.799,http://data.nytimes.com/,,Chennai,13.0878,80.2785,http://sws.geonames.org/,,0@2454#1@2917
+1,Calgary,51.0501,-114.085,http://sws.geonames.org/,,Calgary,51.045,-114.057,http://dbpedia.org/,,0@6593#1@3753
+1,New Canaan,41.1468,-73.4948,http://sws.geonames.org/,,"New Canaan, Connecticut",,,http://dbpedia.org/,,0@6099#1@5198
+0,Manchester,53.4667,-2.23333,http://dbpedia.org/,,"New Canaan, Connecticut",,,http://dbpedia.org/,,0@2669#1@5198
+0,Essaouira,31.51,-9.76,http://sws.geonames.org/,,Urgup,,,http://dbpedia.org/,,0@6643#1@2322
+0,queens,40.7143,-73.8204,http://rdf.freebase.com/,,Urgup,,,http://dbpedia.org/,,0@6029#1@2322
+1,Essaouira,31.51,-9.76,http://sws.geonames.org/,,Essaouira (Morocco),31.51,-9.76,http://data.nytimes.com/,,0@6643#1@6642
+1,Essaouira,31.5131,-9.76972,http://dbpedia.org/,,Essaouira (Morocco),31.51,-9.76,http://data.nytimes.com/,,0@6894#1@6642
+0,Amsterdam,52.374,4.88969,http://sws.geonames.org/,,Louisville,38.2542,-85.7594,http://sws.geonames.org/,,0@2459#1@6592
+0,lagos,6.45,3.3833300000000004,http://rdf.freebase.com/,,Mammoth Lakes (Calif),37.6485,-118.972,http://data.nytimes.com/,,0@4502#1@2675
+0,lagos,6.45,3.3833300000000004,http://rdf.freebase.com/,,Colmar (France),48.0833,7.36667,http://data.nytimes.com/,,0@4502#1@703
+1,montreal,45.5081,-73.555,http://rdf.freebase.com/,,Montreal,45.5088,-73.5878,http://sws.geonames.org/,,0@3557#1@3741
+1,montreal,45.5081,-73.555,http://rdf.freebase.com/,,Montreal (Quebec),45.5088,-73.5878,http://data.nytimes.com/,,0@3557#1@3556
+1,lecce,40.35,18.1667,http://rdf.freebase.com/,,Lecce (Italy),40.357,18.172,http://data.nytimes.com/,,0@6814#1@905
+1,lecce,40.35,18.1667,http://rdf.freebase.com/,,Lecce,40.357,18.172,http://sws.geonames.org/,,0@6814#1@906
+0,Natchez,31.5604,-91.4032,http://sws.geonames.org/,,Lockerbie (Scotland),55.1167,-3.35,http://data.nytimes.com/,,0@4850#1@937
+1,Bristol,51.4587,-2.592,http://dbpedia.org/,,bristol,51.46,-2.6,http://rdf.freebase.com/,,0@3740#1@572
+0,Honfleur,49.4199,0.232944,http://sws.geonames.org/,,Dharamsala,32.2167,76.3167,http://sws.geonames.org/,,0@6702#1@2069
+0,"Long Branch, New Jersey",,,http://dbpedia.org/,,Reykjavik (Iceland),64.146,-21.9423,http://data.nytimes.com/,,0@4734#1@3873
+0,Bangkok,13.75,100.517,http://sws.geonames.org/,,verdun,49.1594,5.388330000000002,http://rdf.freebase.com/,,0@1540#1@512
+0,Ravenna,44.4167,12.2,http://dbpedia.org/,,verdun,49.1594,5.388330000000002,http://rdf.freebase.com/,,0@2815#1@512
+1,Ferrara,44.8333,11.6167,http://dbpedia.org/,,Ferrara,44.8268,11.6207,http://sws.geonames.org/,,0@7331#1@5222
+1,Haditha (Iraq),34.1397,42.3781,http://data.nytimes.com/,,haditha,34.1397,42.3781,http://rdf.freebase.com/,,0@794#1@7211
+0,Bormio,46.4667,10.3667,http://dbpedia.org/,,crown heights brooklyn,40.6631,-73.9447,http://rdf.freebase.com/,,0@5719#1@481
+0,Saugatuck (Mich),42.655,-86.20200000000001,http://data.nytimes.com/,,crown heights brooklyn,40.6631,-73.9447,http://rdf.freebase.com/,,0@1870#1@481
+1,Hanau,50.1333,8.91667,http://sws.geonames.org/,,hanau,50.1358,8.915410000000003,http://rdf.freebase.com/,,0@3765#1@5699
+1,Casablanca,33.5333,-7.58333,http://dbpedia.org/,,casablanca,33.5992,-7.62,http://rdf.freebase.com/,,0@5840#1@4511
+1,Casablanca,33.5333,-7.58333,http://dbpedia.org/,,Casablanca (Morocco),33.59,-7.61,http://data.nytimes.com/,,0@5840#1@1474
+1,Casablanca,33.59,-7.61,http://sws.geonames.org/,,Casablanca (Morocco),33.59,-7.61,http://data.nytimes.com/,,0@1475#1@1474
+1,Goreme (Turkey),38.6486,34.8639,http://data.nytimes.com/,,Goreme,,,http://dbpedia.org/,,0@2899#1@2900
+1,lahore,31.5758,74.3269,http://rdf.freebase.com/,,Lahore (Pakistan),31.5497,74.3436,http://data.nytimes.com/,,0@2790#1@2789
+0,Gori (Georgian Republic),41.9736,44.1111,http://data.nytimes.com/,,Marfa,30.3079,-104.019,http://sws.geonames.org/,,0@411#1@3973
+0,Biarritz (France),43.4833,-1.56667,http://data.nytimes.com/,,Autun,46.9517,4.29944,http://dbpedia.org/,,0@2439#1@4069
+1,luanda,-8.83083,13.245,http://rdf.freebase.com/,,Luanda,-8.838330000000003,13.2344,http://dbpedia.org/,,0@6728#1@6550
+0,luanda,-8.83083,13.245,http://rdf.freebase.com/,,Pucon (Chile),-39.2822,-71.9543,http://data.nytimes.com/,,0@6728#1@296
+1,Ocean Grove,40.2121,-74.0065,http://sws.geonames.org/,,"Ocean Grove, New Jersey",,,http://dbpedia.org/,,0@6471#1@7516
+0,Leipzig,51.3396,12.3713,http://sws.geonames.org/,,Interlaken,46.6833,7.85,http://dbpedia.org/,,0@7002#1@4007
+0,San Miguel de Allende (Mexico),20.9167,-100.75,http://data.nytimes.com/,,Panama City,8.9936,-79.5197,http://sws.geonames.org/,,0@1910#1@4618
+1,panama city,9.0,-79.5,http://rdf.freebase.com/,,Panama City,8.9936,-79.5197,http://sws.geonames.org/,,0@5294#1@4618
+0,Dresden,51.0333,13.7333,http://dbpedia.org/,,Killarney,52.0588,-9.5072,http://dbpedia.org/,,0@3775#1@1368
+0,Bath,51.3794,-2.36556,http://sws.geonames.org/,,darwin,-12.4667,130.833,http://rdf.freebase.com/,,0@6283#1@5062
+1,oxford connecticut,41.434,-73.1168,http://rdf.freebase.com/,,"Oxford, Connecticut",,,http://dbpedia.org/,,0@1615#1@1120
+0,Shelter Island,41.0682,-72.3387,http://sws.geonames.org/,,Qom,34.6453,50.8808,http://sws.geonames.org/,,0@5753#1@3971
+1,Algiers,36.7,3.21667,http://dbpedia.org/,,Algiers (Algeria),36.7631,3.05056,http://data.nytimes.com/,,0@6448#1@3308
+1,Belfast,54.597,-5.93,http://dbpedia.org/,,belfast,54.6,-5.91667,http://rdf.freebase.com/,,0@426#1@4637
+0,Bedford-Stuyvesant (NYC),40.6834,-73.9412,http://data.nytimes.com/,,Jena (LA),31.6832,-92.1337,http://data.nytimes.com/,,0@1633#1@1013
+1,Princeton (NJ),40.3487,-74.65899999999998,http://data.nytimes.com/,,"Princeton, New Jersey",,,http://dbpedia.org/,,0@2328#1@6939
+1,princeton,40.3487,-74.65899999999998,http://rdf.freebase.com/,62.0,"Princeton, New Jersey",,,http://dbpedia.org/,,0@2329#1@6939
+0,Mystic (Conn),41.3543,-71.9665,http://data.nytimes.com/,,Potsdam (Germany),52.3989,13.0657,http://data.nytimes.com/,,0@2756#1@3323
+1,Sochi,43.6,39.7303,http://sws.geonames.org/,,sochi,43.6127,39.7228,http://rdf.freebase.com/,,0@5418#1@5375
+0,"Scranton, Pennsylvania",,,http://dbpedia.org/,,Manchester,53.4809,-2.23743,http://sws.geonames.org/,,0@1150#1@3475
+1,"Mott Haven, Bronx",,,http://dbpedia.org/,,mott haven bronx,40.809,-73.9229,http://rdf.freebase.com/,,0@6388#1@5770
+1,"Mott Haven, Bronx",,,http://dbpedia.org/,,Mott Haven,40.809,-73.9229,http://sws.geonames.org/,,0@6388#1@215
+1,Klosterneuburg,,,http://dbpedia.org/,,Klosterneuburg (Austria),48.3052,16.3252,http://data.nytimes.com/,,0@3972#1@1679
+1,Klosterneuburg,48.3052,16.3252,http://sws.geonames.org/,,Klosterneuburg (Austria),48.3052,16.3252,http://data.nytimes.com/,,0@1680#1@1679
+1,leavenworth washington,47.5964,-120.66,http://rdf.freebase.com/,,Leavenworth (Wash),47.5962,-120.661,http://data.nytimes.com/,,0@5637#1@421
+1,leavenworth washington,47.5964,-120.66,http://rdf.freebase.com/,,"Leavenworth, Washington",,,http://dbpedia.org/,,0@5637#1@422
+0,São Paulo,-23.5475,-46.6361,http://sws.geonames.org/,,"Leavenworth, Washington",,,http://dbpedia.org/,,0@5806#1@422
+1,venice,45.4333,12.3167,http://rdf.freebase.com/,,Venice (Italy),45.4386,12.3267,http://data.nytimes.com/,,0@6655#1@3898
+1,garrison new york,41.3839,-73.9456,http://rdf.freebase.com/,,Garrison,41.38399999999999,-73.9457,http://sws.geonames.org/,,0@5992#1@3417
+1,Garrison (NY),41.38399999999999,-73.9457,http://data.nytimes.com/,,Garrison,41.38399999999999,-73.9457,http://sws.geonames.org/,,0@3416#1@3417
+0,Ljubljana,46.0556,14.5083,http://dbpedia.org/,,Garrison,41.38399999999999,-73.9457,http://sws.geonames.org/,,0@6500#1@3417
+0,"Falmouth, Massachusetts",,,http://dbpedia.org/,,Lake Louise (Canada),51.4167,-116.235,http://data.nytimes.com/,,0@5800#1@122
+1,broome,-17.962,122.236,http://rdf.freebase.com/,19.0,"Broome, Western Australia",,,http://dbpedia.org/,,0@2892#1@7212
+0,Orleans (France),47.9167,1.9,http://data.nytimes.com/,,Nice,43.7034,7.26627,http://dbpedia.org/,,0@484#1@6730
+1,Seaside,30.321,-86.1416,http://sws.geonames.org/,,seaside florida,30.321,-86.1416,http://rdf.freebase.com/,,0@2640#1@5194
+0,Jaipur (India),26.9167,75.8167,http://data.nytimes.com/,,Franschhoek,-33.9167,19.1333,http://dbpedia.org/,,0@3742#1@6354
+1,newark,40.7356,-74.1728,http://rdf.freebase.com/,,Newark,40.7357,-74.1724,http://sws.geonames.org/,,0@6805#1@3529
+1,long beach,33.7669,-118.188,http://rdf.freebase.com/,,Long Beach,33.767,-118.189,http://sws.geonames.org/,,0@5284#1@503
+1,Leipzig (Germany),51.3396,12.3713,http://data.nytimes.com/,,Leipzig,51.3396,12.3713,http://sws.geonames.org/,,0@3929#1@7002
+0,north salem,41.3347,-73.5717,http://rdf.freebase.com/,,seville,37.3833,-5.9833300000000005,http://rdf.freebase.com/,,0@3241#1@265
+1,millau,44.0986,3.07833,http://rdf.freebase.com/,,Millau,44.0986,3.07833,http://dbpedia.org/,,0@1589#1@6682
+0,Shenzhen,22.55,114.1,http://dbpedia.org/,,zagreb,45.8167,15.9833,http://rdf.freebase.com/,,0@2156#1@4692
+0,San Luis Obispo (Calif),35.2828,-120.66,http://data.nytimes.com/,,Yokohama (Japan),35.45,139.65,http://data.nytimes.com/,,0@3748#1@2389
+1,vilnius,54.6833,25.2833,http://rdf.freebase.com/,,Vilnius,54.6833,25.2833,http://dbpedia.org/,,0@3540#1@7291
+0,calcutta,22.5697,88.3697,http://rdf.freebase.com/,,Recife (Brazil),-8.053889999999999,-34.8811,http://data.nytimes.com/,,0@5075#1@3864
+0,Ottawa,45.4208,-75.69,http://dbpedia.org/,,Manhattan,40.7903,-73.9597,http://dbpedia.org/,,0@5934#1@5613
+0,zagreb,45.8167,15.9833,http://rdf.freebase.com/,,Bordeaux,44.8386,-0.578333,http://dbpedia.org/,,0@4692#1@1118
+1,San Juan,18.4663,-66.1057,http://sws.geonames.org/,,San Juan (Puerto Rico),18.4663,-66.1057,http://data.nytimes.com/,,0@346#1@345
+1,Ürümqi,43.8,87.5833,http://sws.geonames.org/,,Urumqi,,,http://dbpedia.org/,,0@4433#1@6792
+1,Cascais,,,http://dbpedia.org/,,Cascais,38.6979,-9.42146,http://sws.geonames.org/,,0@4528#1@1422
+0,Cascais,,,http://dbpedia.org/,,Malindi,-3.21667,40.1167,http://sws.geonames.org/,,0@4528#1@5854
+0,SoHo (NYC),40.7224,-73.9996,http://data.nytimes.com/,,Millerton (NY),41.9537,-73.5107,http://data.nytimes.com/,,0@569#1@2405
+1,Kufa,32.0333,44.4,http://dbpedia.org/,,Kufa,32.0347,44.4033,http://sws.geonames.org/,,0@3004#1@6094
+1,Kufa,32.0333,44.4,http://dbpedia.org/,,kufa,32.0297,44.3947,http://rdf.freebase.com/,,0@3004#1@5352
+0,Franschhoek (South Africa),-33.9167,19.1167,http://data.nytimes.com/,,Vienna (Austria),48.2085,16.3721,http://data.nytimes.com/,,0@4722#1@110
+0,Franschhoek (South Africa),-33.9167,19.1167,http://data.nytimes.com/,,Beverley,53.845,-0.4270000000000001,http://dbpedia.org/,,0@4722#1@5277
+1,Franschhoek (South Africa),-33.9167,19.1167,http://data.nytimes.com/,,Franschhoek,-33.9167,19.1167,http://sws.geonames.org/,,0@4722#1@4723
+0,Ashgabat,37.9333,58.3667,http://dbpedia.org/,,Franschhoek,-33.9167,19.1167,http://sws.geonames.org/,,0@4953#1@4723
+0,Irvington (NJ),40.7323,-74.2349,http://data.nytimes.com/,,Silver City (NM),32.7701,-108.28,http://data.nytimes.com/,,0@1814#1@1173
+1,Ayacucho,-13.1631,-74.2244,http://dbpedia.org/,,Ayacucho,-13.1583,-74.2239,http://sws.geonames.org/,,0@6942#1@950
+0,cadiz,36.5167,-6.28333,http://rdf.freebase.com/,,north stonington,41.4409,-71.8812,http://rdf.freebase.com/,,0@4674#1@2924
+0,Veracruz (Mexico),19.2,-96.1333,http://data.nytimes.com/,,north stonington,41.4409,-71.8812,http://rdf.freebase.com/,,0@4866#1@2924
+0,milan italy,45.464,9.19157,http://rdf.freebase.com/,121.0,milford pennsylvania,41.3222,-74.8028,http://rdf.freebase.com/,,0@7052#1@5793
+0,Alajuela,10.0167,-84.2167,http://dbpedia.org/,,la rochelle,46.1667,-1.15,http://rdf.freebase.com/,,0@4874#1@1691
+0,santo domingo,18.4833,-69.9167,http://rdf.freebase.com/,,New Brunswick,40.4862,-74.4518,http://sws.geonames.org/,,0@5032#1@3226
+0,hanover,52.3699,9.73526,http://rdf.freebase.com/,,Jackson Heights (NYC),40.7557,-73.8854,http://data.nytimes.com/,,0@2392#1@2311
+0,hanover,52.3699,9.73526,http://rdf.freebase.com/,,Berne,46.9481,7.4474399999999985,http://sws.geonames.org/,,0@2392#1@5180
+0,Sderot,,,http://dbpedia.org/,,Santiago de Compostela,42.8805,-8.545689999999999,http://sws.geonames.org/,,0@6685#1@2845
+0,Quebec City,46.8123,-71.2145,http://sws.geonames.org/,,Basra (Iraq),30.4942,47.8192,http://data.nytimes.com/,,0@1791#1@1189
+1,Basra,30.5,47.8167,http://dbpedia.org/,,Basra (Iraq),30.4942,47.8192,http://data.nytimes.com/,,0@1190#1@1189
+1,"Boquete, Chiriqui",,,http://dbpedia.org/,,Boquete (Panama),8.78333,-82.4333,http://data.nytimes.com/,,0@5499#1@1727
+0,Beirut (Lebanon),33.8719,35.5097,http://data.nytimes.com/,,aragon,41.0,-1.0,http://rdf.freebase.com/,,0@2484#1@1318
+0,Osaka,34.6937,135.502,http://sws.geonames.org/,,Palenque,17.484,-92.0463,http://dbpedia.org/,,0@4139#1@5762
+0,cape town,-33.9767,18.4244,http://rdf.freebase.com/,,Xian (China),34.2583,108.929,http://data.nytimes.com/,,0@3351#1@2269
+0,Quito,-0.25,-78.5833,http://dbpedia.org/,,Palisades Park,40.8482,-73.9976,http://sws.geonames.org/,,0@1122#1@1268
+1,Lehinch,52.9367,-9.34528,http://sws.geonames.org/,,Lahinch,52.937,-9.345,http://dbpedia.org/,,0@5298#1@6287
+1,Aix-en-Provence (France),43.5283,5.4497300000000015,http://data.nytimes.com/,,Aix-en-Provence,43.5283,5.4497300000000015,http://sws.geonames.org/,,0@3538#1@1869
+1,aix-en-provence,43.53,5.44722,http://rdf.freebase.com/,,Aix-en-Provence,43.5283,5.4497300000000015,http://sws.geonames.org/,,0@7261#1@1869
+0,Chachapoyas (Peru),-6.23169,-77.869,http://data.nytimes.com/,,Aix-en-Provence,43.5283,5.4497300000000015,http://sws.geonames.org/,,0@166#1@1869
+0,Bucharest,44.4322,26.1063,http://sws.geonames.org/,,Bormio,46.4684,10.3721,http://sws.geonames.org/,,0@6341#1@5576
+1,hanoi,21.0409,105.798,http://rdf.freebase.com/,,Hanoi,21.0245,105.841,http://sws.geonames.org/,,0@5945#1@2908
+1,milford connecticut,41.2222,-73.0569,http://rdf.freebase.com/,,Milford (Conn),41.2223,-73.0565,http://data.nytimes.com/,,0@7257#1@5157
+1,Paris,48.8567,2.35083,http://dbpedia.org/,,Paris (France),48.8534,2.3488,http://data.nytimes.com/,,0@6195#1@4070
+1,Paris,48.8567,2.35083,http://dbpedia.org/,,Paris,48.8534,2.3488,http://sws.geonames.org/,,0@6195#1@4071
+1,Puntarenas (Costa Rica),9.97625,-84.8384,http://data.nytimes.com/,,puntarenas,9.9667,-84.8333,http://rdf.freebase.com/,,0@2163#1@5380
+0,Chengde,40.9667,117.933,http://dbpedia.org/,,Acapulco,16.8636,-99.8825,http://dbpedia.org/,,0@5315#1@323
+0,Chengde,40.9667,117.933,http://dbpedia.org/,,Szentendre,47.7044,19.0686,http://dbpedia.org/,,0@5315#1@6927
+1,Szentendre,47.6694,19.0756,http://sws.geonames.org/,,Szentendre,47.7044,19.0686,http://dbpedia.org/,,0@3206#1@6927
+0,Chengde,40.9667,117.933,http://dbpedia.org/,,Millerton,41.9537,-73.5107,http://sws.geonames.org/,,0@5315#1@2406
+0,Miami,25.7743,-80.1937,http://sws.geonames.org/,,Millerton,41.9537,-73.5107,http://sws.geonames.org/,,0@7196#1@2406
+1,Carcassonne,43.2131,2.35203,http://dbpedia.org/,,Carcassonne (France),43.2167,2.35,http://data.nytimes.com/,,0@7502#1@6839
+0,Versailles,48.8,2.13333,http://sws.geonames.org/,,Carcassonne (France),43.2167,2.35,http://data.nytimes.com/,,0@866#1@6839
+1,chartres,48.4436,1.48583,http://rdf.freebase.com/,,Chartres (France),48.4469,1.48925,http://data.nytimes.com/,,0@3165#1@1179
+0,belize city,17.4964,-88.1828,http://rdf.freebase.com/,,Hanover,52.3705,9.73322,http://sws.geonames.org/,,0@3513#1@7456
+0,marseille,43.2975,5.3772,http://rdf.freebase.com/,,playa zancudo,8.54405,-83.1467,http://rdf.freebase.com/,,0@3151#1@7314
+1,Saugatuck (Mich),42.655,-86.20200000000001,http://data.nytimes.com/,,saugatuck,42.655,-86.2019,http://rdf.freebase.com/,,0@1870#1@1871
+1,Saugatuck,42.655,-86.20200000000001,http://sws.geonames.org/,,saugatuck,42.655,-86.2019,http://rdf.freebase.com/,,0@5021#1@1871
+1,Mosul,36.3667,43.1167,http://dbpedia.org/,,Mosul (Iraq),36.335,43.1189,http://data.nytimes.com/,,0@1524#1@1523
+0,Long Island City (NYC),40.7448,-73.9487,http://data.nytimes.com/,,Ulyanovsk,54.3189,48.3858,http://sws.geonames.org/,,0@2448#1@1465
+1,Granada,37.1781,-3.60083,http://dbpedia.org/,,granada,37.1742,-3.5975,http://rdf.freebase.com/,,0@3112#1@7366
+0,Indianapolis,39.7683,-86.1582,http://dbpedia.org/,,Cardiff,51.4853,-3.18667,http://dbpedia.org/,,0@1411#1@3594
+0,"Mobile, Alabama",,,http://dbpedia.org/,,Regensburg,49.0167,12.0833,http://dbpedia.org/,,0@6299#1@7510
+1,shanghai,31.2,121.5,http://rdf.freebase.com/,,Shanghai (China),31.2222,121.458,http://data.nytimes.com/,,0@3565#1@268
+0,"Huntington Station, New York",,,http://dbpedia.org/,,Shanghai (China),31.2222,121.458,http://data.nytimes.com/,,0@445#1@268
+1,Bruges (Belgium),51.2098,3.225,http://data.nytimes.com/,,bruges,51.2167,3.23333,http://rdf.freebase.com/,,0@3384#1@7356
+1,Malindi (Kenya),-3.21667,40.1167,http://data.nytimes.com/,,malindi,-3.2167,40.1167,http://rdf.freebase.com/,,0@5853#1@5991
+1,"Toledo, Spain",,,http://dbpedia.org/,,toledo spain,39.8667,-4.03333,http://rdf.freebase.com/,,0@219#1@6191
+0,"Toledo, Spain",,,http://dbpedia.org/,,Kaesong (North Korea),37.9708,126.554,http://data.nytimes.com/,,0@219#1@3679
+1,Les Eyzies-de-Tayac (France),44.9359,1.01327,http://data.nytimes.com/,,les eyzies-de-tayac-sireuil,44.93600000000001,1.01805,http://rdf.freebase.com/,,0@4118#1@7424
+1,Les Eyzies-de-Tayac (France),44.9359,1.01327,http://data.nytimes.com/,,Les Eyzies-de-Tayac-Sireuil,44.9359,1.01327,http://sws.geonames.org/,,0@4118#1@6750
+1,Cochabamba (Bolivia),-17.3833,-66.15,http://data.nytimes.com/,,Cochabamba,-17.3833,-66.1667,http://dbpedia.org/,,0@2283#1@4101
+0,Cochabamba (Bolivia),-17.3833,-66.15,http://data.nytimes.com/,,lafayette louisiana,30.2139,-92.0294,http://rdf.freebase.com/,,0@2283#1@4681
+0,"Salem, Massachusetts",,,http://dbpedia.org/,,potsdam,52.4,13.07,http://rdf.freebase.com/,,0@2966#1@3324
+1,Vientiane,17.9667,102.6,http://sws.geonames.org/,,Vientiane (Laos),17.9667,102.6,http://data.nytimes.com/,,0@1260#1@1259
+1,Porto,41.1497,-8.61,http://dbpedia.org/,,porto,41.1667,-8.58333,http://rdf.freebase.com/,,0@263#1@7046
+1,Porto,41.15,-8.61667,http://sws.geonames.org/,,porto,41.1667,-8.58333,http://rdf.freebase.com/,,0@2933#1@7046
+1,baqubah,33.75,44.6333,http://rdf.freebase.com/,,Baqubah,33.75,44.6333,http://dbpedia.org/,,0@3183#1@3768
+0,scranton,41.4089,-75.6628,http://rdf.freebase.com/,,Abu Dhabi,24.4667,54.3667,http://dbpedia.org/,,0@7122#1@4892
+0,scranton,41.4089,-75.6628,http://rdf.freebase.com/,,Acapulco (Mexico),16.8634,-99.8901,http://data.nytimes.com/,,0@7122#1@322
+1,Manteca,37.7974,-121.216,http://sws.geonames.org/,,Manteca (Calif),37.7974,-121.216,http://data.nytimes.com/,,0@3337#1@3291
+1,Providence (RI),41.824,-71.4128,http://data.nytimes.com/,,Providence,41.824,-71.4128,http://sws.geonames.org/,,0@1903#1@7386
+1,Short Hills,40.7479,-74.3254,http://sws.geonames.org/,,short hills,40.7479,-74.3254,http://rdf.freebase.com/,,0@5451#1@7320
+0,tiradentes brazil,-21.1103,-44.2114,http://rdf.freebase.com/,,armonk,41.1264,-73.7144,http://rdf.freebase.com/,,0@4757#1@2936
+1,Armonk (NY),41.1265,-73.714,http://data.nytimes.com/,,armonk,41.1264,-73.7144,http://rdf.freebase.com/,,0@2935#1@2936
+1,Vilnius,54.6892,25.2798,http://sws.geonames.org/,,vilnius,54.6833,25.2833,http://rdf.freebase.com/,,0@2599#1@3540
+1,Puerto Morelos,20.8536,-86.8986,http://dbpedia.org/,,Puerto Morelos (Mexico),20.8417,-86.8824,http://data.nytimes.com/,,0@4449#1@4448
+1,"Irvington, New Jersey",,,http://dbpedia.org/,,irvington,40.7256,-74.2319,http://rdf.freebase.com/,,0@4981#1@4834
+1,Lugano (Switzerland),46.0101,8.96004,http://data.nytimes.com/,,lugano,46.0046,8.953510000000003,http://rdf.freebase.com/,273.0,0@2770#1@6488
+0,La Paz,-16.5,-68.15,http://sws.geonames.org/,,Hermanus,-34.4167,19.25,http://dbpedia.org/,,0@2692#1@2274
+1,La Paz,-16.5,-68.15,http://sws.geonames.org/,,La Paz (Bolivia),-16.5,-68.15,http://data.nytimes.com/,,0@2692#1@2691
+0,Haines (Alaska),59.2358,-135.445,http://data.nytimes.com/,,Hood River (Ore),45.7054,-121.521,http://data.nytimes.com/,,0@2706#1@1257
+0,basra,30.4944,47.8236,http://rdf.freebase.com/,,Fukuoka,33.5833,130.4,http://dbpedia.org/,,0@2436#1@2101
+0,Ravenna,44.4175,12.2011,http://sws.geonames.org/,,Fukuoka,33.5833,130.4,http://dbpedia.org/,,0@791#1@2101
+1,Oxford (Conn),41.434,-73.1168,http://data.nytimes.com/,,Oxford,41.434,-73.1168,http://sws.geonames.org/,,0@1119#1@5177
+1,Oxford (Conn),41.434,-73.1168,http://data.nytimes.com/,,oxford connecticut,41.434,-73.1168,http://rdf.freebase.com/,,0@1119#1@1615
+0,Hiroshima,34.3981,132.476,http://dbpedia.org/,,Irvington,40.7323,-74.2349,http://sws.geonames.org/,,0@89#1@1815
+1,"Ocean City, Maryland",,,http://dbpedia.org/,,ocean city,38.3364,-75.0853,http://rdf.freebase.com/,,0@1276#1@2170
+1,Ocean City,38.3365,-75.0849,http://sws.geonames.org/,,ocean city,38.3364,-75.0853,http://rdf.freebase.com/,,0@5047#1@2170
+1,Pécs,46.0833,18.2333,http://sws.geonames.org/,,Pecs (Hungary),46.0833,18.2333,http://data.nytimes.com/,,0@7444#1@3802
+1,"Cobble Hill, Brooklyn",,,http://dbpedia.org/,,Cobble Hill,40.6875,-73.9981,http://sws.geonames.org/,,0@2288#1@1579
+1,Alajuela (Costa Rica),10.0167,-84.2167,http://data.nytimes.com/,,Alajuela,10.0167,-84.2167,http://sws.geonames.org/,,0@1156#1@4106
+0,Bayeux,49.2794,-0.702778,http://dbpedia.org/,,Toledo,39.8581,-4.02263,http://sws.geonames.org/,,0@4487#1@515
+0,Bayeux,49.2794,-0.702778,http://dbpedia.org/,,"Jamesport, New York",,,http://dbpedia.org/,,0@4487#1@6917
+1,Pasadena,34.1478,-118.145,http://sws.geonames.org/,,pasadena,34.156111,-118.131944,http://rdf.freebase.com/,,0@5539#1@7316
+0,Saint Michaels,38.7851,-76.2244,http://sws.geonames.org/,,Courchevel (France),45.4167,6.65,http://data.nytimes.com/,,0@7236#1@1412
+1,"Rossville, Staten Island",,,http://dbpedia.org/,,Rossville (NYC),40.5557,-74.2135,http://data.nytimes.com/,,0@5692#1@435
+0,Hollywood,34.0983,-118.327,http://sws.geonames.org/,,oakland california,37.8044,-122.27,http://rdf.freebase.com/,,0@1939#1@5805
+0,peekskill,41.29,-73.9208,http://rdf.freebase.com/,,La Paz,-16.5,-68.1333,http://dbpedia.org/,,0@5567#1@4773
+0,peekskill,41.29,-73.9208,http://rdf.freebase.com/,,Santiago de Cuba,20.0198,-75.8139,http://dbpedia.org/,,0@5567#1@4358
+0,Zurich (Switzerland),47.3667,8.55,http://data.nytimes.com/,,kandahar,31.6078,65.7053,http://rdf.freebase.com/,,0@1391#1@2325
+0,Adelaide,-34.9333,138.6,http://sws.geonames.org/,,Puducherry,11.93,79.83,http://dbpedia.org/,,0@2618#1@1770
+0,Adelaide,-34.9333,138.6,http://sws.geonames.org/,,Madrid,40.4165,-3.70256,http://sws.geonames.org/,,0@2618#1@2234
+0,Nairobi,-1.28333,36.8167,http://sws.geonames.org/,,"Kiawah Island, South Carolina",,,http://dbpedia.org/,,0@187#1@6751
+1,Lisbon,38.7138,-9.13939,http://dbpedia.org/,,Lisbon (Portugal),38.7167,-9.13333,http://data.nytimes.com/,,0@275#1@274
+1,Lisbon,38.7138,-9.13939,http://dbpedia.org/,,lisbon,38.7,-9.1833,http://rdf.freebase.com/,,0@275#1@1096
+0,Lisbon,38.7138,-9.13939,http://dbpedia.org/,,Seaside (Fla),30.321,-86.1416,http://data.nytimes.com/,,0@275#1@2639
+0,Seneca Falls (NY),42.9106,-76.7966,http://data.nytimes.com/,,prospect heights brooklyn,40.6778,-73.9694,http://rdf.freebase.com/,,0@2365#1@5100
+1,St Paul (Minn),44.9444,-93.0933,http://data.nytimes.com/,,Saint Paul,44.9444,-93.0933,http://sws.geonames.org/,,0@1859#1@1860
+1,Chengdu,30.6667,104.067,http://sws.geonames.org/,,Chengdu,30.6636,104.067,http://dbpedia.org/,,0@4833#1@405
+1,norfolk virginia,36.8857,-76.2599,http://rdf.freebase.com/,,Norfolk,36.8468,-76.2852,http://sws.geonames.org/,,0@1087#1@6242
+1,norfolk virginia,36.8857,-76.2599,http://rdf.freebase.com/,,"Norfolk, Virginia",,,http://dbpedia.org/,,0@1087#1@2774
+1,"Cordoba, Spain",,,http://dbpedia.org/,,cordoba,37.8833,-4.78333,http://rdf.freebase.com/,,0@5#1@2911
+1,placencia,16.5139,-88.3667,http://rdf.freebase.com/,,Placencia (Belize),16.5167,-88.3667,http://data.nytimes.com/,,0@7102#1@3643
+1,placencia,16.5139,-88.3667,http://rdf.freebase.com/,,Placentia Village,16.5167,-88.3667,http://sws.geonames.org/,,0@7102#1@3644
+1,Peshawar (Pakistan),34.0078,71.5733,http://data.nytimes.com/,,Peshawar,34.0167,71.5833,http://dbpedia.org/,,0@5483#1@7457
+0,Sacramento (Calif),38.5816,-121.494,http://data.nytimes.com/,,Uppsala,59.85,17.6333,http://dbpedia.org/,,0@1158#1@7381
+1,Alkmaar (Netherlands),52.6317,4.74861,http://data.nytimes.com/,,Alkmaar,52.6333,4.75,http://dbpedia.org/,,0@2226#1@2227
+0,Santo Domingo,18.5,-69.9833,http://dbpedia.org/,,Zihuatanejo,17.6367,-101.551,http://dbpedia.org/,,0@4108#1@85
+0,Ayodhya (India),26.8,82.2,http://data.nytimes.com/,,Punta Gorda,26.9298,-82.0454,http://sws.geonames.org/,,0@140#1@4652
+0,Lockerbie (Scotland),55.1167,-3.35,http://data.nytimes.com/,,Delft (Netherlands),52.0067,4.35556,http://data.nytimes.com/,,0@937#1@2372
+1,Lockerbie (Scotland),55.1167,-3.35,http://data.nytimes.com/,,lockerbie,55.1167,-3.35,http://rdf.freebase.com/,,0@937#1@4492
+1,"Hakone, Kanagawa",,,http://dbpedia.org/,,hakone,35.1833,139.033,http://rdf.freebase.com/,,0@4747#1@3638
+1,Long Beach (NY),40.5884,-73.6579,http://data.nytimes.com/,,long beach new york,40.5883,-73.6583,http://rdf.freebase.com/,,0@853#1@3726
+0,Danang (Vietnam),16.0678,108.221,http://data.nytimes.com/,,Messene,,,http://dbpedia.org/,,0@1226#1@978
+0,Saint Mawes,50.1594,-5.01222,http://sws.geonames.org/,,curitiba,-25.4687,-49.2535,http://rdf.freebase.com/,,0@3668#1@5859
+0,darjeeling,27.0436,88.2644,http://rdf.freebase.com/,,York,53.9583,-1.08028,http://dbpedia.org/,,0@6250#1@4476
+1,Milan (Italy),45.4643,9.18951,http://data.nytimes.com/,,milan italy,45.464,9.19157,http://rdf.freebase.com/,121.0,0@5096#1@7052
+0,los angeles,34.0522,-118.243,http://rdf.freebase.com/,71.0,"Naples, Florida",,,http://dbpedia.org/,,0@2943#1@5141
+1,Leeds,53.7997,-1.5491700000000002,http://dbpedia.org/,,leeds,53.81,-1.55,http://rdf.freebase.com/,,0@4116#1@5143
+1,leipzig,51.34,12.38,http://rdf.freebase.com/,,Leipzig,51.3333,12.3833,http://dbpedia.org/,,0@3930#1@6132
+0,Nassau,25.0582,-77.3431,http://sws.geonames.org/,,"Punta Gorda, Belize",,,http://dbpedia.org/,,0@3498#1@7405
+1,Oslo,59.9494,10.7564,http://dbpedia.org/,,Oslo (Norway),59.9132,10.7389,http://data.nytimes.com/,,0@2776#1@2775
+0,boquete,8.78,-82.44,http://rdf.freebase.com/,,Ras al-Khaimah,25.7833,55.95,http://dbpedia.org/,,0@1728#1@6177
+0,scarsdale,41.005,-73.785,http://rdf.freebase.com/,,quebec city,46.8902,-71.2189,http://rdf.freebase.com/,,0@2194#1@2063
+1,kathmandu,27.7167,85.3667,http://rdf.freebase.com/,,Kathmandu,27.7,85.3333,http://dbpedia.org/,,0@3358#1@109
+1,kathmandu,27.7167,85.3667,http://rdf.freebase.com/,,Katmandu (Nepal),27.7167,85.3167,http://data.nytimes.com/,,0@3358#1@108
+0,Ogunquit,43.249,-70.5992,http://sws.geonames.org/,,"Falls Village, Connecticut",,,http://dbpedia.org/,,0@2865#1@2951
+1,Bridgehampton,40.9379,-72.3009,http://sws.geonames.org/,,bridgehampton,40.9378,-72.3014,http://rdf.freebase.com/,,0@6337#1@3119
+0,mobile,30.6942,-88.0431,http://rdf.freebase.com/,,Düsseldorf,51.2217,6.776160000000001,http://sws.geonames.org/,,0@4336#1@5421
+0,Peshawar,34.0078,71.5733,http://sws.geonames.org/,,alice springs,-23.7,133.87,http://rdf.freebase.com/,,0@7389#1@2115
+0,Peshawar,34.0078,71.5733,http://sws.geonames.org/,,Portland (Me),43.6615,-70.2553,http://data.nytimes.com/,,0@7389#1@1509
+1,sofia,42.66,23.36,http://rdf.freebase.com/,,Sofia (Bulgaria),42.6975,23.3241,http://data.nytimes.com/,,0@5556#1@2029
+0,Verdun,49.162,5.38759,http://dbpedia.org/,,"Natchez, Mississippi",,,http://dbpedia.org/,,0@1907#1@4697
+1,Natchez (Miss),31.5604,-91.4032,http://data.nytimes.com/,,"Natchez, Mississippi",,,http://dbpedia.org/,,0@4696#1@4697
+1,"Revelstoke, British Columbia",,,http://dbpedia.org/,,Revelstoke,50.9832,-118.202,http://sws.geonames.org/,,0@2864#1@3311
+0,Veracruz (Mexico),19.2,-96.1333,http://data.nytimes.com/,,Brasília,-15.7797,-47.9297,http://sws.geonames.org/,,0@4866#1@5486
+1,bam,29.1083,58.3583,http://rdf.freebase.com/,,Bam (Iran),29.1078,58.3619,http://data.nytimes.com/,,0@1998#1@1997
+1,omaha nebraska,41.2586,-95.9375,http://rdf.freebase.com/,,Omaha,41.2586,-95.9378,http://sws.geonames.org/,,0@4327#1@4410
+0,cairo,30.0566,31.2262,http://rdf.freebase.com/,,"Chachapoyas, Peru",,,http://dbpedia.org/,,0@600#1@167
+1,chachapoyas,-6.2167,-77.85,http://rdf.freebase.com/,,"Chachapoyas, Peru",,,http://dbpedia.org/,,0@6511#1@167
+1,Vientiane,17.9667,102.6,http://dbpedia.org/,,Vientiane,17.9667,102.6,http://sws.geonames.org/,,0@5659#1@1260
+0,Akaroa (New Zealand),-43.7983,172.97,http://data.nytimes.com/,,Killarney,52.05,-9.51667,http://sws.geonames.org/,,0@461#1@5452
+1,"Rockaway Beach, Queens",,,http://dbpedia.org/,,rockaway beach queens,40.5867,-73.8115,http://rdf.freebase.com/,,0@4210#1@2492
+0,Lima,-12.0433,-77.0283,http://dbpedia.org/,,Ixtapa,17.6678,-101.642,http://sws.geonames.org/,,0@6857#1@995
+0,Kandahar,31.61,65.7,http://sws.geonames.org/,,Kalkan (Turkey),36.2656,29.4153,http://data.nytimes.com/,,0@6051#1@925
+0,Sāmthar,26.9833,88.5,http://sws.geonames.org/,,calcutta,22.5697,88.3697,http://rdf.freebase.com/,,0@3446#1@5075
+1,Dhaka,23.7104,90.4074,http://sws.geonames.org/,,Dhaka,23.7,90.375,http://dbpedia.org/,,0@7180#1@6878
+1,St. Moritz,46.5,9.83333,http://sws.geonames.org/,,St. Moritz,46.5,9.83333,http://dbpedia.org/,,0@2934#1@43
+1,Paterson (NJ),40.9168,-74.1718,http://data.nytimes.com/,,Paterson,40.9168,-74.1718,http://sws.geonames.org/,,0@454#1@3447
+0,Bursa,40.1833,29.0667,http://dbpedia.org/,,Hay-on-wye,52.0705,-3.12741,http://sws.geonames.org/,,0@2094#1@7218
+0,tirana,41.326,19.816,http://rdf.freebase.com/,110.0,hong kong,22.3,114.167,http://rdf.freebase.com/,,0@5837#1@1798
+0,Karlovy Vary,50.2283,12.8661,http://dbpedia.org/,,hong kong,22.3,114.167,http://rdf.freebase.com/,,0@5939#1@1798
+0,"Roosevelt, New York",,,http://dbpedia.org/,,Oxnard,34.1975,-119.177,http://sws.geonames.org/,,0@5958#1@6624
+0,"Roosevelt, New York",,,http://dbpedia.org/,,Marrakech,31.63,-8.0,http://sws.geonames.org/,,0@5958#1@3288
+1,Ajman,25.4167,55.5,http://dbpedia.org/,,ajman,25.3833,55.5167,http://rdf.freebase.com/,,0@1852#1@6316
+0,montclair,40.8258,-74.2094,http://rdf.freebase.com/,,Turin (Italy),45.0705,7.68682,http://data.nytimes.com/,,0@7319#1@5190
+0,kochi,9.9667,76.2167,http://rdf.freebase.com/,,Carmel,36.5552,-121.923,http://sws.geonames.org/,,0@5369#1@6106
+0,Lockerbie,55.1167,-3.35,http://sws.geonames.org/,,Beaune,47.0333,4.83333,http://sws.geonames.org/,,0@5751#1@4191
+1,Beaune (France),47.0333,4.83333,http://data.nytimes.com/,,Beaune,47.0333,4.83333,http://sws.geonames.org/,,0@4190#1@4191
+1,grasse,43.6589,6.9258,http://rdf.freebase.com/,,Grasse,43.6667,6.91667,http://sws.geonames.org/,,0@1897#1@1502
+1,athens,37.9778,23.7278,http://rdf.freebase.com/,,Athens,37.9795,23.7162,http://sws.geonames.org/,,0@4702#1@5823
+1,"Niagara Falls, New York",,,http://dbpedia.org/,,Niagara Falls (NY),43.0945,-79.0567,http://data.nytimes.com/,,0@6469#1@1365
+0,siwa oasis,29.1833,25.55,http://rdf.freebase.com/,,Hue (Vietnam),16.4667,107.6,http://data.nytimes.com/,,0@3257#1@3224
+0,"Isle of Palms, South Carolina",,,http://dbpedia.org/,,Pasadena (Calif),34.1478,-118.145,http://data.nytimes.com/,,0@7384#1@5538
+0,Milan,45.4642,9.19028,http://dbpedia.org/,,Maspeth (NYC),40.7232,-73.9126,http://data.nytimes.com/,,0@5848#1@3471
+0,Auckland,-36.8404,174.74,http://dbpedia.org/,,Edirne,41.6772,26.556,http://sws.geonames.org/,,0@4337#1@3793
+1,Omaha,41.2586,-95.9378,http://sws.geonames.org/,,"Omaha, Nebraska",,,http://dbpedia.org/,,0@4410#1@5428
+0,durban,-29.8697,31.0236,http://rdf.freebase.com/,,St Moritz (Switzerland),46.5,9.83333,http://data.nytimes.com/,,0@1479#1@42
+1,Shanksville,40.0179,-78.9072,http://sws.geonames.org/,,shanksville,40.0172,-78.9058,http://rdf.freebase.com/,,0@739#1@4952
+0,Cairo (Egypt),30.05,31.25,http://data.nytimes.com/,,flatiron district manhattan,40.7408,-73.9896,http://rdf.freebase.com/,,0@599#1@4263
+1,richmond virginia,37.540972,-77.432889,http://rdf.freebase.com/,,Richmond,37.5538,-77.4603,http://sws.geonames.org/,,0@3989#1@6007
+0,richmond virginia,37.540972,-77.432889,http://rdf.freebase.com/,,Sacramento (Calif),38.5816,-121.494,http://data.nytimes.com/,,0@3989#1@1158
+0,Grasse (France),43.6667,6.91667,http://data.nytimes.com/,,Sofia,42.7,23.3333,http://dbpedia.org/,,0@1501#1@2030
+0,KwaZulu-Natal,-30.5764,30.5764,http://dbpedia.org/,,Lyon,45.75,4.85,http://sws.geonames.org/,,0@1351#1@7421
+1,Mantova,45.1603,10.7978,http://sws.geonames.org/,,Mantua,45.1667,10.8,http://dbpedia.org/,,0@2142#1@2367
+0,Kufa (Iraq),32.0347,44.4033,http://data.nytimes.com/,,Dar es Salaam,-6.82349,39.2695,http://sws.geonames.org/,,0@3003#1@7089
+0,Dakar,14.6937,-17.4441,http://sws.geonames.org/,,Kinsale,51.7075,-8.530560000000001,http://dbpedia.org/,,0@5118#1@4821
+1,sderot,31.5167,34.5833,http://rdf.freebase.com/,,Sderot,,,http://dbpedia.org/,,0@3117#1@6685
+1,Stellenbosch (South Africa),-33.9333,18.85,http://data.nytimes.com/,,Stellenbosch,-33.9333,18.85,http://sws.geonames.org/,,0@38#1@6680
+0,"New Canaan, Connecticut",,,http://dbpedia.org/,,"Scottsdale, Arizona",,,http://dbpedia.org/,,0@5198#1@1918
+1,spoleto,42.7333,12.7333,http://rdf.freebase.com/,,Spoleto,42.7333,12.7333,http://dbpedia.org/,,0@5219#1@5184
+1,Basel,47.5667,7.6,http://dbpedia.org/,,basel,47.566,7.6,http://rdf.freebase.com/,,0@5858#1@6389
+0,Genoa (Italy),44.4063,8.933860000000003,http://data.nytimes.com/,,Alkmaar (Netherlands),52.6317,4.74861,http://data.nytimes.com/,,0@1449#1@2226
+0,Bristol (England),51.45,-2.58333,http://data.nytimes.com/,,Corona,40.747,-73.8601,http://sws.geonames.org/,,0@571#1@5398
+0,Taormina (Italy),37.8536,15.2885,http://data.nytimes.com/,,hoffenheim,49.2722,8.844439999999997,http://rdf.freebase.com/,,0@3780#1@5073
+1,quito,-0.218611,-78.5097,http://rdf.freebase.com/,,Quito,-0.229854,-78.5249,http://sws.geonames.org/,,0@7454#1@5871
+1,Jackson Heights,40.7557,-73.8854,http://sws.geonames.org/,,"Jackson Heights, Queens",,,http://dbpedia.org/,,0@2312#1@6489
+0,Amsterdam,52.3731,4.89222,http://dbpedia.org/,,Recife,-8.053889999999999,-34.8811,http://sws.geonames.org/,,0@4047#1@5646
+0,lockerbie,55.1167,-3.35,http://rdf.freebase.com/,,Ocean Grove,40.2121,-74.0065,http://sws.geonames.org/,,0@4492#1@6471
+0,Verona,45.4333,10.9833,http://dbpedia.org/,,singapore,1.3667,103.75,http://rdf.freebase.com/,,0@3868#1@4667
+1,Stellenbosch,-33.92,18.86,http://dbpedia.org/,,stellenbosch western cape,-33.92,18.86,http://rdf.freebase.com/,,0@39#1@3710
+1,Park City (Utah),40.6461,-111.498,http://data.nytimes.com/,,Park City,40.6461,-111.498,http://sws.geonames.org/,,0@3335#1@6507
+1,"Seneca Falls (village), New York",,,http://dbpedia.org/,,Seneca Falls,42.9106,-76.7966,http://sws.geonames.org/,,0@2366#1@6335
+0,Fukuoka (Japan),33.5833,130.4,http://data.nytimes.com/,,Seneca Falls,42.9106,-76.7966,http://sws.geonames.org/,,0@2100#1@6335
+1,Chappaqua,41.1595,-73.7649,http://sws.geonames.org/,,Chappaqua (NY),41.1595,-73.7649,http://data.nytimes.com/,,0@5468#1@4237
+1,Chappaqua,41.1595,-73.7649,http://sws.geonames.org/,,"Chappaqua, New York",,,http://dbpedia.org/,,0@5468#1@4238
+1,nashville tennessee,36.1658,-86.7844,http://rdf.freebase.com/,,Nashville,36.1659,-86.7844,http://sws.geonames.org/,,0@4639#1@3246
+0,Portland (Ore),45.5235,-122.676,http://data.nytimes.com/,,Nashville,36.1659,-86.7844,http://sws.geonames.org/,,0@3713#1@3246
+1,"Red Hook, Brooklyn",,,http://dbpedia.org/,,red hook brooklyn,40.6765,-74.0114,http://rdf.freebase.com/,,0@2080#1@6843
+0,"Myrtle Beach, South Carolina",,,http://dbpedia.org/,,red hook brooklyn,40.6765,-74.0114,http://rdf.freebase.com/,,0@4355#1@6843
+1,Lanai,20.8306,-156.922,http://sws.geonames.org/,,lanai,20.8333,-156.933,http://rdf.freebase.com/,1026.0,0@5634#1@5602
+1,saas-fee,46.1097,7.92917,http://rdf.freebase.com/,,Saas-Fee (Switzerland),46.1135,7.9348800000000015,http://data.nytimes.com/,,0@1653#1@1652
+1,jamaica new york,40.6914,-73.8061,http://rdf.freebase.com/,,Jamaica (NYC),40.6915,-73.8057,http://data.nytimes.com/,,0@6193#1@4611
+0,Seattle,47.6062,-122.332,http://sws.geonames.org/,,locust valley,40.8758,-73.5975,http://rdf.freebase.com/,,0@6845#1@4941
+0,Sacramento,38.5816,-121.494,http://sws.geonames.org/,,locust valley,40.8758,-73.5975,http://rdf.freebase.com/,,0@1159#1@4941
+1,Santo Domingo (Dominican Republic),18.4667,-69.9,http://data.nytimes.com/,,Santo Domingo,18.5,-69.9833,http://dbpedia.org/,,0@4107#1@4108
+0,quebec city,46.8902,-71.2189,http://rdf.freebase.com/,,Cairo,30.0626,31.2497,http://sws.geonames.org/,,0@2063#1@2223
+0,Fukuoka,33.5833,130.4,http://sws.geonames.org/,,arosa,46.783333,9.683333,http://rdf.freebase.com/,1775.0,0@3835#1@257
+0,girona,41.9833,2.81667,http://rdf.freebase.com/,,"Sacramento, California",,,http://dbpedia.org/,,0@7459#1@5910
+0,New Brunswick,40.4862,-74.4518,http://sws.geonames.org/,,Scranton,41.409,-75.6624,http://sws.geonames.org/,,0@3226#1@3168
+0,Cataño,18.4413,-66.1182,http://sws.geonames.org/,,Ashgabat,37.95,58.3833,http://sws.geonames.org/,,0@5628#1@2111
+1,"Nashville, Tennessee",,,http://dbpedia.org/,,nashville tennessee,36.1658,-86.7844,http://rdf.freebase.com/,,0@5948#1@4639
+0,Playa Zancudo,8.54405,-83.1467,http://dbpedia.org/,,skaneateles new york,42.9469,-76.4294,http://rdf.freebase.com/,,0@1706#1@6450
+1,saratoga springs,43.0831,-73.785,http://rdf.freebase.com/,,Saratoga Springs (NY),43.0831,-73.7846,http://data.nytimes.com/,,0@4167#1@4166
+1,Santiago de Cuba (Cuba),20.0247,-75.8219,http://data.nytimes.com/,,santiago de cuba,20.0283,-75.8206,http://rdf.freebase.com/,,0@1043#1@1044
+1,Chichen Itza,20.6667,-88.5667,http://sws.geonames.org/,,Chichen Itza (Mexico),20.6667,-88.5667,http://data.nytimes.com/,,0@4234#1@1567
+1,Honolulu (Hawaii),21.3069,-157.858,http://data.nytimes.com/,,Honolulu,21.3069,-157.858,http://sws.geonames.org/,,0@1130#1@1131
+1,Myrtle Beach (SC),33.6891,-78.8867,http://data.nytimes.com/,,myrtle beach,33.6889,-78.8869,http://rdf.freebase.com/,,0@1629#1@1630
+0,St. Moritz,46.5,9.83333,http://dbpedia.org/,,Jersey City (NJ),40.7282,-74.0776,http://data.nytimes.com/,,0@43#1@1552
+1,Jersey City,40.7282,-74.0776,http://sws.geonames.org/,,Jersey City (NJ),40.7282,-74.0776,http://data.nytimes.com/,,0@1553#1@1552
+0,Bilbao,43.2569,-2.92361,http://dbpedia.org/,,"Prospect Heights, Brooklyn",,,http://dbpedia.org/,,0@3959#1@2480
+0,Venice,45.4375,12.3358,http://dbpedia.org/,,palisades park,40.8481,-73.9981,http://rdf.freebase.com/,,0@6144#1@6225
+0,Cadiz (Spain),36.5336,-6.29944,http://data.nytimes.com/,,Palm Beach,26.7056,-80.0364,http://sws.geonames.org/,,0@1066#1@7364
+1,Ouro Preto,-20.3948,-43.5052,http://sws.geonames.org/,,Ouro Preto (Brazil),-20.2875,-43.5081,http://data.nytimes.com/,,0@87#1@86
+1,"St Ives, Cornwall",,,http://dbpedia.org/,,St Ives (England),50.2086,-5.4875,http://data.nytimes.com/,,0@6755#1@689
+0,Curitiba,-25.4278,-49.2731,http://sws.geonames.org/,,cape town,-33.9767,18.4244,http://rdf.freebase.com/,,0@4750#1@3351
+0,Mazatlan,,,http://dbpedia.org/,,carnac,47.5728,-3.07083,http://rdf.freebase.com/,,0@2451#1@1936
+0,Ravenna,44.4175,12.2011,http://sws.geonames.org/,,St Ives,50.2086,-5.4875,http://sws.geonames.org/,,0@791#1@690
+1,Falls Village (Conn),41.9559,-73.3632,http://data.nytimes.com/,,Falls Village,41.9559,-73.3632,http://sws.geonames.org/,,0@544#1@545
+1,Arosa,46.7833,9.68333,http://dbpedia.org/,,Arosa,46.7833,9.66667,http://sws.geonames.org/,,0@1550#1@2191
+0,"Villarrica, Chile",,,http://dbpedia.org/,,Seville (Spain),37.3772,-5.98694,http://data.nytimes.com/,,0@3461#1@264
+1,Shenzhen,22.5455,114.068,http://sws.geonames.org/,,Shenzhen,22.55,114.1,http://dbpedia.org/,,0@3660#1@2156
+0,les eyzies-de-tayac-sireuil,44.93600000000001,1.01805,http://rdf.freebase.com/,,Shenzhen,22.55,114.1,http://dbpedia.org/,,0@7424#1@2156
+0,Mombasa,-4.05,39.6667,http://sws.geonames.org/,,macon,32.8406,-83.6325,http://rdf.freebase.com/,,0@5911#1@3875
+0,Najaf (Iraq),31.9961,44.3147,http://data.nytimes.com/,,breezy point queens,40.5565,-73.9262,http://rdf.freebase.com/,,0@3672#1@4121
+1,Dar es Salaam,-6.8,39.2833,http://dbpedia.org/,,dar es salaam,-6.8166699999999985,39.2839,http://rdf.freebase.com/,,0@6282#1@5592
+1,Carnac,47.5847,-3.0794,http://dbpedia.org/,,Carnac,47.5833,-3.08333,http://sws.geonames.org/,,0@4790#1@7206
+0,Valencia (Spain),39.4698,-0.377387,http://data.nytimes.com/,,Chengde (China),40.9725,117.936,http://data.nytimes.com/,,0@4254#1@4192
+1,providence,41.8239,-71.4133,http://rdf.freebase.com/,,"Providence, Rhode Island",,,http://dbpedia.org/,,0@4117#1@1904
+0,Jena (LA),31.6832,-92.1337,http://data.nytimes.com/,,colmar,48.0667,7.36667,http://rdf.freebase.com/,,0@1013#1@4861
+1,Isle of Palms (SC),32.7868,-79.7948,http://data.nytimes.com/,,Isle of Palms,32.7868,-79.7948,http://sws.geonames.org/,,0@4963#1@4964
+1,Sausalito,37.8591,-122.485,http://sws.geonames.org/,,sausalito,37.8592,-122.484,http://rdf.freebase.com/,,0@4727#1@3977
+1,"Sausalito, California",,,http://dbpedia.org/,,sausalito,37.8592,-122.484,http://rdf.freebase.com/,,0@6691#1@3977
+1,Malaga (Spain),36.7202,-4.42034,http://data.nytimes.com/,,malaga,36.7167,-4.41667,http://rdf.freebase.com/,,0@4562#1@7415
+0,new york county,40.7697,-73.9735,http://rdf.freebase.com/,,"Rochester, New York",,,http://dbpedia.org/,,0@4434#1@6559
+0,galway,53.2734,-9.05033,http://rdf.freebase.com/,,Stuttgart,48.7786,9.17944,http://dbpedia.org/,,0@4272#1@5741
+0,"Knoxville, Tennessee",,,http://dbpedia.org/,,Salida,38.5347,-105.999,http://sws.geonames.org/,,0@7119#1@5014
+0,"Knoxville, Tennessee",,,http://dbpedia.org/,,Dubrovnik (Croatia),42.6481,18.0922,http://data.nytimes.com/,,0@7119#1@2381
+0,Tikal (Guatemala),17.225,-89.6133,http://data.nytimes.com/,,"Monterey, California",,,http://dbpedia.org/,,0@2040#1@4868
+1,San Sebastian,,,http://dbpedia.org/,,donostia,43.32,-1.98,http://rdf.freebase.com/,,0@4788#1@4231
+0,Hanover,52.3667,9.71667,http://dbpedia.org/,,Matsumoto,36.2333,137.967,http://sws.geonames.org/,,0@6699#1@3396
+1,Matsumoto (Japan),36.2333,137.967,http://data.nytimes.com/,,Matsumoto,36.2333,137.967,http://sws.geonames.org/,,0@2260#1@3396
+0,Santo Domingo,18.5001,-69.9886,http://sws.geonames.org/,,Alkmaar,52.6317,4.74861,http://sws.geonames.org/,,0@6130#1@4531
+1,Spoleto (Italy),42.7448,12.7374,http://data.nytimes.com/,,spoleto,42.7333,12.7333,http://rdf.freebase.com/,,0@5183#1@5219
+0,Granada (Spain),37.1882,-3.60667,http://data.nytimes.com/,,Huế,16.4667,107.6,http://sws.geonames.org/,,0@3111#1@3225
+1,beslan,43.2,44.5667,http://rdf.freebase.com/,,Beslan (Russia),43.1919,44.5388,http://data.nytimes.com/,,0@6317#1@3823
+1,Dunedin,-45.8742,170.50400000000005,http://sws.geonames.org/,,Dunedin,-45.8667,170.5,http://dbpedia.org/,,0@7532#1@5547
+1,abu dhabi,24.47,54.38,http://rdf.freebase.com/,,Abu Dhabi,24.4667,54.3667,http://sws.geonames.org/,,0@677#1@6174
+1,ferrara,44.83,11.62,http://rdf.freebase.com/,,Ferrara (Italy),44.8268,11.6207,http://data.nytimes.com/,,0@6179#1@5221
+1,Las Cruces (NM),32.3123,-106.778,http://data.nytimes.com/,,"Las Cruces, New Mexico",,,http://dbpedia.org/,,0@4955#1@4956
+1,las cruces,32.3197,-106.765,http://rdf.freebase.com/,,"Las Cruces, New Mexico",,,http://dbpedia.org/,,0@6652#1@4956
+1,pattaya,12.9363,100.887,http://rdf.freebase.com/,,Pattaya,12.9275,100.875,http://dbpedia.org/,,0@3866#1@5668
+1,"Macon, Georgia",,,http://dbpedia.org/,,Macon (Ga),32.8407,-83.6324,http://data.nytimes.com/,,0@2761#1@2760
+1,"Macon, Georgia",,,http://dbpedia.org/,,Macon,32.8407,-83.6324,http://sws.geonames.org/,,0@2761#1@5631
+1,Macon (Ga),32.8407,-83.6324,http://data.nytimes.com/,,Macon,32.8407,-83.6324,http://sws.geonames.org/,,0@2760#1@5631
+0,salzburg,47.8,13.0333,http://rdf.freebase.com/,,Recife,-8.05,-34.9,http://dbpedia.org/,,0@3155#1@6167
+1,Recife (Brazil),-8.053889999999999,-34.8811,http://data.nytimes.com/,,Recife,-8.05,-34.9,http://dbpedia.org/,,0@3864#1@6167
+0,Karbala,32.5978,44.0161,http://sws.geonames.org/,,Addis Ababa,9.02497,38.7469,http://sws.geonames.org/,,0@4686#1@6044
+0,Catano (Puerto Rico),18.4413,-66.1182,http://data.nytimes.com/,,"Memphis, Tennessee",,,http://dbpedia.org/,,0@3744#1@3708
+1,kinsale,51.7075,-8.530560000000001,http://rdf.freebase.com/,,Kinsale (Ireland),51.7075,-8.530560000000001,http://data.nytimes.com/,,0@2132#1@1695
+0,sheepshead bay brooklyn,40.582,-73.942,http://rdf.freebase.com/,,Wellington,-41.2866,174.77599999999995,http://sws.geonames.org/,,0@6547#1@171
+0,Carmel,36.5552,-121.923,http://sws.geonames.org/,,Luang Prabang,19.8833,102.133,http://dbpedia.org/,,0@6106#1@6615
+1,Marseille (France),43.3,5.4,http://data.nytimes.com/,,marseille,43.2975,5.3772,http://rdf.freebase.com/,,0@3150#1@3151
+1,Vina del Mar (Chile),-33.0246,-71.5518,http://data.nytimes.com/,,vina del mar,-33.0333,-71.5417,http://rdf.freebase.com/,,0@1665#1@2820
+1,Düsseldorf,51.2217,6.776160000000001,http://sws.geonames.org/,,Dusseldorf (Germany),51.2217,6.776160000000001,http://data.nytimes.com/,,0@5421#1@1503
+0,fes,34.0442,-5.00194,http://rdf.freebase.com/,,ojai,34.4481,-119.242,http://rdf.freebase.com/,,0@688#1@2796
+1,Orleans (Mass),41.7898,-69.9897,http://data.nytimes.com/,,Orleans,41.7898,-69.9897,http://sws.geonames.org/,,0@1171#1@1172
+1,Bayreuth,49.9481,11.5783,http://sws.geonames.org/,,Bayreuth,49.9481,11.5783,http://dbpedia.org/,,0@6603#1@902
+1,Chiang Mai (Thailand),18.7903,98.9817,http://data.nytimes.com/,,Chiang Mai,18.7953,98.9986,http://dbpedia.org/,,0@4480#1@7248
+1,"Park City, Utah",,,http://dbpedia.org/,,park city,40.6461,-111.497,http://rdf.freebase.com/,,0@3336#1@5331
+1,Nafplio (Greece),37.5636,22.8075,http://data.nytimes.com/,,Nafplion,,,http://dbpedia.org/,,0@2305#1@2371
+1,"Millbrook, New York",,,http://dbpedia.org/,,Millbrook (NY),41.7851,-73.694,http://data.nytimes.com/,,0@1841#1@1840
+1,Ouro Preto (Brazil),-20.2875,-43.5081,http://data.nytimes.com/,,ouro preto,-20.3708,-43.51,http://rdf.freebase.com/,,0@86#1@2249
+1,Cardiff,51.4853,-3.18667,http://dbpedia.org/,,Cardiff (Wales),51.48,-3.18,http://data.nytimes.com/,,0@3594#1@1721
+1,"Peekskill, New York",,,http://dbpedia.org/,,Peekskill,41.2901,-73.9204,http://sws.geonames.org/,,0@4615#1@5847
+0,Ghent (Belgium),51.05,3.71667,http://data.nytimes.com/,,Peekskill,41.2901,-73.9204,http://sws.geonames.org/,,0@176#1@5847
+0,Cairo,30.0626,31.2497,http://sws.geonames.org/,,biarritz,43.4797,-1.555,http://rdf.freebase.com/,,0@2223#1@5383
+0,Silver City (New Mexico),32.7781,-108.274,http://dbpedia.org/,,Cirencester,51.7333,-1.98333,http://sws.geonames.org/,,0@6830#1@1774
+0,midwood brooklyn,40.623334,-73.961678,http://rdf.freebase.com/,,davos,46.8045,9.83671,http://rdf.freebase.com/,1560.0,0@3903#1@3274
+0,Simi Valley (Calif),34.2694,-118.781,http://data.nytimes.com/,,bonn,50.73,7.1,http://rdf.freebase.com/,,0@1914#1@2384
+1,Simi Valley (Calif),34.2694,-118.781,http://data.nytimes.com/,,simi valley,34.2694,-118.781,http://rdf.freebase.com/,,0@1914#1@4980
+0,Ronda,36.7372,-5.16472,http://dbpedia.org/,,Manaus,-3.1019400000000004,-60.025,http://sws.geonames.org/,,0@6565#1@3075
+0,Vienna,48.2089,16.3731,http://dbpedia.org/,,sydney,-33.8683,151.209,http://rdf.freebase.com/,,0@4440#1@1726
+1,Ocean City,38.3365,-75.0849,http://sws.geonames.org/,,Ocean City (Md),38.3365,-75.0849,http://data.nytimes.com/,,0@5047#1@1275
+0,Gori,41.9736,44.1111,http://sws.geonames.org/,,Ocean City (Md),38.3365,-75.0849,http://data.nytimes.com/,,0@2250#1@1275
+0,Jerusalem (Israel),31.779,35.2253,http://data.nytimes.com/,,"Piermont, New York",,,http://dbpedia.org/,,0@3299#1@7246
+0,Kochi,9.96667,76.2333,http://sws.geonames.org/,,hanover,52.3699,9.73526,http://rdf.freebase.com/,,0@3489#1@2392
+0,park city,40.6461,-111.497,http://rdf.freebase.com/,,SoHo (NYC),40.7224,-73.9996,http://data.nytimes.com/,,0@5331#1@569
+1,Galway,53.2719,-9.04889,http://dbpedia.org/,,galway,53.2734,-9.05033,http://rdf.freebase.com/,,0@3167#1@4272
+1,Key West,24.5546,-81.7915,http://sws.geonames.org/,,"Key West, Florida",,,http://dbpedia.org/,,0@7199#1@6320
+1,montgomery,32.3667,-86.3,http://rdf.freebase.com/,,Montgomery,32.3668,-86.3,http://sws.geonames.org/,,0@5826#1@1196
+0,Saratoga Springs (NY),43.0831,-73.7846,http://data.nytimes.com/,,St. Moritz,46.5,9.83333,http://sws.geonames.org/,,0@4166#1@2934
+0,Tours,47.3936,0.689167,http://dbpedia.org/,,Bowery (NYC),,,http://data.nytimes.com/,,0@7213#1@3136
+1,Chartres,48.4558,1.4841799999999998,http://dbpedia.org/,,Chartres,48.4469,1.48925,http://sws.geonames.org/,,0@5248#1@1180
+1,Hoffenheim,49.2722,8.844439999999997,http://dbpedia.org/,,Hoffenheim,49.2667,8.85,http://sws.geonames.org/,,0@2792#1@2553
+0,bormio,46.4667,10.3667,http://rdf.freebase.com/,,Bergama (Turkey),39.1207,27.1805,http://data.nytimes.com/,,0@5379#1@282
+0,Reno (Nev),39.5296,-119.814,http://data.nytimes.com/,,Kips Bay (NYC),40.7395,-73.9771,http://data.nytimes.com/,,0@4090#1@357
+1,salem massachusetts,42.5194,-70.8972,http://rdf.freebase.com/,,"Salem, Massachusetts",,,http://dbpedia.org/,,0@1270#1@2966
+1,niagara falls ontario,43.1167,-79.0667,http://rdf.freebase.com/,,Niagara Falls (Ontario),43.1001,-79.0663,http://data.nytimes.com/,,0@1900#1@929
+0,xalapa,19.54,-96.9275,http://rdf.freebase.com/,,carmel by the sea,36.5553,-121.922,http://rdf.freebase.com/,,0@4148#1@5176
+0,Nasiriyah,31.0542,46.2594,http://sws.geonames.org/,,Santiago de Cuba (Cuba),20.0247,-75.8219,http://data.nytimes.com/,,0@2168#1@1043
+1,Giverny,49.0667,1.53333,http://sws.geonames.org/,,giverny,49.0769,1.53,http://rdf.freebase.com/,,0@1817#1@2969
+1,Johannesburg,-26.2023,28.0436,http://sws.geonames.org/,,Johannesburg,-26.2044,28.0456,http://dbpedia.org/,,0@4782#1@5897
+0,Huntington Station,40.8534,-73.4115,http://sws.geonames.org/,,Ürümqi,43.8,87.5833,http://sws.geonames.org/,,0@7343#1@4433
+0,munich,48.1333,11.5667,http://rdf.freebase.com/,,Reno (Nev),39.5296,-119.814,http://data.nytimes.com/,,0@6989#1@4090
+1,oklahoma city,35.4675,-97.5161,http://rdf.freebase.com/,,Oklahoma City (Okla),35.4676,-97.5164,http://data.nytimes.com/,,0@1430#1@1429
+1,"Ocean Grove, New Jersey",,,http://dbpedia.org/,,Ocean Grove (NJ),40.2121,-74.0065,http://data.nytimes.com/,,0@7516#1@4414
+0,Chernobyl,51.2667,30.2333,http://sws.geonames.org/,,Dhaka,23.7104,90.4074,http://sws.geonames.org/,,0@4754#1@7180
+0,"Newark, New Jersey",,,http://dbpedia.org/,,najaf,31.9892,44.3244,http://rdf.freebase.com/,,0@6508#1@3698
+1,Gori,41.9736,44.1111,http://sws.geonames.org/,,Gori (Georgian Republic),41.9736,44.1111,http://data.nytimes.com/,,0@2250#1@411
+0,padua,45.4167,11.8667,http://rdf.freebase.com/,,rehoboth beach,38.7208,-75.0764,http://rdf.freebase.com/,,0@5999#1@5012
+1,Long Branch,40.3043,-73.9924,http://sws.geonames.org/,,long branch,40.3042,-73.9928,http://rdf.freebase.com/,,0@2225#1@5127
+1,Long Branch,40.3043,-73.9924,http://sws.geonames.org/,,"Long Branch, New Jersey",,,http://dbpedia.org/,,0@2225#1@4734
+0,wellington,-41.2889,174.77700000000004,http://rdf.freebase.com/,,cairo,30.0566,31.2262,http://rdf.freebase.com/,,0@1240#1@600
+1,Xalapa (Mexico),19.5333,-96.9167,http://data.nytimes.com/,,xalapa,19.54,-96.9275,http://rdf.freebase.com/,,0@715#1@4148
+1,melbourne australia,-37.7833,144.967,http://rdf.freebase.com/,,Melbourne (Australia),-37.814,144.963,http://data.nytimes.com/,,0@1642#1@575
+1,Miami,25.7878,-80.2242,http://dbpedia.org/,,Miami (Fla),25.7743,-80.1937,http://data.nytimes.com/,,0@6923#1@4141
+1,Pátzcuaro,19.5167,-101.6,http://sws.geonames.org/,,Patzcuaro,,,http://dbpedia.org/,,0@508#1@95
+0,ogunquit,43.2489,-70.5997,http://rdf.freebase.com/,,Mendoza,-32.8833,-68.8167,http://sws.geonames.org/,,0@6698#1@6479
+1,"Mendoza, Argentina",,,http://dbpedia.org/,,Mendoza,-32.8833,-68.8167,http://sws.geonames.org/,,0@3542#1@6479
+1,Antalya (Turkey),36.9125,30.6897,http://data.nytimes.com/,,Antalya,36.9,30.6833,http://dbpedia.org/,,0@4018#1@5883
+0,cambridge,52.21,0.13,http://rdf.freebase.com/,,Hamburg (Germany),53.55,10.0,http://data.nytimes.com/,,0@1863#1@2437
+1,Yokohama,35.45,139.65,http://sws.geonames.org/,,Yokohama,35.45,139.63299999999998,http://dbpedia.org/,,0@5573#1@6936
+1,Nantucket,41.2835,-70.0995,http://sws.geonames.org/,,"Nantucket, Massachusetts",,,http://dbpedia.org/,,0@2102#1@891
+1,Rotterdam,51.9225,4.47917,http://sws.geonames.org/,,Rotterdam (Netherlands),51.9225,4.47917,http://data.nytimes.com/,,0@6604#1@2967
+1,Warsaw (Poland),52.25,21.0,http://data.nytimes.com/,,warsaw,52.23,21.0108,http://rdf.freebase.com/,,0@3735#1@6173
+0,Rossville,40.5557,-74.2135,http://sws.geonames.org/,,warsaw,52.23,21.0108,http://rdf.freebase.com/,,0@436#1@6173
+1,Bergen (Norway),60.3932,5.32428,http://data.nytimes.com/,,Bergen,60.3894,5.33,http://dbpedia.org/,,0@2645#1@2646
+0,Cartagena (Colombia),10.3997,-75.5144,http://data.nytimes.com/,,karlovy vary,50.2306,12.8725,http://rdf.freebase.com/,,0@3060#1@7455
+1,Nantes,47.2173,-1.55336,http://sws.geonames.org/,,nantes,47.2181,-1.5527799999999998,http://rdf.freebase.com/,,0@4198#1@2109
+0,punta cana,18.5333,-68.3667,http://rdf.freebase.com/,,recife,-8.05556,-34.8911,http://rdf.freebase.com/,,0@7163#1@3865
+1,"Amenia (town), New York",,,http://dbpedia.org/,,amenia,41.8494,-73.5566,http://rdf.freebase.com/,,0@5744#1@424
+1,Amenia,41.8493,-73.5568,http://sws.geonames.org/,,amenia,41.8494,-73.5566,http://rdf.freebase.com/,,0@7143#1@424
+0,Bourges,47.0844,2.39639,http://dbpedia.org/,,Short Hills (NJ),40.7479,-74.3254,http://data.nytimes.com/,,0@5130#1@3582
+1,saint petersburg,59.9333,30.3333,http://rdf.freebase.com/,,Saint Petersburg,59.95,30.3167,http://dbpedia.org/,,0@6412#1@1678
+1,Saint-Petersburg,59.8944,30.2642,http://sws.geonames.org/,,Saint Petersburg,59.95,30.3167,http://dbpedia.org/,,0@1208#1@1678
+0,malaga,36.7167,-4.41667,http://rdf.freebase.com/,,Hell's Kitchen,40.7573,-73.9954,http://sws.geonames.org/,,0@7415#1@3640
+1,Petrópolis,-22.505,-43.1786,http://sws.geonames.org/,,Petropolis (Brazil),-22.505,-43.1786,http://data.nytimes.com/,,0@7230#1@3023
+0,Louisville (Ky),38.2542,-85.7594,http://data.nytimes.com/,,dunedin,-45.89,170.5,http://rdf.freebase.com/,,0@3346#1@4063
+1,Dunedin (New Zealand),-45.8742,170.50400000000005,http://data.nytimes.com/,,dunedin,-45.89,170.5,http://rdf.freebase.com/,,0@4062#1@4063
+1,Qingdao (China),36.0986,120.372,http://data.nytimes.com/,,Qingdao,36.0667,120.383,http://dbpedia.org/,,0@4048#1@4049
+0,Curitiba,-25.4167,-49.25,http://dbpedia.org/,,Durban,-29.8833,31.05,http://dbpedia.org/,,0@1218#1@2342
+1,Verona (Italy),45.4342,10.9978,http://data.nytimes.com/,,Verona,45.4342,10.9978,http://sws.geonames.org/,,0@1916#1@3395
+0,Regensburg (Germany),49.015,12.0956,http://data.nytimes.com/,,Mombasa,-4.05,39.6667,http://sws.geonames.org/,,0@6301#1@5911
+0,Eilat (Israel),29.5611,34.9517,http://data.nytimes.com/,,clinton hill brooklyn,40.6897,-73.9653,http://rdf.freebase.com/,,0@1232#1@3937
+1,Amagansett,40.9737,-72.1437,http://sws.geonames.org/,,Amagansett (NY),40.9737,-72.1437,http://data.nytimes.com/,,0@7511#1@6911
+0,Mazatlán,23.2167,-106.417,http://sws.geonames.org/,,New Bedford,41.6362,-70.9342,http://sws.geonames.org/,,0@6717#1@7221
+0,Mazatlán,23.2167,-106.417,http://sws.geonames.org/,,Taormina,37.8536,15.2885,http://sws.geonames.org/,,0@6717#1@4229
+1,Marseille,43.3,5.4,http://sws.geonames.org/,,Marseille,43.2964,5.36995,http://dbpedia.org/,,0@5747#1@6941
+1,Amenia,41.8493,-73.5568,http://sws.geonames.org/,,Amenia (NY),41.8493,-73.5568,http://data.nytimes.com/,,0@7143#1@423
+1,Colmar (France),48.0833,7.36667,http://data.nytimes.com/,,Colmar,48.0817,7.35556,http://dbpedia.org/,,0@703#1@704
+0,Tokyo,35.6149,139.58100000000002,http://sws.geonames.org/,,"Ridgefield, Connecticut",,,http://dbpedia.org/,,0@2923#1@3734
+0,Tokyo,35.6149,139.58100000000002,http://sws.geonames.org/,,Cutchogue,41.0107,-72.4851,http://sws.geonames.org/,,0@2923#1@4298
+0,Zanzibar,-6.13333,39.3167,http://dbpedia.org/,,Rehoboth Beach (Del),38.7209,-75.07600000000002,http://data.nytimes.com/,,0@2198#1@5011
+0,New Delhi,28.0,77.0,http://dbpedia.org/,,puerto morelos,20.8536,-86.8753,http://rdf.freebase.com/,,0@5125#1@6380
+1,"Rockland, Maine",,,http://dbpedia.org/,,Rockland (Me),44.1037,-69.1089,http://data.nytimes.com/,,0@6088#1@1543
+1,Trieste,45.6333,13.8,http://dbpedia.org/,,Trieste,45.6486,13.78,http://sws.geonames.org/,,0@712#1@2986
+0,Cortina d'Ampezzo,46.5333,12.1333,http://dbpedia.org/,,Kunming (China),25.0389,102.718,http://data.nytimes.com/,,0@3505#1@1987
+1,Islamabad (Pakistan),33.61,73.0591,http://data.nytimes.com/,,islamabad,33.6667,73.1667,http://rdf.freebase.com/,,0@3675#1@3676
+0,Los Angeles,34.0522,-118.244,http://sws.geonames.org/,,Zurich (Switzerland),47.3667,8.55,http://data.nytimes.com/,,0@3725#1@1391
+0,North Stonington (Conn),41.4409,-71.8812,http://data.nytimes.com/,,merca,1.7167,44.8833,http://rdf.freebase.com/,,0@719#1@3049
+1,"Guadalupe, Baja California",,,http://dbpedia.org/,,guadalupe mexico,32.0667,-116.583,http://rdf.freebase.com/,,0@4542#1@221
+0,Kashgar,39.4667,75.9833,http://dbpedia.org/,,San Francisco,37.7793,-122.419,http://dbpedia.org/,,0@7194#1@2047
+0,Naypyidaw (Myanmar),19.745,96.1297,http://data.nytimes.com/,,Oxnard (Calif),34.1975,-119.177,http://data.nytimes.com/,,0@2987#1@4258
+1,Crans Montana,46.3132,7.479139999999999,http://sws.geonames.org/,,crans-montana,46.311944,7.4828,http://rdf.freebase.com/,,0@3394#1@7508
+0,"Queenstown, New Zealand",,,http://dbpedia.org/,,ogden,41.2231,-111.973,http://rdf.freebase.com/,,0@6607#1@7369
+1,Santa Cruz (Calif),36.9741,-122.031,http://data.nytimes.com/,,"Santa Cruz, California",,,http://dbpedia.org/,,0@4416#1@6095
+0,Gansbaai,-34.5828,19.3522,http://dbpedia.org/,,addis ababa,9.02722,38.7369,http://rdf.freebase.com/,,0@7467#1@3160
+0,Ghent,51.05,3.71667,http://sws.geonames.org/,,caracas,10.5,-66.8992,http://rdf.freebase.com/,900.0,0@1977#1@5924
+0,pyongyang,39.0333,125.75,http://rdf.freebase.com/,,caracas,10.5,-66.8992,http://rdf.freebase.com/,900.0,0@4987#1@5924
+1,Juneau,58.3019,-134.42,http://sws.geonames.org/,,juneau,58.3514,-134.512,http://rdf.freebase.com/,,0@4439#1@6253
+1,puerto jimenez,8990.33,-5170.87,http://rdf.freebase.com/,,Puerto Jiménez,8.53333,-83.3167,http://sws.geonames.org/,,0@3077#1@6425
+0,Fes,34.0333,-5.0,http://dbpedia.org/,,Berchtesgaden,47.6314,13.0042,http://dbpedia.org/,,0@1083#1@325
+1,Hakone,35.1833,139.033,http://sws.geonames.org/,,Hakone (Japan),35.1833,139.033,http://data.nytimes.com/,,0@4333#1@3637
+1,Damascus,33.5102,36.2913,http://sws.geonames.org/,,Damascus (Syria),33.5,36.3,http://data.nytimes.com/,,0@143#1@142
+0,"Garment District, Manhattan",,,http://dbpedia.org/,,Vienna,48.2085,16.3721,http://sws.geonames.org/,,0@1610#1@5015
+0,Pittsfield (Mass),42.4501,-73.2454,http://data.nytimes.com/,,buenos aires,-34.6036,-58.3817,http://rdf.freebase.com/,,0@2585#1@2565
+0,Naples (Italy),40.8333,14.25,http://data.nytimes.com/,,Udaipur (India),24.5712,73.6918,http://data.nytimes.com/,,0@754#1@3374
+0,"Chinatown, Manhattan",,,http://dbpedia.org/,,Bangalore (India),12.9762,77.6033,http://data.nytimes.com/,,0@1116#1@5002
+1,Bayeux,49.2667,-0.7,http://sws.geonames.org/,,Bayeux (France),49.2667,-0.7,http://data.nytimes.com/,,0@5559#1@4486
+1,chamonix,45.9189,6.8653,http://rdf.freebase.com/,,Chamonix,45.9167,6.86667,http://sws.geonames.org/,,0@253#1@3059
+0,"Locust Valley, New York",,,http://dbpedia.org/,,"Brooklyn Heights, Brooklyn",,,http://dbpedia.org/,,0@5453#1@1668
+0,manteca,37.7975,-121.215,http://rdf.freebase.com/,,Les Eyzies-de-Tayac (France),44.9359,1.01327,http://data.nytimes.com/,,0@3292#1@4118
+0,San Antonio,29.4167,-98.5,http://dbpedia.org/,,Ashgabat,37.9333,58.3667,http://dbpedia.org/,,0@3519#1@4953
+1,Killington,43.6776,-72.7798,http://sws.geonames.org/,,killington,43.6776,-72.7798,http://rdf.freebase.com/,,0@729#1@3255
+0,Killington,43.6776,-72.7798,http://sws.geonames.org/,,Punta Gorda (Belize),16.1,-88.8,http://data.nytimes.com/,,0@729#1@156
+1,"Huntington Beach, California",,,http://dbpedia.org/,,Huntington Beach (Calif),33.6603,-117.999,http://data.nytimes.com/,,0@1415#1@1414
+0,Petropolis (Brazil),-22.505,-43.1786,http://data.nytimes.com/,,Menton,43.7765,7.50435,http://sws.geonames.org/,,0@3023#1@6110
+0,Melbourne (Australia),-37.814,144.963,http://data.nytimes.com/,,Klosterneuburg,48.3052,16.3252,http://sws.geonames.org/,,0@575#1@1680
+0,Cahors,44.4491,1.43663,http://sws.geonames.org/,,Bhopal,23.25,77.42,http://dbpedia.org/,,0@2925#1@4225
+0,Pawtucket (RI),41.8787,-71.3826,http://data.nytimes.com/,,Timbuktu,16.7758,-3.00944,http://dbpedia.org/,,0@1837#1@2620
+1,Mazatlan (Mexico),23.2167,-106.417,http://data.nytimes.com/,,Mazatlan,,,http://dbpedia.org/,,0@2450#1@2451
+0,Mazatlan (Mexico),23.2167,-106.417,http://data.nytimes.com/,,Pawtucket,41.8787,-71.3826,http://sws.geonames.org/,,0@2450#1@1838
+0,hunts point bronx,40.812601,-73.884025,http://rdf.freebase.com/,,"Cuenca, Ecuador",,,http://dbpedia.org/,,0@517#1@6741
+1,north adams,42.7008,-73.1092,http://rdf.freebase.com/,,North Adams,42.7009,-73.1087,http://sws.geonames.org/,,0@375#1@213
+1,Chachapoyas,-6.23169,-77.869,http://sws.geonames.org/,,chachapoyas,-6.2167,-77.85,http://rdf.freebase.com/,,0@1525#1@6511
+1,Beijing,39.9075,116.397,http://sws.geonames.org/,,beijing,39.91,116.4,http://rdf.freebase.com/,43.5,0@7182#1@628
+1,North Stonington,41.4409,-71.8812,http://sws.geonames.org/,,"North Stonington, Connecticut",,,http://dbpedia.org/,,0@720#1@3581
+0,Sandwich (Mass),41.75899999999999,-70.4939,http://data.nytimes.com/,,Oklahoma City,35.4676,-97.5164,http://sws.geonames.org/,,0@3264#1@3186
+1,Park Slope,40.6701,-73.986,http://sws.geonames.org/,,Park Slope (NYC),40.6701,-73.986,http://data.nytimes.com/,,0@6749#1@4543
+0,Jamaica (NYC),40.6915,-73.8057,http://data.nytimes.com/,,Lahore,31.5497,74.3436,http://dbpedia.org/,,0@4611#1@3322
+1,Alice Springs (Australia),-23.7,133.88299999999998,http://data.nytimes.com/,,"Alice Springs, Northern Territory",,,http://dbpedia.org/,,0@343#1@5231
+0,Hamburg,53.55,10.0,http://sws.geonames.org/,,Golfito,8.634319999999999,-83.1619,http://dbpedia.org/,,0@2438#1@2915
+0,Mexico City,19.4285,-99.1277,http://sws.geonames.org/,,Hopewell Junction,41.584,-73.8087,http://sws.geonames.org/,,0@7529#1@7093
+1,Mexico City,19.4285,-99.1277,http://sws.geonames.org/,,Mexico City,19.4333,-99.1333,http://dbpedia.org/,,0@7529#1@3532
+1,Dhaka (Bangladesh),23.7231,90.4086,http://data.nytimes.com/,,dhaka,23.7,90.3833,http://rdf.freebase.com/,,0@3368#1@3369
+1,Durban (South Africa),-29.85,31.0167,http://data.nytimes.com/,,Durban,-29.85,31.0167,http://sws.geonames.org/,,0@1478#1@1612
+0,Napa,38.2971,-122.286,http://sws.geonames.org/,,Saugatuck,42.655,-86.20200000000001,http://sws.geonames.org/,,0@4944#1@5021
+0,Zermatt,46.0167,7.75,http://sws.geonames.org/,,Luang Prabang,19.8856,102.135,http://sws.geonames.org/,,0@5716#1@7531
+0,Barcelona,41.3833,2.18333,http://dbpedia.org/,,Mogadishu (Somalia),2.03914,45.3419,http://data.nytimes.com/,,0@5621#1@637
+1,Honolulu,21.3069,-157.858,http://sws.geonames.org/,,Honolulu,21.3089,-157.826,http://dbpedia.org/,,0@1131#1@5091
+1,Birmingham,52.4796,-1.89361,http://dbpedia.org/,,Birmingham,52.4667,-1.91667,http://sws.geonames.org/,,0@2575#1@4170
+1,Autun,46.9517,4.29944,http://dbpedia.org/,,Autun (France),46.95,4.3,http://data.nytimes.com/,,0@4069#1@2432
+1,cork,51.9,-8.47306,http://rdf.freebase.com/,,Cork (city),51.8972,-8.47,http://dbpedia.org/,,0@5577#1@2860
+0,Pucon,,,http://dbpedia.org/,,aurland,60.8681,7.24333,http://rdf.freebase.com/,,0@2085#1@7266
+1,chappaqua,41.1594,-73.7653,http://rdf.freebase.com/,,Chappaqua,41.1595,-73.7649,http://sws.geonames.org/,,0@4529#1@5468
+0,Valparaiso (Chile),-33.0393,-71.6273,http://data.nytimes.com/,,auxerre,47.7983,3.5677800000000004,http://rdf.freebase.com/,,0@232#1@7175
+1,szeged,46.25,20.1667,http://rdf.freebase.com/,,Szeged (Hungary),46.253,20.1482,http://data.nytimes.com/,,0@3850#1@1905
+1,szeged,46.25,20.1667,http://rdf.freebase.com/,,Szeged,46.253,20.1482,http://sws.geonames.org/,,0@3850#1@1906
+0,Istanbul (Turkey),41.0138,28.9497,http://data.nytimes.com/,,Paris,33.6609,-95.5555,http://sws.geonames.org/,,0@6187#1@5603
+1,geneva,46.2,6.15,http://rdf.freebase.com/,,Geneva,46.2022,6.14569,http://sws.geonames.org/,,0@249#1@6681
+0,Oxford (England),51.7522,-1.25596,http://data.nytimes.com/,,Edirne (Turkey),41.6772,26.556,http://data.nytimes.com/,,0@1881#1@960
+1,Cape Town,-33.9253,18.4239,http://dbpedia.org/,,Cape Town,-33.9167,18.4167,http://sws.geonames.org/,,0@3371#1@2721
+1,Sadr City,33.3889,44.4583,http://dbpedia.org/,,sadr city,33.3889,44.4583,http://rdf.freebase.com/,,0@255#1@4388
+0,Alajuela,10.0167,-84.2167,http://sws.geonames.org/,,Carnac,47.5847,-3.0794,http://dbpedia.org/,,0@4106#1@4790
+1,Luanda (Angola),-8.838330000000003,13.2344,http://data.nytimes.com/,,luanda,-8.83083,13.245,http://rdf.freebase.com/,,0@4292#1@6728
+0,Lausanne (Switzerland),46.51600000000001,6.63282,http://data.nytimes.com/,,Orvieto (Italy),42.7195,12.1116,http://data.nytimes.com/,,0@4469#1@1654
+0,Siem Reap (Cambodia),13.3667,103.85,http://data.nytimes.com/,,amsterdam,52.37,4.89,http://rdf.freebase.com/,,0@4309#1@6553
+1,Hanover (Germany),52.3705,9.73322,http://data.nytimes.com/,,Hanover,52.3667,9.71667,http://dbpedia.org/,,0@2391#1@6699
+1,"Liberia, Costa Rica",,,http://dbpedia.org/,,Liberia (Costa Rica),10.6333,-85.4333,http://data.nytimes.com/,,0@4037#1@1454
+0,La Rochelle,46.1667,-1.15,http://sws.geonames.org/,,Rotterdam,51.9225,4.47917,http://sws.geonames.org/,,0@6008#1@6604
+0,"Monhegan, Maine",,,http://dbpedia.org/,,Dublin,53.3478,-6.25972,http://dbpedia.org/,,0@3518#1@5664
+0,New Milford (Conn),41.577,-73.4085,http://data.nytimes.com/,,Houston (Tex),29.7633,-95.3633,http://data.nytimes.com/,,0@1004#1@4099
+1,Fortaleza (Brazil),-3.71722,-38.5431,http://data.nytimes.com/,,fortaleza,-3.7737,-38.5748,http://rdf.freebase.com/,21.00072,0@4150#1@4151
+1,Melbourne,-37.814,144.963,http://sws.geonames.org/,,Melbourne,37.8136,144.963,http://dbpedia.org/,,0@576#1@5970
+1,Athens,,,http://dbpedia.org/,,athens,37.9778,23.7278,http://rdf.freebase.com/,,0@2443#1@4702
+0,Fontainebleau (France),48.4,2.7,http://data.nytimes.com/,,Ljubljana,46.0511,14.5051,http://sws.geonames.org/,,0@1031#1@7523
+1,Ravenna (Italy),44.4175,12.2011,http://data.nytimes.com/,,Ravenna,44.4167,12.2,http://dbpedia.org/,,0@790#1@2815
+0,Old Lyme (Conn),41.3159,-72.329,http://data.nytimes.com/,,ocean grove new jersey,40.2119,-74.0069,http://rdf.freebase.com/,,0@727#1@4415
+1,lake placid,44.2794,-73.9803,http://rdf.freebase.com/,,Lake Placid,44.2795,-73.9799,http://sws.geonames.org/,,0@6623#1@7106
+1,park slope brooklyn,40.6701,-73.986,http://rdf.freebase.com/,15.0,Park Slope,40.6701,-73.986,http://sws.geonames.org/,,0@4544#1@6749
+0,Limoges (France),45.85,1.25,http://data.nytimes.com/,,Gansbaai,-34.5828,19.3522,http://dbpedia.org/,,0@3984#1@7467
+0,Silver City,32.7701,-108.28,http://sws.geonames.org/,,kalkan,36.2581,29.4083,http://rdf.freebase.com/,,0@1174#1@7028
+1,Hamburg,53.5653,10.0014,http://dbpedia.org/,,Hamburg,53.55,10.0,http://sws.geonames.org/,,0@5653#1@2438
+0,siem reap,13.3622,103.86,http://rdf.freebase.com/,,millau,44.0986,3.07833,http://rdf.freebase.com/,,0@5492#1@1589
+0,Palisades Park (NJ),40.8482,-73.9976,http://data.nytimes.com/,,Jersey City,40.7282,-74.0776,http://sws.geonames.org/,,0@1267#1@1553
+0,"Sandwich, Massachusetts",,,http://dbpedia.org/,,san antonio,29.4239,-98.4933,http://rdf.freebase.com/,,0@3265#1@1947
+0,Kirkuk,35.4681,44.3922,http://sws.geonames.org/,,Shanghai,31.2,121.5,http://dbpedia.org/,,0@3301#1@3195
+0,Lima,-12.0432,-77.0282,http://sws.geonames.org/,,Osaka (Japan),34.6937,135.502,http://data.nytimes.com/,,0@7253#1@4138
+0,SoHo,40.7224,-73.9996,http://sws.geonames.org/,,"Sheepshead Bay, Brooklyn",,,http://dbpedia.org/,,0@570#1@2150
+1,ossining new york,41.165278,-73.856667,http://rdf.freebase.com/,49.0728,"Ossining (village), New York",,,http://dbpedia.org/,,0@3585#1@5665
+0,"Santa Ynez, California",,,http://dbpedia.org/,,Hamilton Heights,40.8244,-73.95,http://sws.geonames.org/,,0@6775#1@3669
+1,Tikal,17.225,-89.6133,http://sws.geonames.org/,,Tikal,17.2221,-89.6236,http://dbpedia.org/,,0@2041#1@2715
+0,cabarete,19.7511,-70.4083,http://rdf.freebase.com/,,Bhopal,23.2667,77.4,http://sws.geonames.org/,,0@657#1@6991
+0,Patchogue,40.7657,-73.0151,http://sws.geonames.org/,,Bangalore,12.9762,77.6033,http://sws.geonames.org/,,0@1244#1@6895
+1,Biarritz,43.4833,-1.56667,http://sws.geonames.org/,,Biarritz (France),43.4833,-1.56667,http://data.nytimes.com/,,0@4540#1@2439
+1,Guilin,25.2819,110.286,http://sws.geonames.org/,,guilin,25.2706,110.292,http://rdf.freebase.com/,,0@6585#1@79
+1,Killarney (Ireland),52.05,-9.51667,http://data.nytimes.com/,,killarney,52.0599,-9.50712,http://rdf.freebase.com/,,0@1367#1@3289
+1,Copenhagen (Denmark),55.6777,12.5709,http://data.nytimes.com/,,Copenhagen,55.6759,12.5655,http://sws.geonames.org/,,0@490#1@6408
+0,Monteverde (Costa Rica),10.1,-83.4333,http://data.nytimes.com/,,Gijon,,,http://dbpedia.org/,,0@837#1@6819
+0,lugano,46.0046,8.953510000000003,http://rdf.freebase.com/,273.0,lahore,31.5758,74.3269,http://rdf.freebase.com/,,0@6488#1@2790
+1,Silver City (NM),32.7701,-108.28,http://data.nytimes.com/,,silver city,32.77,-108.28,http://rdf.freebase.com/,,0@1173#1@2849
+0,Chernobyl,51.2722,30.2242,http://dbpedia.org/,,Beslan,43.2,44.5667,http://dbpedia.org/,,0@5937#1@3824
+1,Minneapolis (Minn),44.98,-93.2638,http://data.nytimes.com/,,Minneapolis,44.98,-93.2638,http://sws.geonames.org/,,0@2133#1@5927
+0,stellenbosch western cape,-33.92,18.86,http://rdf.freebase.com/,,Gijon (Spain),43.5411,-5.66444,http://data.nytimes.com/,,0@3710#1@4050

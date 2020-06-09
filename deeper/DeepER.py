@@ -1,5 +1,7 @@
 import numpy as np
 import tensorflow as tf
+import pandas as pd
+import csv,codecs,os
 from keras.layers import Input, Embedding, LSTM, concatenate, subtract, Dense, Bidirectional, Lambda
 from keras.models import Model, load_model
 from keras.initializers import Constant
@@ -7,9 +9,8 @@ from keras.preprocessing.text import Tokenizer
 from keras.utils import plot_model, to_categorical
 from keras.preprocessing.sequence import pad_sequences
 from keras.callbacks import EarlyStopping, ModelCheckpoint
-from deeper.data import data2Inputs
 from tqdm import tqdm
-import os
+from sklearn.metrics import f1_score
 
 
 def __dataToText(dataset):
@@ -25,39 +26,30 @@ def __dataToText(dataset):
 
 # InPut: Nome del file con gli embeddings
 # Output: Un dizionario con tutti gli embeddings: {parola: embedding}
-def init_embeddings_index(embeddings_file):
-
-    print('* Costruzione indice degli embeddings.....', end='', flush=True)
-    embeddings_index = {}
-    with open(embeddings_file, encoding='utf8') as f:
-        for line in f:
-            values = line.split(' ')
-            word = values[0]
-            coefs = np.asarray(values[1:], dtype='float32')
-            embeddings_index[word] = coefs
-    
-    print(f'Fatto. {len(embeddings_index)} embeddings totali.')
-    
-    return embeddings_index
+def __load_embeddings(embeddings_path):
+    with codecs.open(embeddings_path + '.vocab', 'r', 'utf-8') as f_in:
+        index2word = [line.strip() for line in f_in]
+    word2index = {w: i for i, w in enumerate(index2word)}
+    wv = np.load(embeddings_path + '.npy')
+    return wv, index2word, word2index
 
 
 # InPut: Nome del file contenente gli embeddings
 # OutPut: Un modello che converte vettori di token in vettori di embeddings ed un tokenizzatore
 def init_embeddings_model(embeddings_filename):
-    embeddings_index = init_embeddings_index(embeddings_filename)
+    word_vectors,index2word,word2index = __load_embeddings(embeddings_filename)
     print('* Inizializzo il tokenizzatore.....', end='', flush=True)
     tokenizer = Tokenizer()
-    tokenizer.fit_on_texts(embeddings_index.keys())
+    tokenizer.fit_on_texts(index2word)
     words_index = tokenizer.word_index
     print(f'Fatto: {len(words_index)} parole totali.')    
     print('* Preparazione della matrice di embedding.....', end='', flush=True)
-    embedding_dim = len(embeddings_index['cat']) # :3  
+    embedding_dim = word_vectors.shape[1]  
     num_words = len(words_index) + 1
     embedding_matrix = np.zeros((num_words, embedding_dim))
-    for word, i in words_index.items():    
-        embedding_vector = embeddings_index.get(word)
-        if embedding_vector is not None:
-            # Le parole di cui non viene trovato l'embedding avranno vettore nullo
+    for word, i in words_index.items():
+        if word in word2index.keys():
+            embedding_vector = word_vectors[word2index[word]]
             embedding_matrix[i] = embedding_vector
     print(f'Fatto. Dimensioni matrice embeddings: {embedding_matrix.shape}')
 
@@ -139,17 +131,10 @@ def replace_last_layer(model, new_layer):
 # InPut: Una lista di triple [(tup1, tup2, label), ...], il modello da addestrare...
 # Output: Il modello addestrato
 #def train_DeepER(deeper_model, data, embeddings_index):  
-def train_model_ER(data, model,embeddings_model, tokenizer,best_save_path='models',pretraining=False, metric='val_acc', end=''):
-
-    if pretraining:
-        model_name = 'VinSim'
-        table1, table2, labels = data2Inputs(data, tokenizer, categorical=False)
-    else:
-        model_name = 'DeepER'
-        table1, table2, labels = data2Inputs(data, tokenizer)         
-    
+def train_model_ER(training_set,dataset_name,model,best_save_path='models',pretraining=False, metric='val_acc', end=''):
+    model_name = dataset_name
     # Preparazione embeddings (tokens -> embeddings)
-    x1, x2 = embeddings_model.predict([table1, table2])        
+    x1, x2 = training_set.data['left_embeddings'],training_set.data['right_embeddings']
     
     # Early stopping (arresta l'apprendimento se non ci sono miglioramenti)
     es = EarlyStopping(monitor=metric, min_delta=0, verbose=1, patience=7)
@@ -157,14 +142,15 @@ def train_model_ER(data, model,embeddings_model, tokenizer,best_save_path='model
     mc = ModelCheckpoint(
         os.path.join(best_save_path,f'{model_name}_best_model{end}.h5'), monitor=metric, verbose=1,save_best_only=True)
     # Addestramento modello
-    param_batch_size = round(len(data) * 0.015) + 1
+    param_batch_size = round(x1.shape[0]* 0.015) + 1
     print('Batch size:', param_batch_size)
-    model.fit([x1, x2], labels, batch_size=param_batch_size, epochs=64, validation_split=0.2, callbacks=[es, mc])
-
+    model.fit([x1, x2],training_set.data['labels'], batch_size=param_batch_size,\
+              epochs=64, validation_split=0.2, callbacks=[es, mc])
     # Carica il miglior modello checkpointed
     model = load_model(os.path.join(best_save_path,f'{model_name}_best_model{end}.h5'))   
 
     return model
+
 
 def train_model_ROUND_ER(data, model, embeddings_model, tokenizer, metric='val_acc', end=''):
 

@@ -1,0 +1,15 @@
+,0
+Beer_Name,0.55
+Brew_Factory_Name,0.05
+Style,0.1
+ABV,0.05
+Beer_Name/Brew_Factory_Name,0.85
+Beer_Name/Style,0.8
+Beer_Name/ABV,0.65
+Brew_Factory_Name/Style,0.1
+Brew_Factory_Name/ABV,0.05
+Style/ABV,0.1
+Beer_Name/Brew_Factory_Name/Style,1.0
+Beer_Name/Brew_Factory_Name/ABV,0.95
+Beer_Name/Style/ABV,0.8
+Brew_Factory_Name/Style/ABV,0.2
